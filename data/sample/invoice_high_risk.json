@@ -1,0 +1,11 @@
+{
+  "vendor": "ABC Supplies",
+  "invoice_number": "INV-1042",
+  "date": "2026-08-20",
+  "payment_date": "2026-08-15",
+  "amount": 125000,
+  "tax": 22500,
+  "total": 147500,
+  "category": "Equipment",
+  "notes": "Bulk equipment purchase for new site."
+}

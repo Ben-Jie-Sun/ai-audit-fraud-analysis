@@ -1,0 +1,11 @@
+{
+  "vendor": "ABC Supplies",
+  "invoice_number": "INV-1099",
+  "date": "2026-08-10",
+  "payment_date": "2026-08-20",
+  "amount": 21500,
+  "tax": 3870,
+  "total": 25370,
+  "category": "Equipment",
+  "notes": "Quarterly restock of workshop equipment."
+}

@@ -1,0 +1,11 @@
+{
+  "vendor": "ABC Supplies",
+  "invoice_number": "INV-1001",
+  "date": "2026-08-22",
+  "payment_date": "2026-08-29",
+  "amount": 18700,
+  "tax": 3366,
+  "total": 22066,
+  "category": "Equipment",
+  "notes": "Resubmission of invoice for processing."
+}

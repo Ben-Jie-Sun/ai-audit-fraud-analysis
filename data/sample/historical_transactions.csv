@@ -1,0 +1,42 @@
+vendor,invoice_number,date,amount,category
+ABC Supplies,INV-1001,2026-02-03,18500,Equipment
+ABC Supplies,INV-1005,2026-02-19,21000,Equipment
+ABC Supplies,INV-1012,2026-03-10,19500,Equipment
+ABC Supplies,INV-1020,2026-04-02,22500,Equipment
+ABC Supplies,INV-1031,2026-05-14,20500,Equipment
+ABC Supplies,INV-1040,2026-06-21,17800,Equipment
+Global Traders,INV-2002,2026-02-08,26000,Equipment
+Global Traders,INV-2010,2026-03-01,24500,Equipment
+Global Traders,INV-2019,2026-04-11,27500,Equipment
+Global Traders,INV-2033,2026-05-30,25200,Equipment
+Northline Hardware,INV-3004,2026-02-14,15000,Equipment
+Northline Hardware,INV-3011,2026-03-22,16200,Equipment
+Northline Hardware,INV-3025,2026-05-05,15800,Equipment
+Metro Office Mart,INV-4001,2026-01-15,3200,Office Supplies
+Metro Office Mart,INV-4009,2026-02-11,2800,Office Supplies
+Metro Office Mart,INV-4017,2026-03-19,3600,Office Supplies
+Metro Office Mart,INV-4028,2026-04-25,3100,Office Supplies
+Metro Office Mart,INV-4036,2026-05-30,2950,Office Supplies
+Metro Office Mart,INV-4044,2026-06-18,3400,Office Supplies
+Skyline Travel,INV-5002,2026-01-20,42000,Travel
+Skyline Travel,INV-5013,2026-02-27,38500,Travel
+Skyline Travel,INV-5024,2026-03-30,45000,Travel
+Skyline Travel,INV-5035,2026-05-10,40200,Travel
+Skyline Travel,INV-5047,2026-06-15,39800,Travel
+CloudSoft Technologies,INV-6003,2026-01-10,58000,Software
+CloudSoft Technologies,INV-6014,2026-02-15,60500,Software
+CloudSoft Technologies,INV-6027,2026-03-20,57200,Software
+CloudSoft Technologies,INV-6038,2026-04-28,61000,Software
+CloudSoft Technologies,INV-6049,2026-06-02,59500,Software
+Apex Consulting Group,INV-7001,2026-01-25,85000,Consulting
+Apex Consulting Group,INV-7015,2026-03-05,92000,Consulting
+Apex Consulting Group,INV-7029,2026-04-18,88500,Consulting
+Apex Consulting Group,INV-7041,2026-05-27,90500,Consulting
+CityPower Utilities,INV-8002,2026-01-05,12500,Utilities
+CityPower Utilities,INV-8014,2026-02-05,13200,Utilities
+CityPower Utilities,INV-8026,2026-03-05,12800,Utilities
+CityPower Utilities,INV-8038,2026-04-05,13500,Utilities
+CityPower Utilities,INV-8050,2026-05-05,12900,Utilities
+CityPower Utilities,INV-8062,2026-06-05,13100,Utilities
+ABC Supplies,INV-1050,2026-07-08,20200,Equipment
+Global Traders,INV-2045,2026-07-14,26800,Equipment
