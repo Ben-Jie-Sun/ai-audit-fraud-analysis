@@ -67,216 +67,175 @@ RISK_ORDER = ["LOW", "MEDIUM", "HIGH", "CRITICAL"]
 # ---------------------------------------------------------------------------
 
 def inject_styles() -> None:
+    """Apply the polished enterprise dashboard shell used throughout Phase 7.
+
+    The presentation deliberately mirrors the README interface reference while
+    leaving all detection, scoring, routing and API behaviour unchanged.
+    """
     st.markdown(
         """
         <style>
         :root {
-            --navy-950: #061a33;
-            --navy-900: #0a2342;
-            --navy-800: #10335a;
-            --blue: #0f6fe8;
-            --cyan: #16b9d4;
-            --ink: #16233a;
-            --muted: #66758a;
-            --line: #e5eaf1;
-            --bg: #f6f8fb;
-            --card: #ffffff;
-            --danger: #e64855;
-            --warning: #f39a3f;
-            --success: #1c9b76;
+            --navy-950:#061a33;
+            --navy-900:#082341;
+            --navy-800:#0c3158;
+            --blue:#116fe8;
+            --blue-2:#1d84f4;
+            --cyan:#15b8d4;
+            --ink:#13213a;
+            --muted:#68778d;
+            --muted-2:#8794a6;
+            --line:#e2e8f0;
+            --line-soft:#edf1f6;
+            --bg:#f7f9fc;
+            --card:#ffffff;
+            --danger:#ef4f5f;
+            --danger-bg:#fff1f2;
+            --warning:#ef923a;
+            --warning-bg:#fff7ed;
+            --success:#169873;
+            --success-bg:#ecfdf5;
         }
 
-        .stApp {
-            background: var(--bg);
-            color: var(--ink);
-        }
-        [data-testid="stHeader"] { background: transparent; }
+        html, body, [class*="css"] { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+        .stApp { background:var(--bg); color:var(--ink); }
+        [data-testid="stHeader"] { background:rgba(247,249,252,.92); }
+        [data-testid="stToolbar"], [data-testid="stDecoration"], #MainMenu { visibility:hidden; height:0; }
+        footer { visibility:hidden; }
+
         [data-testid="stSidebar"] {
-            background: linear-gradient(180deg, var(--navy-950) 0%, var(--navy-900) 100%);
-            border-right: 1px solid rgba(255,255,255,.06);
-            min-width: 250px;
+            background:linear-gradient(180deg,var(--navy-950) 0%,var(--navy-900) 56%,#071e39 100%);
+            border-right:1px solid rgba(255,255,255,.06);
+            min-width:238px;
+            max-width:238px;
         }
-        [data-testid="stSidebar"] > div { padding-top: 1.15rem; }
+        [data-testid="stSidebar"] > div:first-child { padding-top:1.15rem; }
         [data-testid="stSidebar"] [data-testid="stMarkdownContainer"],
         [data-testid="stSidebar"] label,
         [data-testid="stSidebar"] p,
-        [data-testid="stSidebar"] span { color: #eef5ff; }
-        [data-testid="stSidebar"] [role="radiogroup"] { gap: .22rem; }
+        [data-testid="stSidebar"] span { color:#f4f8ff; }
+        [data-testid="stSidebar"] [role="radiogroup"] { gap:.28rem; }
         [data-testid="stSidebar"] [role="radiogroup"] label {
-            padding: .72rem .78rem;
-            border-radius: .58rem;
-            margin: .04rem 0;
-            transition: all .16s ease;
-            font-weight: 560;
+            padding:.70rem .78rem;
+            border-radius:.56rem;
+            margin:.02rem 0;
+            transition:all .14s ease;
+            font-weight:620;
         }
-        [data-testid="stSidebar"] [role="radiogroup"] label:hover {
-            background: rgba(255,255,255,.08);
-        }
+        [data-testid="stSidebar"] [role="radiogroup"] label:hover { background:rgba(255,255,255,.075); }
         [data-testid="stSidebar"] [role="radiogroup"] label:has(input:checked) {
-            background: linear-gradient(90deg, #0f6fe8, #0861cf);
-            box-shadow: 0 6px 18px rgba(0,93,206,.28);
+            background:linear-gradient(90deg,#1679ec,#0862cf);
+            box-shadow:0 7px 20px rgba(0,88,204,.30);
         }
-        [data-testid="stSidebar"] hr { border-color: rgba(255,255,255,.12); }
+        [data-testid="stSidebar"] hr { border-color:rgba(255,255,255,.11); }
+
+        .sidebar-brand-row { display:flex; align-items:center; gap:.65rem; padding:.2rem .1rem .15rem .1rem; }
+        .sidebar-logo {
+            width:39px; height:44px; display:flex; align-items:center; justify-content:center;
+            border:2px solid #1fc2dc; border-radius:12px 12px 16px 16px; color:#1fc2dc;
+            font-size:1.25rem; font-weight:900; box-shadow:inset 0 0 0 3px rgba(31,194,220,.08);
+        }
+        .sidebar-name { color:#fff; font-size:1.12rem; font-weight:820; letter-spacing:-.02em; }
+        .sidebar-caption { color:#a9bbce; font-size:.70rem; margin-top:.08rem; line-height:1.3; }
+        .sidebar-foot { color:#9fb0c3; font-size:.68rem; line-height:1.5; padding:.3rem .1rem; }
 
         .block-container {
-            max-width: 1520px;
-            padding-top: 1.55rem;
-            padding-bottom: 3rem;
-            padding-left: 2rem;
-            padding-right: 2rem;
+            max-width:1540px;
+            padding-top:1.15rem;
+            padding-bottom:3rem;
+            padding-left:1.75rem;
+            padding-right:1.75rem;
         }
-        h1, h2, h3, h4 { color: var(--ink); }
-        .audit-eyebrow {
-            color: var(--blue);
-            font-size: .73rem;
-            font-weight: 800;
-            letter-spacing: .12em;
-            text-transform: uppercase;
-            margin-bottom: .3rem;
-        }
-        .audit-title {
-            color: var(--ink);
-            font-size: 2rem;
-            line-height: 1.1;
-            font-weight: 760;
-            letter-spacing: -.025em;
-            margin-bottom: .42rem;
-        }
-        .audit-subtitle {
-            color: var(--muted);
-            font-size: .96rem;
-            max-width: 820px;
-            line-height: 1.55;
-            margin-bottom: 1.28rem;
-        }
-        .section-label {
-            color: var(--ink);
-            font-size: 1.03rem;
-            font-weight: 720;
-            margin-top: .35rem;
-            margin-bottom: .58rem;
-        }
+        h1,h2,h3,h4 { color:var(--ink); letter-spacing:-.015em; }
+        .page-top { display:flex; align-items:flex-start; justify-content:space-between; gap:1rem; margin-bottom:.55rem; }
+        .audit-eyebrow { color:var(--blue); font-size:.70rem; font-weight:850; letter-spacing:.14em; text-transform:uppercase; margin-bottom:.22rem; }
+        .audit-title { color:var(--ink); font-size:2.02rem; line-height:1.08; font-weight:800; letter-spacing:-.035em; margin-bottom:.38rem; }
+        .audit-subtitle { color:var(--muted); font-size:.92rem; max-width:850px; line-height:1.52; margin-bottom:1.12rem; }
+        .section-label { color:var(--ink); font-size:1.03rem; font-weight:760; margin-top:.35rem; margin-bottom:.58rem; }
+        .panel-label { color:var(--ink); font-size:.96rem; font-weight:760; margin:0 0 .5rem 0; }
 
-        .kpi-grid {
-            display:grid;
-            grid-template-columns: repeat(4, minmax(0,1fr));
-            gap: 14px;
-            margin: .25rem 0 1.2rem 0;
-        }
+        .kpi-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:13px; margin:.15rem 0 1rem 0; }
         .kpi-card {
-            background: var(--card);
-            border: 1px solid var(--line);
-            border-radius: 13px;
-            padding: 15px 16px;
-            box-shadow: 0 3px 12px rgba(22,35,58,.045);
-            min-height: 92px;
+            background:var(--card); border:1px solid var(--line); border-radius:13px;
+            padding:14px 15px; box-shadow:0 3px 12px rgba(22,35,58,.045); min-height:103px;
+            display:flex; align-items:center; gap:12px;
         }
-        .kpi-label { color: var(--muted); font-size: .78rem; font-weight: 650; }
-        .kpi-value { color: var(--ink); font-size: 1.55rem; font-weight: 780; margin-top: .25rem; }
-        .kpi-note { color: #8793a4; font-size: .72rem; margin-top: .2rem; }
+        .kpi-icon {
+            width:42px; height:42px; border-radius:50%; display:flex; align-items:center; justify-content:center;
+            font-size:1.15rem; flex:0 0 42px; background:#edf5ff; color:var(--blue);
+        }
+        .kpi-card:nth-child(2) .kpi-icon { background:#fff0f2; color:var(--danger); }
+        .kpi-card:nth-child(3) .kpi-icon { background:#eafafd; color:#109db6; }
+        .kpi-card:nth-child(4) .kpi-icon { background:#fff4e8; color:var(--warning); }
+        .kpi-copy { min-width:0; }
+        .kpi-label { color:#4f6076; font-size:.75rem; font-weight:680; }
+        .kpi-value { color:var(--ink); font-size:1.46rem; font-weight:820; margin-top:.10rem; line-height:1.18; }
+        .kpi-note { color:var(--muted-2); font-size:.68rem; margin-top:.16rem; line-height:1.32; }
 
         [data-testid="stMetric"] {
-            background: var(--card);
-            border: 1px solid var(--line);
-            border-radius: .78rem;
-            padding: .85rem .95rem;
-            box-shadow: 0 2px 8px rgba(22,35,58,.04);
+            background:var(--card); border:1px solid var(--line); border-radius:.78rem;
+            padding:.80rem .92rem; box-shadow:0 2px 8px rgba(22,35,58,.035);
         }
+        [data-testid="stMetricValue"], [data-testid="stMetricLabel"] { color:var(--ink)!important; }
         [data-testid="stDataFrame"] {
-            border: 1px solid var(--line);
-            border-radius: .72rem;
-            overflow: hidden;
-            background: var(--card);
-            box-shadow: 0 2px 10px rgba(22,35,58,.035);
+            border:1px solid var(--line); border-radius:.72rem; overflow:hidden;
+            background:var(--card); box-shadow:0 2px 9px rgba(22,35,58,.035);
         }
-        [data-testid="stExpander"] {
-            background: var(--card);
-            border: 1px solid var(--line);
-            border-radius: .72rem;
+        [data-testid="stExpander"] { background:var(--card); border:1px solid var(--line); border-radius:.72rem; overflow:hidden; }
+        [data-testid="stExpander"] details, [data-testid="stExpander"] summary { background:#fff!important; color:var(--ink)!important; }
+        [data-testid="stExpander"] summary p, [data-testid="stExpander"] summary span { color:var(--ink)!important; }
+        [data-testid="stAlert"] { border-radius:.72rem; border-width:1px; }
+        [data-testid="stSelectbox"] > div > div, [data-testid="stFileUploader"] section { border-radius:.65rem; }
+        [data-testid="stCaptionContainer"] { color:var(--muted)!important; }
+
+        .insight-shell {
+            background:var(--card); border:1px solid var(--line); border-radius:13px;
+            padding:.9rem 1rem; box-shadow:0 3px 12px rgba(22,35,58,.04); margin-bottom:.75rem;
         }
-        [data-testid="stAlert"] { border-radius: .72rem; }
-        [data-testid="stSelectbox"] > div > div { border-radius: .62rem; }
-        .insight-card {
-            background: var(--card);
-            border: 1px solid var(--line);
-            border-radius: .78rem;
-            padding: 1rem 1rem .78rem 1rem;
-            margin-bottom: .8rem;
-            box-shadow: 0 2px 10px rgba(22,35,58,.035);
-        }
-        .insight-card h4 { margin: 0 0 .45rem 0; font-size: .98rem; }
-        .muted-note { color: var(--muted); font-size: .85rem; }
-        .sidebar-brand {
-            color: #ffffff;
-            font-size: 1.25rem;
-            font-weight: 800;
-            letter-spacing: -.01em;
-            padding: .35rem .1rem .2rem .1rem;
-        }
-        .sidebar-brand .mark { color: #19c0db; margin-right: .25rem; }
-        .sidebar-caption {
-            color: #aebdcb;
-            font-size: .76rem;
-            line-height: 1.35;
-            margin: 0 0 1.1rem .1rem;
-        }
-        /* Keep Streamlit widgets visually consistent with the light workspace. */
+        .insight-title { font-size:1.0rem; font-weight:800; color:var(--ink); margin-bottom:.55rem; }
+        .insight-row { color:#405269; font-size:.82rem; line-height:1.45; margin:.35rem 0; padding-left:.75rem; position:relative; }
+        .insight-row:before { content:"•"; color:var(--cyan); position:absolute; left:0; font-weight:900; }
+        .soft-note { color:var(--muted); font-size:.79rem; line-height:1.45; }
+        .status-pill { display:inline-block; border-radius:999px; padding:.34rem .62rem; font-size:.72rem; font-weight:800; }
+        .status-pass { background:var(--success-bg); color:var(--success); border:1px solid #bae8d9; }
+        .status-review { background:var(--warning-bg); color:#c96a12; border:1px solid #fed7aa; }
+        .status-critical { background:var(--danger-bg); color:#d43748; border:1px solid #fecdd3; }
+
         div.stButton > button, div.stDownloadButton > button {
-            border-radius: .58rem;
-            min-height: 2.55rem;
-            font-weight: 650;
-            background: #ffffff !important;
-            color: var(--ink) !important;
-            border: 1px solid #cfd8e5 !important;
-            box-shadow: 0 1px 2px rgba(15,23,42,.03);
+            border-radius:.56rem; min-height:2.45rem; font-weight:680; background:#fff!important;
+            color:var(--ink)!important; border:1px solid #ccd7e5!important; box-shadow:0 1px 2px rgba(15,23,42,.025);
         }
-        div.stButton > button p, div.stDownloadButton > button p {
-            color: inherit !important;
-        }
+        div.stButton > button p, div.stDownloadButton > button p { color:inherit!important; }
         div.stButton > button:hover, div.stDownloadButton > button:hover {
-            border-color: #8fb8ef !important;
-            color: var(--blue) !important;
-            background: #f8fbff !important;
+            border-color:#8db7ee!important; color:var(--blue)!important; background:#f8fbff!important;
         }
-        div.stButton > button[kind="primary"] {
-            background: var(--blue) !important;
-            color: #ffffff !important;
-            border-color: var(--blue) !important;
+        div.stButton > button[kind="primary"] { background:var(--blue)!important; color:#fff!important; border-color:var(--blue)!important; }
+        div.stButton > button[kind="primary"]:hover { background:#0b61cf!important; color:#fff!important; }
+
+        @media(max-width:1050px) {
+            .kpi-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+            [data-testid="stSidebar"] { min-width:220px; max-width:220px; }
         }
-        div.stButton > button[kind="primary"]:hover {
-            background: #0b61cf !important;
-            color: #ffffff !important;
-        }
-        [data-testid="stExpander"] details,
-        [data-testid="stExpander"] summary {
-            background: #ffffff !important;
-            color: var(--ink) !important;
-        }
-        [data-testid="stExpander"] summary p,
-        [data-testid="stExpander"] summary span {
-            color: var(--ink) !important;
-        }
-        [data-testid="stMetricValue"], [data-testid="stMetricLabel"] {
-            color: var(--ink) !important;
-        }
-        [data-testid="stCaptionContainer"] { color: var(--muted) !important; }
-        @media(max-width: 1000px) { .kpi-grid { grid-template-columns: repeat(2,1fr); } }
         </style>
         """,
         unsafe_allow_html=True,
     )
 
-
 def render_kpi_cards(cards: list[tuple[str, object, str]]) -> None:
+    icons = ["↗", "⚑", "◈", "◷"]
     parts = ['<div class="kpi-grid">']
-    for label, value, note in cards:
+    for i, (label, value, note) in enumerate(cards):
         parts.append(
-            f'<div class="kpi-card"><div class="kpi-label">{label}</div>'
-            f'<div class="kpi-value">{value}</div><div class="kpi-note">{note}</div></div>'
+            '<div class="kpi-card">'
+            f'<div class="kpi-icon">{icons[i % len(icons)]}</div>'
+            '<div class="kpi-copy">'
+            f'<div class="kpi-label">{label}</div>'
+            f'<div class="kpi-value">{value}</div>'
+            f'<div class="kpi-note">{note}</div>'
+            '</div></div>'
         )
     parts.append('</div>')
     st.markdown(''.join(parts), unsafe_allow_html=True)
-
 
 def page_header(title: str, subtitle: str, eyebrow: str = "AI AUDIT") -> None:
     st.markdown(
@@ -288,35 +247,40 @@ def page_header(title: str, subtitle: str, eyebrow: str = "AI AUDIT") -> None:
         unsafe_allow_html=True,
     )
 
-
 def sidebar_navigation() -> str:
+    display_to_page = {
+        "⌂  Overview": "Overview",
+        "▤  Transactions": "Transaction Analysis",
+        "▧  Document Audit": "Document Audit",
+        "♙  Human Review Queue": "Human Review Queue",
+        "✦  Audit Assistant": "Audit Assistant",
+        "▥  Reports": "Reports",
+    }
     with st.sidebar:
-        st.markdown('<div class="sidebar-brand"><span class="mark">◈</span> AI AUDIT</div>', unsafe_allow_html=True)
         st.markdown(
-            '<div class="sidebar-caption">Human-led fraud screening & audit intelligence</div>',
+            """
+            <div class="sidebar-brand-row">
+              <div class="sidebar-logo">⌁</div>
+              <div>
+                <div class="sidebar-name">AI AUDIT</div>
+                <div class="sidebar-caption">Fraud screening & audit intelligence</div>
+              </div>
+            </div>
+            """,
             unsafe_allow_html=True,
         )
-        page = st.radio(
+        st.markdown("<div style='height:.65rem'></div>", unsafe_allow_html=True)
+        selected = st.radio(
             "Navigation",
-            [
-                "Overview",
-                "Transaction Analysis",
-                "Document Audit",
-                "Human Review Queue",
-                "Audit Assistant",
-                "Reports",
-            ],
+            list(display_to_page),
             label_visibility="collapsed",
         )
         st.divider()
-        st.caption("Detection evidence → review priority → human decision")
-        st.caption("Anomaly ≠ fraud · Risk score ≠ fraud probability")
-    return page
-
-
-# ---------------------------------------------------------------------------
-# API helpers
-# ---------------------------------------------------------------------------
+        st.markdown(
+            "<div class='sidebar-foot'><b>Human-led by design</b><br>Detection evidence → review priority → human decision.<br><br>Anomaly ≠ fraud<br>Risk score ≠ fraud probability</div>",
+            unsafe_allow_html=True,
+        )
+    return display_to_page[selected]
 
 def _post_file(endpoint: str, filename: str, content: bytes, timeout: int = 60):
     return requests.post(
@@ -766,109 +730,78 @@ def render_transaction_analysis(result: dict) -> None:
     high_critical = risk_summary.get("high", 0) + risk_summary.get("critical", 0)
 
     render_kpi_cards([
-        ("Total transactions", total, "Rows processed in the active ledger"),
-        ("Flagged transactions", anomalies, "Suspicious behaviour requiring attention"),
-        ("Pending review", review_count, "Cases routed to human reviewers"),
-        ("High / critical", high_critical, "Highest-priority review workload"),
+        ("Total Transactions", total, "Rows processed in the active ledger"),
+        ("Flagged Transactions", anomalies, "Suspicious behaviour requiring attention"),
+        ("Pending Review", review_count, "Cases routed to human reviewers"),
+        ("High / Critical", high_critical, "Highest-priority review workload"),
     ])
 
     anomaly_df = pd.DataFrame(result.get("anomalies", []))
     review_df = pd.DataFrame(result.get("review_queue", []))
 
-    # Primary workspace: the right rail is intentionally reserved for concise
-    # audit interpretation only. Charts and drill-downs sit below the review
-    # queue so they do not compete with the operational table.
     left, right = st.columns([2.65, 1], gap="large")
-
     with left:
-        st.markdown('<div class="section-label">Suspicious transaction ledger</div>', unsafe_allow_html=True)
+        st.markdown('<div class="section-label">Filtered Transaction Data</div>', unsafe_allow_html=True)
         if anomaly_df.empty:
             st.success("No anomalous transactions were detected in this ledger.")
         else:
-            preferred = [
-                "transaction_id",
-                "employee_name",
-                "vendor",
-                "category",
-                "amount",
-                "risk_score",
-                "risk_level",
-                "decision",
-                "assigned_reviewer",
-            ]
+            preferred = ["transaction_id", "amount", "date", "location", "vendor", "risk_score", "risk_level", "decision"]
             cols = [c for c in preferred if c in anomaly_df.columns]
-            st.dataframe(anomaly_df[cols], use_container_width=True, hide_index=True, height=390)
+            st.dataframe(anomaly_df[cols], use_container_width=True, hide_index=True, height=410)
 
-        st.markdown('<div class="section-label">Human review queue</div>', unsafe_allow_html=True)
+        st.markdown('<div class="section-label">Human Review Queue</div>', unsafe_allow_html=True)
         if review_df.empty:
             st.caption("No transaction currently requires human review.")
         else:
-            qcols = [
-                c
-                for c in [
-                    "transaction_id",
-                    "employee_name",
-                    "amount",
-                    "risk_level",
-                    "assigned_reviewer",
-                    "recommended_action",
-                ]
-                if c in review_df.columns
-            ]
+            qcols = [c for c in ["transaction_id", "employee_name", "amount", "risk_level", "assigned_reviewer", "recommended_action"] if c in review_df.columns]
             st.dataframe(review_df[qcols], use_container_width=True, hide_index=True, height=300)
 
     with right:
-        st.markdown('<div class="section-label">Audit insights</div>', unsafe_allow_html=True)
+        st.markdown('<div class="section-label">Audit Insights</div>', unsafe_allow_html=True)
         judgement = result.get("batch_judgement", "n/a")
-        if judgement == "CONDITIONAL PASS":
-            st.success(judgement)
-        elif judgement == "SYSTEMIC REVIEW REQUIRED":
-            st.error(judgement)
-        else:
-            st.warning(judgement)
-        st.caption(result.get("batch_reason", ""))
-
+        cls = "status-pass" if judgement == "CONDITIONAL PASS" else ("status-critical" if judgement == "SYSTEMIC REVIEW REQUIRED" else "status-review")
         anomaly_rate = result.get("anomaly_rate")
         if anomaly_rate is None and total:
             anomaly_rate = anomalies / total
+        pct = None
         if anomaly_rate is not None:
-            # Some backend versions expose 0..1 while others expose percent.
             pct = float(anomaly_rate) * 100 if float(anomaly_rate) <= 1 else float(anomaly_rate)
-            st.markdown(f"**Flagged share:** {pct:.1f}%")
-
-        st.markdown(f"**Human review:** {review_count} transaction(s)")
-        st.markdown(f"**High / critical:** {high_critical} transaction(s)")
-
         coverage = result.get("data_coverage", {})
         context = coverage.get("recommended_coverage")
-        if context is not None:
-            st.markdown(f"**Data context coverage:** {float(context):.0%}")
-
         skipped = coverage.get("skipped_signals", [])
+        rows = [
+            f"{pct:.1f}% of transactions flagged" if pct is not None else "Flagged-share metric unavailable",
+            f"{review_count} transaction(s) require human review",
+            f"{high_critical} transaction(s) are high/critical",
+            f"{float(context):.0%} recommended context coverage" if context is not None else "Context coverage unavailable",
+        ]
+        st.markdown(
+            '<div class="insight-shell">'
+            '<div class="insight-title">Batch Summary</div>'
+            f'<span class="status-pill {cls}">{judgement}</span>'
+            f'<div class="soft-note" style="margin-top:.65rem">{result.get("batch_reason", "")}</div>'
+            + ''.join(f'<div class="insight-row">{r}</div>' for r in rows)
+            + '</div>',
+            unsafe_allow_html=True,
+        )
         if skipped:
-            st.caption(
-                "Some context-specific checks were skipped because supporting columns were not supplied. "
-                "See Schema mapping & analysis coverage below."
+            st.markdown(
+                '<div class="insight-shell"><div class="insight-title">Data limitations</div><div class="soft-note">Some context-specific fraud checks were skipped because their supporting columns were not supplied. The coverage section below lists them explicitly.</div></div>',
+                unsafe_allow_html=True,
             )
         else:
-            st.caption("All available context-specific checks were enabled for this ledger.")
+            st.markdown(
+                '<div class="insight-shell"><div class="insight-title">Detection coverage</div><div class="soft-note">All context-specific checks supported by this ledger were enabled. Risk remains review-priority evidence, not proof of fraud.</div></div>',
+                unsafe_allow_html=True,
+            )
 
-    # Supporting analytics belong below the operational review table.
-    st.markdown('<div class="section-label">Risk distribution</div>', unsafe_allow_html=True)
-    risk_chart = pd.DataFrame(
-        {
-            "Risk": RISK_ORDER,
-            "Transactions": [
-                risk_summary.get("low", 0),
-                risk_summary.get("medium", 0),
-                risk_summary.get("high", 0),
-                risk_summary.get("critical", 0),
-            ],
-        }
-    )
-    st.bar_chart(risk_chart.set_index("Risk"), height=260)
+    # Per the approved UI layout, analytics and investigation remain below the
+    # operational tables. The right rail is intentionally Audit Insights only.
+    st.markdown('<div class="section-label">Risk Score Distribution</div>', unsafe_allow_html=True)
+    risk_chart = pd.DataFrame({"Risk": RISK_ORDER, "Transactions": [risk_summary.get("low",0), risk_summary.get("medium",0), risk_summary.get("high",0), risk_summary.get("critical",0)]})
+    st.bar_chart(risk_chart.set_index("Risk"), height=255)
 
-    st.markdown('<div class="section-label">Selected transaction investigation</div>', unsafe_allow_html=True)
+    st.markdown('<div class="section-label">Detailed Transaction View</div>', unsafe_allow_html=True)
     render_transaction_drilldown(anomaly_df)
 
     render_schema_coverage(result)
@@ -876,10 +809,8 @@ def render_transaction_analysis(result: dict) -> None:
     evaluation = result.get("evaluation")
     if evaluation is not None:
         with st.expander("Synthetic benchmark evaluation"):
-            st.caption(
-                "Evaluation labels are read only after prediction. They are not model inputs."
-            )
-            e1, e2, e3 = st.columns(3)
+            st.caption("Evaluation labels are read only after prediction. They are not model inputs.")
+            e1,e2,e3 = st.columns(3)
             e1.metric("Precision", f"{evaluation['precision']:.1%}")
             e2.metric("Recall", f"{evaluation['recall']:.1%}")
             e3.metric("F1", f"{evaluation['f1']:.1%}")
@@ -891,48 +822,28 @@ def render_transaction_analysis(result: dict) -> None:
                 st.dataframe(pattern_df, use_container_width=True, hide_index=True)
 
     with st.expander("Model / cluster interpretation"):
-        st.markdown(
-            """
-            - **K-Means cluster** = behavioural peer group, not a fraud/safe label.
-            - **Cluster distance** = how far the row sits from its cluster centre after standardization.
-            - **Isolation score** = global unusualness evidence from Isolation Forest.
-            - **Pattern signals** = interpretable checks such as duplicate/split payments, bursts and shifts.
-            - **Risk score** = review priority, not a calibrated fraud probability.
-            """
-        )
+        st.markdown("""
+        - **K-Means cluster** = behavioural peer group, not a fraud/safe label.
+        - **Cluster distance** = how far the row sits from its cluster centre after standardization.
+        - **Isolation score** = global unusualness evidence from Isolation Forest.
+        - **Pattern signals** = interpretable checks such as duplicate/split payments, bursts and shifts.
+        - **Risk score** = review priority, not a calibrated fraud probability.
+        """)
         clusters = result.get("cluster_summary", [])
         if clusters:
             st.dataframe(pd.DataFrame(clusters), use_container_width=True, hide_index=True)
 
     st.markdown('<div class="section-label">Exports</div>', unsafe_allow_html=True)
     tx_report = create_transaction_audit_excel_report(result)
-    d1, d2 = st.columns(2)
+    d1,d2 = st.columns(2)
     with d1:
-        st.download_button(
-            "Download complete audit report",
-            data=tx_report,
-            file_name="AI_Transaction_Audit_Report.xlsx",
-            mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-            use_container_width=True,
-        )
+        st.download_button("Download complete audit report", data=tx_report, file_name="AI_Transaction_Audit_Report.xlsx", mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", use_container_width=True)
     with d2:
         anomaly_csv = anomaly_df.to_csv(index=False).encode("utf-8") if not anomaly_df.empty else b""
-        st.download_button(
-            "Download suspicious transactions CSV",
-            data=anomaly_csv,
-            file_name="suspicious_transactions.csv",
-            mime="text/csv",
-            use_container_width=True,
-            disabled=anomaly_df.empty,
-        )
+        st.download_button("Download suspicious transactions CSV", data=anomaly_csv, file_name="suspicious_transactions.csv", mime="text/csv", use_container_width=True, disabled=anomaly_df.empty)
 
     with st.expander("View first 20 processed transactions"):
         st.dataframe(result.get("preview", []), use_container_width=True, hide_index=True)
-
-
-# ---------------------------------------------------------------------------
-# Document result UI
-# ---------------------------------------------------------------------------
 
 def render_document_analysis(result: dict) -> None:
     findings = result.get("findings", [])
@@ -1011,8 +922,8 @@ def render_document_analysis(result: dict) -> None:
 
 def render_overview_page() -> None:
     page_header(
-        "Fraud Screening — Overview",
-        "One workspace for transaction intelligence, document controls, human review and audit reporting.",
+        "AI-Based Financial Fraud Detector",
+        "Screen transaction behaviour, audit supporting documents, prioritize suspicious cases and keep the final decision with human reviewers.",
     )
 
     tx = st.session_state.get("transaction_result")
@@ -1029,79 +940,57 @@ def render_overview_page() -> None:
         critical += 1
 
     render_kpi_cards([
-        ("Transactions analysed", total_tx, "Current cached transaction analysis"),
-        ("Suspicious flags", flags, "Transactions flagged by combined evidence"),
-        ("Pending reviews", pending, "Unified transaction + document queue"),
-        ("Critical escalations", critical, "Cases requiring senior investigation"),
+        ("Total Transactions", total_tx, "Rows in the currently persisted ledger"),
+        ("Flagged Transactions", flags, "Rows flagged by combined evidence"),
+        ("Pending Review", pending, "Unified transaction + document workload"),
+        ("Critical Escalations", critical, "Cases routed to senior investigation"),
     ])
-    left, right = st.columns([2.35, 1], gap="large")
-    with left:
-        st.markdown('<div class="section-label">Current review workload</div>', unsafe_allow_html=True)
-        if queue.empty:
-            st.info(
-                "No review items are currently cached. Run a transaction analysis or document audit from the sidebar."
-            )
-        else:
-            shown = queue[
-                [
-                    c
-                    for c in [
-                        "Source",
-                        "Reference",
-                        "Subject",
-                        "Amount",
-                        "Risk Level",
-                        "Assigned Reviewer",
-                    ]
-                    if c in queue.columns
-                ]
-            ].head(12)
-            st.dataframe(shown, use_container_width=True, hide_index=True, height=400)
 
-        if tx:
-            st.markdown('<div class="section-label">Transaction risk distribution</div>', unsafe_allow_html=True)
-            rs = tx.get("risk_summary", {})
-            chart = pd.DataFrame(
-                {
-                    "Risk": RISK_ORDER,
-                    "Transactions": [rs.get("low", 0), rs.get("medium", 0), rs.get("high", 0), rs.get("critical", 0)],
-                }
-            )
-            st.bar_chart(chart.set_index("Risk"), height=260)
+    left, right = st.columns([2.55, 1], gap="large")
+    with left:
+        st.markdown('<div class="section-label">Filtered Transaction Data / Current Review Workload</div>', unsafe_allow_html=True)
+        if queue.empty:
+            st.info("No review items are currently cached. Run a transaction analysis or document audit from the sidebar.")
+        else:
+            shown = queue[[c for c in [
+                "Source", "Reference", "Subject", "Amount", "Risk Score", "Risk Level", "Decision", "Assigned Reviewer"
+            ] if c in queue.columns]].head(12)
+            st.dataframe(shown, use_container_width=True, hide_index=True, height=420)
 
     with right:
-        st.markdown('<div class="section-label">Reports & insights</div>', unsafe_allow_html=True)
+        st.markdown('<div class="section-label">Risk Insights</div>', unsafe_allow_html=True)
         if tx:
-            st.markdown("**Transaction batch**")
             judgement = tx.get("batch_judgement", "n/a")
-            if judgement == "CONDITIONAL PASS":
-                st.success(judgement)
-            elif judgement == "SYSTEMIC REVIEW REQUIRED":
-                st.error(judgement)
-            else:
-                st.warning(judgement)
-            st.caption(tx.get("batch_reason", ""))
+            cls = "status-pass" if judgement == "CONDITIONAL PASS" else ("status-critical" if judgement == "SYSTEMIC REVIEW REQUIRED" else "status-review")
+            st.markdown(f'<div class="insight-shell"><div class="insight-title">Transaction batch</div><span class="status-pill {cls}">{judgement}</span><div class="soft-note" style="margin-top:.65rem">{tx.get("batch_reason", "")}</div></div>', unsafe_allow_html=True)
+            rs = tx.get("risk_summary", {})
             coverage = tx.get("data_coverage", {})
-            if coverage.get("recommended_coverage") is not None:
-                st.metric("Data context coverage", f"{float(coverage['recommended_coverage']):.0%}")
-
+            context = coverage.get("recommended_coverage")
+            insight_rows = [
+                f"{flags} suspicious transaction(s) currently flagged",
+                f"{pending} item(s) waiting for human review",
+                f"{rs.get('high', 0) + rs.get('critical', 0)} high/critical transaction(s)",
+            ]
+            if context is not None:
+                insight_rows.append(f"{float(context):.0%} recommended data-context coverage")
+            html = '<div class="insight-shell"><div class="insight-title">Summary</div>' + ''.join(f'<div class="insight-row">{x}</div>' for x in insight_rows) + '</div>'
+            st.markdown(html, unsafe_allow_html=True)
         if doc:
-            st.markdown("**Latest document audit**")
-            st.metric("Document priority", doc.get("review_priority", "n/a"))
-            st.write(doc.get("decision", "n/a"))
+            st.markdown('<div class="insight-shell"><div class="insight-title">Latest document audit</div>', unsafe_allow_html=True)
+            st.metric("Review priority", doc.get("review_priority", "n/a"))
             st.caption(doc.get("source_file", ""))
-
+            st.markdown('</div>', unsafe_allow_html=True)
         if not tx and not doc:
             st.markdown(
-                """
-                **Start with either workflow:**
-                - Transaction Analysis for CSV/XLSX ledgers
-                - Document Audit for invoice/expense evidence
-
-                Both feed the same human-review hierarchy.
-                """
+                '<div class="insight-shell"><div class="insight-title">Start an analysis</div><div class="insight-row">Transactions: CSV/XLSX ledger screening</div><div class="insight-row">Documents: invoice / expense control checks</div><div class="insight-row">Both feed one human-review workflow</div></div>',
+                unsafe_allow_html=True,
             )
 
+    if tx:
+        st.markdown('<div class="section-label">Risk Score Distribution</div>', unsafe_allow_html=True)
+        rs = tx.get("risk_summary", {})
+        chart = pd.DataFrame({"Risk": RISK_ORDER, "Transactions": [rs.get("low",0), rs.get("medium",0), rs.get("high",0), rs.get("critical",0)]})
+        st.bar_chart(chart.set_index("Risk"), height=250)
 
 def render_transaction_input() -> None:
     st.markdown('<div class="section-label">Input requirements</div>', unsafe_allow_html=True)
@@ -1470,48 +1359,32 @@ def render_reports_page() -> None:
         st.info("Run a transaction analysis or document audit before generating reports.")
         return
 
-    c1, c2 = st.columns(2, gap="large")
+    c1,c2 = st.columns(2, gap="large")
     with c1:
-        st.markdown("### Transaction audit report")
+        st.markdown('<div class="section-label">Transaction audit report</div>', unsafe_allow_html=True)
         if tx:
+            st.markdown('<div class="insight-shell"><div class="insight-title">Active transaction analysis</div>', unsafe_allow_html=True)
             st.write(tx.get("source_file", "Transaction ledger"))
-            st.caption(
-                "Executive Summary · All Transactions · Anomalies · Human Review Queue · Clusters · Evaluation · Schema Mapping · Data Coverage"
-            )
-            st.download_button(
-                "Download transaction workbook",
-                data=create_transaction_audit_excel_report(tx),
-                file_name="AI_Transaction_Audit_Report.xlsx",
-                mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-                use_container_width=True,
-            )
+            st.caption("Executive Summary · All Transactions · Anomalies · Human Review Queue · Clusters · Evaluation · Schema Mapping · Data Coverage")
+            st.download_button("Download transaction workbook", data=create_transaction_audit_excel_report(tx), file_name="AI_Transaction_Audit_Report.xlsx", mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", use_container_width=True)
+            st.markdown('</div>', unsafe_allow_html=True)
         else:
             st.caption("No transaction analysis is currently cached.")
 
     with c2:
-        st.markdown("### Document audit report")
+        st.markdown('<div class="section-label">Document audit report</div>', unsafe_allow_html=True)
         if doc:
+            st.markdown('<div class="insight-shell"><div class="insight-title">Active document audit</div>', unsafe_allow_html=True)
             st.write(doc.get("source_file", "Document"))
-            st.caption(
-                "Executive Summary · Findings · Human Review Queue · Extracted Document · Metric Definitions"
-            )
-            st.download_button(
-                "Download document workbook",
-                data=create_document_audit_excel_report(doc),
-                file_name="AI_Document_Audit_Report.xlsx",
-                mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-                use_container_width=True,
-            )
+            st.caption("Executive Summary · Findings · Human Review Queue · Extracted Document · Metric Definitions")
+            st.download_button("Download document workbook", data=create_document_audit_excel_report(doc), file_name="AI_Document_Audit_Report.xlsx", mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", use_container_width=True)
+            st.markdown('</div>', unsafe_allow_html=True)
         else:
             st.caption("No document audit is currently cached.")
 
     st.divider()
-    st.markdown("### Reporting principle")
-    st.write(
-        "Both reports expose the evidence, review priority, assigned reviewer and recommended action. "
-        "They do not present an anomaly or risk score as proof of fraud."
-    )
-
+    st.markdown('<div class="section-label">Reporting principle</div>', unsafe_allow_html=True)
+    st.markdown('<div class="insight-shell"><div class="soft-note">Both reports expose evidence, review priority, assigned reviewer and recommended action. They do not present an anomaly or risk score as proof of fraud.</div></div>', unsafe_allow_html=True)
 
 def main() -> None:
     inject_styles()
