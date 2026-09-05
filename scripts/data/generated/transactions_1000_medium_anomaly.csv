@@ -1,0 +1,1001 @@
+transaction_id,employee_id,employee_name,date,vendor,category,amount,manager_name,department,payment_method,location,synthetic_anomaly
+TX000001,EMP003,Kabir,2026-08-06,TravelDesk,Software,27307.34,Manager A,Engineering,Card,Varanasi,False
+TX000002,EMP005,Rohan,2026-01-21,EquipHub,Equipment,19860.36,Manager A,Engineering,Bank Transfer,Bengaluru,False
+TX000003,EMP004,Ishita,2026-07-31,CloudWorks,Travel,23151.77,Manager A,Operations,UPI,Mumbai,False
+TX000004,EMP005,Rohan,2026-01-26,TechSupply,Software,21415.59,Manager B,Finance,Card,Varanasi,False
+TX000005,EMP005,Rohan,2026-01-02,TechSupply,Travel,24763.6,Manager B,Engineering,Card,Bengaluru,False
+TX000006,EMP001,Aarav,2026-06-13,EquipHub,Travel,25028.88,Manager B,Engineering,UPI,Varanasi,False
+TX000007,EMP005,Rohan,2026-05-30,EquipHub,Software,27049.2,Manager B,Operations,Card,Mumbai,False
+TX000008,EMP004,Ishita,2026-03-04,CloudWorks,Travel,18009.05,Manager A,Engineering,Card,Mumbai,False
+TX000009,EMP002,Meera,2026-04-22,TravelDesk,Software,20462.27,Manager A,Operations,UPI,Bengaluru,False
+TX000010,EMP002,Meera,2026-04-18,EquipHub,Office,27369.96,Manager B,Engineering,Card,Mumbai,False
+TX000011,EMP001,Aarav,2026-01-24,TravelDesk,Office,7608.85,Manager A,Operations,Bank Transfer,Bengaluru,False
+TX000012,EMP002,Meera,2026-04-22,EquipHub,Software,18501.87,Manager A,Operations,Bank Transfer,Bengaluru,False
+TX000013,EMP005,Rohan,2026-07-14,EquipHub,Equipment,19018.17,Manager B,Engineering,Card,Delhi,False
+TX000014,EMP004,Ishita,2026-04-01,CloudWorks,Travel,10414.78,Manager B,Finance,UPI,Delhi,False
+TX000015,EMP002,Meera,2026-08-12,TravelDesk,Equipment,25828.57,Manager A,Finance,Card,Delhi,False
+TX000016,EMP004,Ishita,2026-06-12,CloudWorks,Travel,9718.96,Manager B,Finance,Card,Bengaluru,False
+TX000017,EMP001,Aarav,2026-04-19,EquipHub,Software,23073.15,Manager A,Engineering,Card,Bengaluru,False
+TX000018,EMP005,Rohan,2026-06-16,TravelDesk,Travel,13030.77,Manager B,Finance,Card,Mumbai,False
+TX000019,EMP005,Rohan,2026-08-10,TechSupply,Software,23657.08,Manager A,Finance,Card,Bengaluru,False
+TX000020,EMP004,Ishita,2026-04-17,TechSupply,Software,24878.46,Manager A,Operations,Card,Bengaluru,False
+TX000021,EMP003,Kabir,2026-05-04,TravelDesk,Office,14801.36,Manager B,Engineering,UPI,Varanasi,False
+TX000022,EMP003,Kabir,2026-04-07,OfficeMart,Software,22635.89,Manager B,Engineering,UPI,Mumbai,False
+TX000023,EMP001,Aarav,2026-06-29,EquipHub,Equipment,19397.18,Manager B,Finance,Card,Mumbai,False
+TX000024,EMP004,Ishita,2026-04-18,CloudWorks,Software,14533.46,Manager B,Engineering,Bank Transfer,Mumbai,False
+TX000025,EMP003,Kabir,2026-02-23,OfficeMart,Travel,15173.58,Manager A,Operations,UPI,Delhi,False
+TX000026,EMP003,Kabir,2026-02-15,TravelDesk,Office,30772.6,Manager A,Operations,Card,Bengaluru,False
+TX000027,EMP002,Meera,2026-07-05,OfficeMart,Software,17065.48,Manager A,Finance,Bank Transfer,Delhi,False
+TX000028,EMP005,Rohan,2026-02-03,CloudWorks,Travel,26534.25,Manager A,Finance,UPI,Mumbai,False
+TX000029,EMP002,Meera,2026-02-22,TechSupply,Equipment,30630.69,Manager A,Operations,Bank Transfer,Mumbai,False
+TX000030,EMP002,Meera,2026-01-04,EquipHub,Office,38030.78,Manager B,Operations,Bank Transfer,Bengaluru,False
+TX000031,EMP001,Aarav,2026-02-26,TravelDesk,Equipment,21596.85,Manager A,Finance,Bank Transfer,Bengaluru,False
+TX000032,EMP005,Rohan,2026-07-10,CloudWorks,Office,21097.59,Manager A,Engineering,Card,Mumbai,False
+TX000033,EMP002,Meera,2026-02-22,CloudWorks,Equipment,9773.88,Manager A,Engineering,Bank Transfer,Bengaluru,False
+TX000034,EMP005,Rohan,2026-08-16,CloudWorks,Office,25648.15,Manager A,Operations,Bank Transfer,Bengaluru,False
+TX000035,EMP005,Rohan,2026-01-27,EquipHub,Office,14764.3,Manager A,Finance,Bank Transfer,Mumbai,False
+TX000036,EMP002,Meera,2026-03-27,OfficeMart,Travel,17601.02,Manager B,Engineering,Card,Bengaluru,False
+TX000037,EMP005,Rohan,2026-01-13,TravelDesk,Software,3161.52,Manager B,Engineering,Bank Transfer,Bengaluru,False
+TX000038,EMP002,Meera,2026-06-08,TechSupply,Travel,12990.24,Manager B,Finance,Bank Transfer,Delhi,False
+TX000039,EMP003,Kabir,2026-06-26,TechSupply,Equipment,18206.78,Manager B,Engineering,Card,Varanasi,False
+TX000040,EMP002,Meera,2026-02-13,EquipHub,Software,29271.16,Manager B,Finance,Card,Mumbai,False
+TX000041,EMP001,Aarav,2026-01-09,CloudWorks,Travel,22369.1,Manager A,Finance,UPI,Varanasi,False
+TX000042,EMP003,Kabir,2026-04-25,TechSupply,Software,310213.7447848344,Manager A,Finance,UPI,Varanasi,True
+TX000043,EMP004,Ishita,2026-01-12,EquipHub,Software,30650.75,Manager A,Finance,Card,Delhi,False
+TX000044,EMP004,Ishita,2026-04-28,CloudWorks,Equipment,22724.09,Manager B,Operations,Bank Transfer,Mumbai,False
+TX000045,EMP001,Aarav,2026-04-08,TechSupply,Office,277355.6718078,Manager B,Finance,UPI,Bengaluru,True
+TX000046,EMP004,Ishita,2026-01-01,OfficeMart,Software,19715.93,Manager B,Operations,Bank Transfer,Delhi,False
+TX000047,EMP004,Ishita,2026-06-29,EquipHub,Travel,586169.8138647967,Manager A,Finance,UPI,Bengaluru,True
+TX000048,EMP001,Aarav,2026-02-05,EquipHub,Travel,15119.95,Manager B,Operations,UPI,Mumbai,False
+TX000049,EMP002,Meera,2026-04-30,TechSupply,Travel,14736.4,Manager A,Operations,UPI,Varanasi,False
+TX000050,EMP005,Rohan,2026-02-15,TechSupply,Software,30981.1,Manager A,Operations,UPI,Delhi,False
+TX000051,EMP002,Meera,2026-03-09,OfficeMart,Software,19188.48,Manager B,Engineering,UPI,Varanasi,False
+TX000052,EMP004,Ishita,2026-08-07,TravelDesk,Travel,20189.74,Manager B,Engineering,Card,Delhi,False
+TX000053,EMP004,Ishita,2026-03-06,CloudWorks,Travel,21002.19,Manager B,Finance,Bank Transfer,Varanasi,False
+TX000054,EMP003,Kabir,2026-06-13,TravelDesk,Travel,19147.44,Manager A,Operations,Card,Mumbai,False
+TX000055,EMP005,Rohan,2026-07-17,CloudWorks,Software,29468.66,Manager B,Finance,Bank Transfer,Varanasi,False
+TX000056,EMP003,Kabir,2026-04-07,TechSupply,Office,22127.82,Manager A,Operations,UPI,Varanasi,False
+TX000057,EMP005,Rohan,2026-01-21,EquipHub,Office,17999.79,Manager A,Finance,Bank Transfer,Delhi,False
+TX000058,EMP002,Meera,2026-05-07,OfficeMart,Software,15910.86,Manager A,Engineering,Card,Bengaluru,False
+TX000059,EMP002,Meera,2026-06-02,CloudWorks,Travel,17098.17,Manager B,Finance,Bank Transfer,Delhi,False
+TX000060,EMP001,Aarav,2026-03-09,TechSupply,Travel,15937.04,Manager B,Engineering,UPI,Varanasi,False
+TX000061,EMP005,Rohan,2026-08-14,TravelDesk,Software,16956.05,Manager B,Finance,Bank Transfer,Bengaluru,False
+TX000062,EMP004,Ishita,2026-07-28,CloudWorks,Office,27532.14,Manager A,Finance,UPI,Mumbai,False
+TX000063,EMP002,Meera,2026-04-04,EquipHub,Travel,14061.9,Manager A,Finance,Bank Transfer,Delhi,False
+TX000064,EMP004,Ishita,2026-08-24,CloudWorks,Equipment,11585.98,Manager B,Operations,UPI,Mumbai,False
+TX000065,EMP004,Ishita,2026-05-10,TechSupply,Office,19199.16,Manager B,Operations,UPI,Mumbai,False
+TX000066,EMP005,Rohan,2026-07-18,EquipHub,Software,18300.45,Manager A,Operations,Bank Transfer,Varanasi,False
+TX000067,EMP003,Kabir,2026-01-26,TravelDesk,Travel,21482.72,Manager A,Operations,UPI,Mumbai,False
+TX000068,EMP001,Aarav,2026-04-13,EquipHub,Equipment,20877.58,Manager A,Finance,Card,Delhi,False
+TX000069,EMP001,Aarav,2026-01-17,TechSupply,Travel,21417.99,Manager B,Finance,Bank Transfer,Varanasi,False
+TX000070,EMP005,Rohan,2026-05-18,EquipHub,Equipment,20444.75,Manager B,Finance,Card,Bengaluru,False
+TX000071,EMP001,Aarav,2026-06-07,EquipHub,Equipment,13603.74,Manager A,Engineering,Card,Varanasi,False
+TX000072,EMP002,Meera,2026-01-30,CloudWorks,Travel,19279.88,Manager A,Operations,Card,Varanasi,False
+TX000073,EMP001,Aarav,2026-03-31,TravelDesk,Office,23314.85,Manager A,Engineering,Bank Transfer,Bengaluru,False
+TX000074,EMP002,Meera,2026-01-06,EquipHub,Office,3831.76,Manager B,Engineering,Card,Bengaluru,False
+TX000075,EMP001,Aarav,2026-02-28,TravelDesk,Equipment,18925.17,Manager B,Finance,UPI,Varanasi,False
+TX000076,EMP004,Ishita,2026-01-02,EquipHub,Travel,17466.51,Manager A,Engineering,Bank Transfer,Mumbai,False
+TX000077,EMP005,Rohan,2026-06-18,TechSupply,Software,15165.48,Manager A,Finance,Bank Transfer,Bengaluru,False
+TX000078,EMP001,Aarav,2026-04-17,TechSupply,Travel,22514.28,Manager B,Finance,Bank Transfer,Delhi,False
+TX000079,EMP002,Meera,2026-08-02,OfficeMart,Office,27025.26,Manager A,Engineering,Card,Mumbai,False
+TX000080,EMP001,Aarav,2026-06-17,CloudWorks,Equipment,24509.13,Manager A,Finance,Bank Transfer,Mumbai,False
+TX000081,EMP002,Meera,2026-01-14,EquipHub,Office,33265.96,Manager B,Operations,Card,Delhi,False
+TX000082,EMP003,Kabir,2026-05-08,TravelDesk,Travel,189508.51356694842,Manager B,Engineering,Card,Bengaluru,True
+TX000083,EMP001,Aarav,2026-07-18,OfficeMart,Office,25970.98,Manager A,Finance,UPI,Delhi,False
+TX000084,EMP005,Rohan,2026-03-17,TravelDesk,Equipment,22894.15,Manager A,Finance,Card,Bengaluru,False
+TX000085,EMP004,Ishita,2026-08-07,CloudWorks,Equipment,23329.52,Manager A,Finance,UPI,Varanasi,False
+TX000086,EMP001,Aarav,2026-05-06,OfficeMart,Travel,14704.2,Manager B,Operations,Bank Transfer,Bengaluru,False
+TX000087,EMP004,Ishita,2026-08-07,TravelDesk,Office,29523.39,Manager B,Operations,Bank Transfer,Mumbai,False
+TX000088,EMP001,Aarav,2026-03-22,TechSupply,Travel,18619.7,Manager A,Engineering,Card,Varanasi,False
+TX000089,EMP003,Kabir,2026-01-23,TechSupply,Equipment,24195.03,Manager B,Operations,Card,Bengaluru,False
+TX000090,EMP004,Ishita,2026-07-27,CloudWorks,Equipment,19520.84,Manager A,Engineering,Card,Varanasi,False
+TX000091,EMP005,Rohan,2026-06-16,CloudWorks,Equipment,21385.2,Manager A,Finance,Bank Transfer,Mumbai,False
+TX000092,EMP004,Ishita,2026-01-04,TechSupply,Equipment,14252.04,Manager A,Engineering,Bank Transfer,Mumbai,False
+TX000093,EMP002,Meera,2026-02-14,CloudWorks,Travel,30396.0,Manager A,Finance,Card,Varanasi,False
+TX000094,EMP001,Aarav,2026-02-13,CloudWorks,Travel,23515.62,Manager B,Engineering,Card,Bengaluru,False
+TX000095,EMP004,Ishita,2026-05-25,TechSupply,Office,22547.49,Manager B,Finance,Bank Transfer,Mumbai,False
+TX000096,EMP002,Meera,2026-02-25,TechSupply,Travel,23867.01,Manager B,Finance,Bank Transfer,Bengaluru,False
+TX000097,EMP002,Meera,2026-02-14,TechSupply,Travel,15919.77,Manager B,Engineering,UPI,Delhi,False
+TX000098,EMP001,Aarav,2026-07-12,TravelDesk,Office,333533.6662848065,Manager B,Finance,UPI,Mumbai,True
+TX000099,EMP004,Ishita,2026-04-05,TravelDesk,Software,15480.16,Manager B,Operations,Card,Mumbai,False
+TX000100,EMP004,Ishita,2026-02-25,CloudWorks,Travel,25838.68,Manager A,Engineering,Bank Transfer,Bengaluru,False
+TX000101,EMP003,Kabir,2026-04-23,TechSupply,Office,18154.43,Manager A,Finance,UPI,Varanasi,False
+TX000102,EMP004,Ishita,2026-03-07,OfficeMart,Office,21118.94,Manager A,Engineering,Card,Varanasi,False
+TX000103,EMP001,Aarav,2026-07-30,OfficeMart,Equipment,21672.96,Manager A,Finance,UPI,Bengaluru,False
+TX000104,EMP005,Rohan,2026-07-19,TechSupply,Travel,28365.85,Manager B,Finance,UPI,Delhi,False
+TX000105,EMP004,Ishita,2026-07-18,TravelDesk,Software,7283.49,Manager A,Finance,Card,Bengaluru,False
+TX000106,EMP002,Meera,2026-07-26,OfficeMart,Office,27162.38,Manager A,Engineering,Bank Transfer,Varanasi,False
+TX000107,EMP005,Rohan,2026-02-10,CloudWorks,Software,11587.31,Manager B,Operations,Bank Transfer,Varanasi,False
+TX000108,EMP003,Kabir,2026-05-14,OfficeMart,Office,16574.34,Manager B,Operations,Card,Varanasi,False
+TX000109,EMP005,Rohan,2026-04-18,EquipHub,Office,23522.54,Manager B,Operations,UPI,Varanasi,False
+TX000110,EMP003,Kabir,2026-05-12,OfficeMart,Equipment,23807.09,Manager B,Finance,Bank Transfer,Delhi,False
+TX000111,EMP003,Kabir,2026-05-10,EquipHub,Equipment,18842.89,Manager A,Operations,Card,Delhi,False
+TX000112,EMP001,Aarav,2026-02-27,TechSupply,Travel,12026.73,Manager B,Operations,Bank Transfer,Delhi,False
+TX000113,EMP001,Aarav,2026-03-20,OfficeMart,Software,10524.19,Manager A,Engineering,UPI,Delhi,False
+TX000114,EMP005,Rohan,2026-03-16,OfficeMart,Office,21750.03,Manager B,Operations,Card,Bengaluru,False
+TX000115,EMP001,Aarav,2026-01-10,EquipHub,Equipment,16579.58,Manager A,Finance,UPI,Mumbai,False
+TX000116,EMP003,Kabir,2026-03-14,CloudWorks,Equipment,201604.47494153352,Manager B,Finance,Bank Transfer,Varanasi,True
+TX000117,EMP002,Meera,2026-04-29,CloudWorks,Equipment,21226.53,Manager A,Operations,Bank Transfer,Bengaluru,False
+TX000118,EMP001,Aarav,2026-01-03,TravelDesk,Software,22575.17,Manager B,Finance,Card,Varanasi,False
+TX000119,EMP002,Meera,2026-04-14,TravelDesk,Equipment,10670.57,Manager B,Finance,UPI,Bengaluru,False
+TX000120,EMP002,Meera,2026-06-11,CloudWorks,Software,15784.88,Manager B,Finance,Bank Transfer,Varanasi,False
+TX000121,EMP001,Aarav,2026-01-03,OfficeMart,Equipment,25517.1,Manager B,Operations,Card,Bengaluru,False
+TX000122,EMP002,Meera,2026-01-01,OfficeMart,Equipment,30728.68,Manager A,Operations,UPI,Bengaluru,False
+TX000123,EMP003,Kabir,2026-08-13,CloudWorks,Equipment,291572.12424862455,Manager A,Finance,UPI,Delhi,True
+TX000124,EMP004,Ishita,2026-03-01,CloudWorks,Software,9108.22,Manager A,Operations,Card,Varanasi,False
+TX000125,EMP003,Kabir,2026-06-30,OfficeMart,Equipment,13185.71,Manager A,Operations,Card,Mumbai,False
+TX000126,EMP001,Aarav,2026-08-03,OfficeMart,Equipment,17822.92,Manager A,Engineering,Bank Transfer,Mumbai,False
+TX000127,EMP003,Kabir,2026-05-22,EquipHub,Travel,8101.88,Manager A,Operations,Bank Transfer,Delhi,False
+TX000128,EMP005,Rohan,2026-07-02,EquipHub,Equipment,11758.48,Manager B,Engineering,UPI,Mumbai,False
+TX000129,EMP001,Aarav,2026-06-27,OfficeMart,Travel,21485.77,Manager B,Finance,UPI,Varanasi,False
+TX000130,EMP004,Ishita,2026-04-22,EquipHub,Office,27250.07,Manager A,Engineering,Bank Transfer,Varanasi,False
+TX000131,EMP001,Aarav,2026-04-28,OfficeMart,Software,6662.04,Manager A,Operations,Card,Delhi,False
+TX000132,EMP001,Aarav,2026-04-30,EquipHub,Software,26290.88,Manager B,Operations,Card,Delhi,False
+TX000133,EMP002,Meera,2026-05-03,CloudWorks,Equipment,16104.92,Manager B,Finance,Card,Mumbai,False
+TX000134,EMP004,Ishita,2026-05-26,TechSupply,Office,19733.79,Manager B,Engineering,UPI,Varanasi,False
+TX000135,EMP005,Rohan,2026-03-22,EquipHub,Travel,31718.33,Manager B,Finance,Card,Delhi,False
+TX000136,EMP001,Aarav,2026-07-05,EquipHub,Office,26490.42,Manager B,Engineering,Bank Transfer,Mumbai,False
+TX000137,EMP001,Aarav,2026-05-31,OfficeMart,Equipment,20710.62,Manager A,Finance,Bank Transfer,Bengaluru,False
+TX000138,EMP005,Rohan,2026-02-06,OfficeMart,Software,17275.62,Manager B,Engineering,Card,Varanasi,False
+TX000139,EMP001,Aarav,2026-04-21,OfficeMart,Travel,15025.72,Manager B,Operations,Bank Transfer,Mumbai,False
+TX000140,EMP005,Rohan,2026-07-19,EquipHub,Office,25306.59,Manager A,Engineering,Bank Transfer,Varanasi,False
+TX000141,EMP002,Meera,2026-06-21,CloudWorks,Equipment,22705.16,Manager A,Operations,Bank Transfer,Mumbai,False
+TX000142,EMP003,Kabir,2026-08-18,OfficeMart,Software,21743.71,Manager A,Engineering,Card,Delhi,False
+TX000143,EMP005,Rohan,2026-02-04,TravelDesk,Software,22838.7,Manager B,Engineering,Bank Transfer,Bengaluru,False
+TX000144,EMP002,Meera,2026-07-04,TravelDesk,Travel,20816.01,Manager B,Operations,Card,Mumbai,False
+TX000145,EMP005,Rohan,2026-01-18,TravelDesk,Software,16617.4,Manager A,Engineering,Bank Transfer,Mumbai,False
+TX000146,EMP001,Aarav,2026-04-04,OfficeMart,Equipment,167966.2304623539,Manager B,Operations,Bank Transfer,Bengaluru,True
+TX000147,EMP001,Aarav,2026-07-24,CloudWorks,Travel,325821.1832775173,Manager B,Engineering,Card,Bengaluru,True
+TX000148,EMP005,Rohan,2026-02-08,OfficeMart,Office,23485.53,Manager A,Operations,Card,Bengaluru,False
+TX000149,EMP001,Aarav,2026-02-12,TravelDesk,Software,28143.83,Manager B,Finance,Bank Transfer,Delhi,False
+TX000150,EMP005,Rohan,2026-02-14,TravelDesk,Equipment,23398.95,Manager B,Engineering,Bank Transfer,Mumbai,False
+TX000151,EMP005,Rohan,2026-07-18,EquipHub,Office,18335.22,Manager B,Operations,Card,Bengaluru,False
+TX000152,EMP003,Kabir,2026-06-14,TravelDesk,Office,8484.08,Manager A,Engineering,Bank Transfer,Varanasi,False
+TX000153,EMP005,Rohan,2026-04-14,OfficeMart,Office,16803.3,Manager B,Operations,Bank Transfer,Mumbai,False
+TX000154,EMP001,Aarav,2026-02-11,EquipHub,Software,21795.33,Manager B,Operations,Card,Bengaluru,False
+TX000155,EMP002,Meera,2026-03-09,TravelDesk,Travel,26358.45,Manager A,Operations,Bank Transfer,Mumbai,False
+TX000156,EMP005,Rohan,2026-05-06,CloudWorks,Software,244004.76113676414,Manager B,Operations,Bank Transfer,Mumbai,True
+TX000157,EMP001,Aarav,2026-08-26,EquipHub,Software,14426.46,Manager A,Finance,Card,Varanasi,False
+TX000158,EMP001,Aarav,2026-01-18,EquipHub,Office,10600.19,Manager A,Finance,Bank Transfer,Bengaluru,False
+TX000159,EMP001,Aarav,2026-07-25,TravelDesk,Office,17815.83,Manager B,Operations,Bank Transfer,Varanasi,False
+TX000160,EMP001,Aarav,2026-08-14,CloudWorks,Software,21510.51,Manager A,Finance,UPI,Varanasi,False
+TX000161,EMP005,Rohan,2026-06-13,EquipHub,Equipment,19537.43,Manager B,Operations,Card,Mumbai,False
+TX000162,EMP002,Meera,2026-05-22,EquipHub,Software,8043.35,Manager A,Operations,Card,Varanasi,False
+TX000163,EMP004,Ishita,2026-02-27,TechSupply,Office,17846.11,Manager A,Operations,UPI,Varanasi,False
+TX000164,EMP002,Meera,2026-07-31,EquipHub,Equipment,25318.25,Manager B,Engineering,Card,Delhi,False
+TX000165,EMP003,Kabir,2026-08-18,TravelDesk,Equipment,30324.3,Manager A,Operations,UPI,Delhi,False
+TX000166,EMP005,Rohan,2026-03-12,TravelDesk,Office,25833.94,Manager A,Engineering,Bank Transfer,Mumbai,False
+TX000167,EMP001,Aarav,2026-08-08,TechSupply,Office,9444.01,Manager B,Finance,Card,Mumbai,False
+TX000168,EMP003,Kabir,2026-05-25,TravelDesk,Software,24219.73,Manager B,Engineering,UPI,Bengaluru,False
+TX000169,EMP003,Kabir,2026-07-12,TravelDesk,Software,15554.07,Manager A,Finance,UPI,Varanasi,False
+TX000170,EMP003,Kabir,2026-08-04,TravelDesk,Software,12780.1,Manager B,Engineering,Card,Bengaluru,False
+TX000171,EMP005,Rohan,2026-05-17,TechSupply,Equipment,13199.42,Manager B,Engineering,Bank Transfer,Mumbai,False
+TX000172,EMP003,Kabir,2026-03-03,TechSupply,Office,15508.33,Manager A,Engineering,UPI,Varanasi,False
+TX000173,EMP004,Ishita,2026-04-25,CloudWorks,Travel,22067.82,Manager A,Engineering,UPI,Mumbai,False
+TX000174,EMP002,Meera,2026-05-29,CloudWorks,Equipment,22079.45,Manager A,Operations,Bank Transfer,Varanasi,False
+TX000175,EMP005,Rohan,2026-06-25,CloudWorks,Travel,25582.18,Manager A,Operations,UPI,Bengaluru,False
+TX000176,EMP004,Ishita,2026-03-01,CloudWorks,Equipment,25583.9,Manager B,Operations,Card,Varanasi,False
+TX000177,EMP003,Kabir,2026-04-09,TechSupply,Travel,9612.66,Manager B,Finance,UPI,Varanasi,False
+TX000178,EMP002,Meera,2026-06-28,TechSupply,Office,25346.2,Manager A,Operations,Card,Delhi,False
+TX000179,EMP004,Ishita,2026-02-04,EquipHub,Equipment,26948.24,Manager A,Operations,Bank Transfer,Mumbai,False
+TX000180,EMP004,Ishita,2026-04-27,TechSupply,Office,19246.5,Manager A,Engineering,Bank Transfer,Varanasi,False
+TX000181,EMP001,Aarav,2026-07-14,OfficeMart,Equipment,21723.89,Manager B,Operations,Card,Delhi,False
+TX000182,EMP004,Ishita,2026-01-29,CloudWorks,Travel,18808.67,Manager A,Engineering,Bank Transfer,Bengaluru,False
+TX000183,EMP004,Ishita,2026-05-09,OfficeMart,Travel,18548.79,Manager A,Finance,Card,Mumbai,False
+TX000184,EMP002,Meera,2026-02-18,TravelDesk,Office,22622.19,Manager B,Engineering,UPI,Varanasi,False
+TX000185,EMP004,Ishita,2026-03-17,OfficeMart,Software,375753.6845520775,Manager B,Finance,UPI,Varanasi,True
+TX000186,EMP003,Kabir,2026-07-14,OfficeMart,Office,10628.09,Manager A,Finance,Card,Bengaluru,False
+TX000187,EMP005,Rohan,2026-08-14,TechSupply,Office,24778.47,Manager A,Operations,Card,Delhi,False
+TX000188,EMP001,Aarav,2026-08-03,TechSupply,Office,25492.55,Manager B,Finance,UPI,Varanasi,False
+TX000189,EMP003,Kabir,2026-08-03,CloudWorks,Office,12081.77,Manager B,Finance,Bank Transfer,Varanasi,False
+TX000190,EMP005,Rohan,2026-06-10,CloudWorks,Software,21882.49,Manager B,Finance,Card,Delhi,False
+TX000191,EMP001,Aarav,2026-03-14,CloudWorks,Office,26728.39,Manager A,Finance,Card,Varanasi,False
+TX000192,EMP005,Rohan,2026-03-13,OfficeMart,Software,27627.56,Manager A,Operations,UPI,Delhi,False
+TX000193,EMP002,Meera,2026-05-02,TechSupply,Equipment,28483.37,Manager A,Operations,UPI,Mumbai,False
+TX000194,EMP002,Meera,2026-02-18,EquipHub,Office,22958.84,Manager B,Engineering,UPI,Bengaluru,False
+TX000195,EMP003,Kabir,2026-06-07,EquipHub,Office,17971.49,Manager A,Engineering,UPI,Delhi,False
+TX000196,EMP002,Meera,2026-08-11,OfficeMart,Equipment,25994.1,Manager B,Finance,Bank Transfer,Bengaluru,False
+TX000197,EMP005,Rohan,2026-05-16,EquipHub,Equipment,14543.43,Manager A,Finance,UPI,Varanasi,False
+TX000198,EMP002,Meera,2026-02-05,TechSupply,Office,11472.43,Manager A,Finance,Card,Mumbai,False
+TX000199,EMP004,Ishita,2026-07-09,CloudWorks,Software,17717.63,Manager B,Finance,Bank Transfer,Varanasi,False
+TX000200,EMP001,Aarav,2026-05-03,TravelDesk,Software,17530.07,Manager B,Operations,Bank Transfer,Bengaluru,False
+TX000201,EMP003,Kabir,2026-05-22,CloudWorks,Software,22731.02,Manager A,Finance,Card,Delhi,False
+TX000202,EMP003,Kabir,2026-04-11,OfficeMart,Software,15489.25,Manager B,Operations,Bank Transfer,Varanasi,False
+TX000203,EMP001,Aarav,2026-07-07,TravelDesk,Travel,29317.7,Manager A,Operations,Card,Bengaluru,False
+TX000204,EMP003,Kabir,2026-02-17,EquipHub,Equipment,21505.08,Manager B,Engineering,Bank Transfer,Mumbai,False
+TX000205,EMP003,Kabir,2026-08-20,EquipHub,Office,14461.67,Manager A,Engineering,Bank Transfer,Delhi,False
+TX000206,EMP002,Meera,2026-02-07,CloudWorks,Software,216419.1355668625,Manager A,Engineering,Bank Transfer,Delhi,True
+TX000207,EMP001,Aarav,2026-03-14,OfficeMart,Software,16404.14,Manager A,Finance,Bank Transfer,Mumbai,False
+TX000208,EMP005,Rohan,2026-02-19,TravelDesk,Equipment,14388.7,Manager B,Finance,Bank Transfer,Bengaluru,False
+TX000209,EMP003,Kabir,2026-07-20,OfficeMart,Equipment,20311.44,Manager B,Finance,Bank Transfer,Bengaluru,False
+TX000210,EMP003,Kabir,2026-01-01,TravelDesk,Office,20817.84,Manager A,Operations,Card,Bengaluru,False
+TX000211,EMP003,Kabir,2026-02-03,TechSupply,Office,26748.38,Manager B,Finance,Bank Transfer,Delhi,False
+TX000212,EMP003,Kabir,2026-08-03,EquipHub,Software,16610.87,Manager B,Operations,Bank Transfer,Bengaluru,False
+TX000213,EMP004,Ishita,2026-06-12,TravelDesk,Office,13110.22,Manager A,Finance,Bank Transfer,Delhi,False
+TX000214,EMP004,Ishita,2026-01-28,EquipHub,Equipment,14737.43,Manager B,Finance,Bank Transfer,Delhi,False
+TX000215,EMP004,Ishita,2026-07-19,TechSupply,Equipment,24368.14,Manager A,Finance,UPI,Bengaluru,False
+TX000216,EMP005,Rohan,2026-04-30,TravelDesk,Software,346057.4975389981,Manager A,Operations,Card,Mumbai,True
+TX000217,EMP002,Meera,2026-02-27,TechSupply,Office,18581.56,Manager A,Operations,UPI,Mumbai,False
+TX000218,EMP005,Rohan,2026-08-03,EquipHub,Software,22328.43,Manager B,Engineering,UPI,Delhi,False
+TX000219,EMP003,Kabir,2026-01-29,OfficeMart,Software,23131.88,Manager A,Operations,UPI,Varanasi,False
+TX000220,EMP002,Meera,2026-04-14,TravelDesk,Equipment,11995.54,Manager B,Engineering,Card,Mumbai,False
+TX000221,EMP002,Meera,2026-06-14,EquipHub,Software,22863.5,Manager B,Engineering,Card,Mumbai,False
+TX000222,EMP001,Aarav,2026-06-04,TravelDesk,Office,28179.3,Manager B,Engineering,UPI,Varanasi,False
+TX000223,EMP004,Ishita,2026-05-10,TechSupply,Software,19542.08,Manager A,Engineering,Card,Varanasi,False
+TX000224,EMP003,Kabir,2026-02-21,TravelDesk,Travel,11983.54,Manager A,Operations,Card,Bengaluru,False
+TX000225,EMP004,Ishita,2026-03-09,EquipHub,Office,14085.36,Manager B,Operations,Bank Transfer,Delhi,False
+TX000226,EMP001,Aarav,2026-07-03,TravelDesk,Software,15719.55,Manager B,Finance,Card,Delhi,False
+TX000227,EMP001,Aarav,2026-06-14,CloudWorks,Travel,31046.68,Manager A,Operations,Bank Transfer,Delhi,False
+TX000228,EMP003,Kabir,2026-07-20,OfficeMart,Software,24753.28,Manager B,Finance,UPI,Bengaluru,False
+TX000229,EMP001,Aarav,2026-07-08,TravelDesk,Software,15287.46,Manager B,Operations,UPI,Delhi,False
+TX000230,EMP002,Meera,2026-01-07,EquipHub,Software,14797.49,Manager A,Operations,UPI,Bengaluru,False
+TX000231,EMP004,Ishita,2026-07-01,TechSupply,Travel,3657.91,Manager B,Engineering,UPI,Delhi,False
+TX000232,EMP001,Aarav,2026-03-21,CloudWorks,Office,17590.7,Manager A,Engineering,UPI,Varanasi,False
+TX000233,EMP003,Kabir,2026-05-24,CloudWorks,Equipment,27369.08,Manager B,Operations,Bank Transfer,Mumbai,False
+TX000234,EMP003,Kabir,2026-06-30,EquipHub,Office,28801.16,Manager A,Operations,Card,Bengaluru,False
+TX000235,EMP001,Aarav,2026-08-22,OfficeMart,Travel,17406.11,Manager A,Operations,UPI,Delhi,False
+TX000236,EMP002,Meera,2026-02-16,OfficeMart,Equipment,276819.0534714369,Manager A,Engineering,Bank Transfer,Bengaluru,True
+TX000237,EMP001,Aarav,2026-08-12,TravelDesk,Software,11415.13,Manager A,Finance,UPI,Varanasi,False
+TX000238,EMP005,Rohan,2026-01-17,TechSupply,Travel,20533.38,Manager B,Operations,UPI,Mumbai,False
+TX000239,EMP003,Kabir,2026-03-23,TravelDesk,Software,18275.65,Manager B,Finance,Card,Bengaluru,False
+TX000240,EMP005,Rohan,2026-04-17,TechSupply,Equipment,18364.77,Manager B,Operations,UPI,Delhi,False
+TX000241,EMP002,Meera,2026-06-18,OfficeMart,Office,14459.61,Manager B,Engineering,Card,Bengaluru,False
+TX000242,EMP002,Meera,2026-03-22,TechSupply,Equipment,31289.12,Manager A,Operations,Bank Transfer,Delhi,False
+TX000243,EMP005,Rohan,2026-07-03,CloudWorks,Software,18344.49,Manager A,Operations,Card,Bengaluru,False
+TX000244,EMP001,Aarav,2026-06-20,TravelDesk,Office,18684.27,Manager B,Engineering,UPI,Mumbai,False
+TX000245,EMP004,Ishita,2026-03-25,TechSupply,Equipment,13193.61,Manager A,Finance,Bank Transfer,Mumbai,False
+TX000246,EMP004,Ishita,2026-05-22,TravelDesk,Equipment,20450.93,Manager A,Operations,Bank Transfer,Bengaluru,False
+TX000247,EMP001,Aarav,2026-02-03,EquipHub,Office,313427.1607082594,Manager A,Engineering,UPI,Varanasi,True
+TX000248,EMP004,Ishita,2026-06-13,EquipHub,Software,23531.85,Manager A,Operations,UPI,Varanasi,False
+TX000249,EMP001,Aarav,2026-02-23,TravelDesk,Equipment,13135.83,Manager B,Finance,Bank Transfer,Mumbai,False
+TX000250,EMP005,Rohan,2026-07-17,TechSupply,Equipment,14563.21,Manager B,Finance,Bank Transfer,Varanasi,False
+TX000251,EMP002,Meera,2026-01-31,OfficeMart,Equipment,20643.27,Manager B,Finance,UPI,Bengaluru,False
+TX000252,EMP004,Ishita,2026-07-06,TravelDesk,Office,19664.64,Manager B,Operations,Card,Mumbai,False
+TX000253,EMP005,Rohan,2026-04-14,TechSupply,Travel,17149.98,Manager B,Finance,UPI,Mumbai,False
+TX000254,EMP005,Rohan,2026-01-09,TravelDesk,Software,27551.8,Manager A,Finance,Card,Mumbai,False
+TX000255,EMP003,Kabir,2026-06-02,OfficeMart,Office,26397.97,Manager B,Finance,Card,Mumbai,False
+TX000256,EMP003,Kabir,2026-05-15,OfficeMart,Travel,22595.74,Manager A,Engineering,Card,Delhi,False
+TX000257,EMP001,Aarav,2026-08-12,CloudWorks,Equipment,15871.78,Manager B,Finance,UPI,Varanasi,False
+TX000258,EMP002,Meera,2026-02-14,OfficeMart,Equipment,19577.37,Manager B,Operations,UPI,Varanasi,False
+TX000259,EMP005,Rohan,2026-06-12,OfficeMart,Travel,20273.77,Manager A,Operations,Card,Varanasi,False
+TX000260,EMP005,Rohan,2026-04-04,CloudWorks,Travel,22709.35,Manager A,Engineering,UPI,Mumbai,False
+TX000261,EMP002,Meera,2026-01-16,CloudWorks,Equipment,20852.41,Manager B,Operations,UPI,Delhi,False
+TX000262,EMP004,Ishita,2026-04-20,CloudWorks,Equipment,21603.54,Manager A,Engineering,Card,Delhi,False
+TX000263,EMP005,Rohan,2026-05-11,TravelDesk,Software,19123.37,Manager B,Finance,UPI,Bengaluru,False
+TX000264,EMP005,Rohan,2026-08-22,TravelDesk,Office,20494.7,Manager B,Finance,Card,Bengaluru,False
+TX000265,EMP005,Rohan,2026-08-14,EquipHub,Office,15976.78,Manager B,Operations,UPI,Varanasi,False
+TX000266,EMP001,Aarav,2026-04-29,TravelDesk,Software,22936.36,Manager A,Engineering,Bank Transfer,Varanasi,False
+TX000267,EMP001,Aarav,2026-03-03,EquipHub,Travel,27318.03,Manager B,Engineering,Card,Mumbai,False
+TX000268,EMP001,Aarav,2026-05-15,OfficeMart,Office,12319.37,Manager A,Operations,UPI,Varanasi,False
+TX000269,EMP001,Aarav,2026-01-11,OfficeMart,Equipment,18851.62,Manager A,Finance,Bank Transfer,Varanasi,False
+TX000270,EMP004,Ishita,2026-04-05,CloudWorks,Software,10769.59,Manager A,Operations,Bank Transfer,Varanasi,False
+TX000271,EMP003,Kabir,2026-04-09,EquipHub,Software,16390.21,Manager A,Finance,Bank Transfer,Varanasi,False
+TX000272,EMP002,Meera,2026-05-05,OfficeMart,Office,25915.79,Manager B,Finance,Card,Bengaluru,False
+TX000273,EMP005,Rohan,2026-04-26,OfficeMart,Equipment,22358.67,Manager A,Finance,Card,Varanasi,False
+TX000274,EMP002,Meera,2026-02-20,TravelDesk,Travel,19493.46,Manager A,Engineering,Bank Transfer,Delhi,False
+TX000275,EMP005,Rohan,2026-01-19,CloudWorks,Equipment,19606.04,Manager B,Finance,Bank Transfer,Varanasi,False
+TX000276,EMP005,Rohan,2026-03-01,CloudWorks,Software,220625.69272608886,Manager A,Engineering,Card,Delhi,True
+TX000277,EMP005,Rohan,2026-06-17,CloudWorks,Travel,18744.74,Manager A,Operations,Bank Transfer,Delhi,False
+TX000278,EMP003,Kabir,2026-03-25,OfficeMart,Office,23763.0,Manager A,Finance,UPI,Delhi,False
+TX000279,EMP004,Ishita,2026-08-27,CloudWorks,Software,25364.98,Manager B,Engineering,Bank Transfer,Varanasi,False
+TX000280,EMP005,Rohan,2026-01-06,EquipHub,Travel,20861.48,Manager A,Finance,UPI,Delhi,False
+TX000281,EMP004,Ishita,2026-04-07,TravelDesk,Travel,27988.08,Manager A,Operations,Card,Varanasi,False
+TX000282,EMP003,Kabir,2026-04-27,TravelDesk,Office,12543.61,Manager A,Engineering,Bank Transfer,Varanasi,False
+TX000283,EMP004,Ishita,2026-07-15,TechSupply,Travel,22487.73,Manager A,Finance,Card,Mumbai,False
+TX000284,EMP005,Rohan,2026-03-02,CloudWorks,Travel,21292.45,Manager A,Finance,UPI,Varanasi,False
+TX000285,EMP005,Rohan,2026-06-07,TravelDesk,Software,28014.86,Manager B,Operations,Card,Mumbai,False
+TX000286,EMP004,Ishita,2026-06-20,OfficeMart,Travel,24044.05,Manager A,Finance,Card,Varanasi,False
+TX000287,EMP003,Kabir,2026-03-29,EquipHub,Office,23101.13,Manager B,Operations,UPI,Delhi,False
+TX000288,EMP003,Kabir,2026-03-10,TravelDesk,Equipment,18712.15,Manager B,Engineering,Bank Transfer,Mumbai,False
+TX000289,EMP003,Kabir,2026-07-25,OfficeMart,Equipment,4811.66,Manager B,Finance,UPI,Bengaluru,False
+TX000290,EMP002,Meera,2026-05-27,TechSupply,Travel,20142.75,Manager B,Finance,Bank Transfer,Varanasi,False
+TX000291,EMP001,Aarav,2026-01-31,OfficeMart,Office,8258.75,Manager B,Finance,Card,Delhi,False
+TX000292,EMP003,Kabir,2026-03-24,OfficeMart,Office,19377.58,Manager A,Engineering,Card,Mumbai,False
+TX000293,EMP004,Ishita,2026-08-15,OfficeMart,Office,9639.58,Manager B,Operations,Card,Delhi,False
+TX000294,EMP002,Meera,2026-06-03,TravelDesk,Equipment,535090.7839148057,Manager A,Operations,Card,Delhi,True
+TX000295,EMP003,Kabir,2026-07-09,TechSupply,Travel,23135.47,Manager A,Operations,Card,Mumbai,False
+TX000296,EMP004,Ishita,2026-04-21,EquipHub,Equipment,13387.57,Manager A,Engineering,Bank Transfer,Delhi,False
+TX000297,EMP003,Kabir,2026-03-14,TravelDesk,Software,12309.04,Manager B,Engineering,Card,Mumbai,False
+TX000298,EMP004,Ishita,2026-04-30,TechSupply,Travel,27758.52,Manager B,Finance,Card,Delhi,False
+TX000299,EMP004,Ishita,2026-07-01,CloudWorks,Office,477157.0887364704,Manager B,Engineering,Bank Transfer,Delhi,True
+TX000300,EMP005,Rohan,2026-08-11,EquipHub,Office,18057.12,Manager B,Operations,UPI,Mumbai,False
+TX000301,EMP001,Aarav,2026-01-07,TravelDesk,Equipment,19036.94,Manager B,Finance,Card,Mumbai,False
+TX000302,EMP001,Aarav,2026-05-17,OfficeMart,Equipment,28985.26,Manager A,Engineering,Card,Bengaluru,False
+TX000303,EMP005,Rohan,2026-02-11,OfficeMart,Office,24413.52,Manager A,Engineering,Card,Varanasi,False
+TX000304,EMP004,Ishita,2026-03-27,EquipHub,Office,32684.67,Manager A,Operations,Card,Delhi,False
+TX000305,EMP001,Aarav,2026-08-21,TravelDesk,Office,23671.99,Manager A,Finance,UPI,Mumbai,False
+TX000306,EMP001,Aarav,2026-02-17,TravelDesk,Travel,22689.56,Manager B,Operations,UPI,Bengaluru,False
+TX000307,EMP003,Kabir,2026-03-20,TechSupply,Equipment,24651.68,Manager A,Operations,Bank Transfer,Mumbai,False
+TX000308,EMP003,Kabir,2026-06-27,OfficeMart,Equipment,19213.06,Manager A,Operations,Bank Transfer,Bengaluru,False
+TX000309,EMP001,Aarav,2026-02-27,CloudWorks,Software,17012.53,Manager A,Engineering,Bank Transfer,Bengaluru,False
+TX000310,EMP005,Rohan,2026-01-28,EquipHub,Office,10261.17,Manager B,Operations,Card,Varanasi,False
+TX000311,EMP002,Meera,2026-02-07,EquipHub,Software,18762.95,Manager B,Finance,Bank Transfer,Varanasi,False
+TX000312,EMP002,Meera,2026-03-04,TravelDesk,Equipment,30431.71,Manager B,Operations,UPI,Mumbai,False
+TX000313,EMP003,Kabir,2026-08-19,TechSupply,Equipment,30954.64,Manager A,Engineering,Bank Transfer,Mumbai,False
+TX000314,EMP004,Ishita,2026-01-24,CloudWorks,Office,21949.45,Manager A,Engineering,Bank Transfer,Bengaluru,False
+TX000315,EMP002,Meera,2026-01-30,EquipHub,Travel,24376.53,Manager B,Operations,Card,Mumbai,False
+TX000316,EMP005,Rohan,2026-07-02,EquipHub,Software,22228.26,Manager A,Finance,Bank Transfer,Mumbai,False
+TX000317,EMP002,Meera,2026-04-13,CloudWorks,Equipment,26678.81,Manager B,Operations,Bank Transfer,Delhi,False
+TX000318,EMP005,Rohan,2026-08-21,OfficeMart,Travel,14210.85,Manager A,Finance,UPI,Delhi,False
+TX000319,EMP005,Rohan,2026-04-20,TravelDesk,Equipment,19743.49,Manager A,Finance,UPI,Varanasi,False
+TX000320,EMP001,Aarav,2026-01-30,CloudWorks,Office,34817.7,Manager A,Finance,Card,Delhi,False
+TX000321,EMP003,Kabir,2026-02-24,CloudWorks,Office,20179.34,Manager A,Operations,UPI,Bengaluru,False
+TX000322,EMP002,Meera,2026-02-23,TechSupply,Equipment,19273.86,Manager A,Operations,UPI,Delhi,False
+TX000323,EMP001,Aarav,2026-03-05,CloudWorks,Office,22357.63,Manager A,Operations,Bank Transfer,Bengaluru,False
+TX000324,EMP004,Ishita,2026-02-28,TravelDesk,Software,21165.0,Manager B,Engineering,Card,Bengaluru,False
+TX000325,EMP002,Meera,2026-02-06,TravelDesk,Travel,10943.64,Manager B,Operations,Card,Mumbai,False
+TX000326,EMP005,Rohan,2026-03-06,OfficeMart,Travel,13518.96,Manager A,Engineering,Bank Transfer,Bengaluru,False
+TX000327,EMP005,Rohan,2026-05-13,CloudWorks,Travel,19080.82,Manager B,Engineering,Card,Bengaluru,False
+TX000328,EMP001,Aarav,2026-01-01,OfficeMart,Equipment,26204.13,Manager A,Finance,Bank Transfer,Mumbai,False
+TX000329,EMP005,Rohan,2026-02-25,TravelDesk,Software,26480.23,Manager B,Operations,Card,Varanasi,False
+TX000330,EMP004,Ishita,2026-04-24,TechSupply,Equipment,25376.77,Manager B,Operations,Card,Varanasi,False
+TX000331,EMP001,Aarav,2026-03-29,TechSupply,Equipment,22324.45,Manager B,Operations,Bank Transfer,Varanasi,False
+TX000332,EMP003,Kabir,2026-01-28,TravelDesk,Office,26665.52,Manager B,Finance,Bank Transfer,Mumbai,False
+TX000333,EMP004,Ishita,2026-01-06,EquipHub,Software,20420.86,Manager B,Finance,Card,Varanasi,False
+TX000334,EMP002,Meera,2026-05-15,TravelDesk,Office,30624.91,Manager B,Engineering,UPI,Varanasi,False
+TX000335,EMP001,Aarav,2026-05-10,TravelDesk,Equipment,22295.08,Manager B,Engineering,Card,Delhi,False
+TX000336,EMP003,Kabir,2026-03-04,OfficeMart,Equipment,16202.8,Manager B,Operations,Bank Transfer,Varanasi,False
+TX000337,EMP004,Ishita,2026-07-10,CloudWorks,Software,15672.28,Manager A,Operations,Bank Transfer,Delhi,False
+TX000338,EMP003,Kabir,2026-06-29,TechSupply,Travel,19517.98,Manager A,Operations,Bank Transfer,Bengaluru,False
+TX000339,EMP003,Kabir,2026-01-28,EquipHub,Software,11836.52,Manager A,Finance,Card,Mumbai,False
+TX000340,EMP002,Meera,2026-08-05,TravelDesk,Travel,11886.81,Manager B,Operations,UPI,Mumbai,False
+TX000341,EMP001,Aarav,2026-04-25,EquipHub,Equipment,22476.57,Manager A,Finance,Bank Transfer,Mumbai,False
+TX000342,EMP001,Aarav,2026-08-05,OfficeMart,Office,15041.12,Manager A,Finance,UPI,Delhi,False
+TX000343,EMP003,Kabir,2026-08-16,TravelDesk,Software,6499.11,Manager A,Finance,Bank Transfer,Bengaluru,False
+TX000344,EMP001,Aarav,2026-04-21,TechSupply,Software,15710.09,Manager A,Operations,UPI,Bengaluru,False
+TX000345,EMP005,Rohan,2026-01-15,TravelDesk,Software,18073.1,Manager B,Finance,Card,Varanasi,False
+TX000346,EMP003,Kabir,2026-05-11,TravelDesk,Travel,199077.26420582744,Manager A,Engineering,UPI,Mumbai,True
+TX000347,EMP001,Aarav,2026-01-26,TravelDesk,Office,18135.9,Manager A,Engineering,Bank Transfer,Bengaluru,False
+TX000348,EMP004,Ishita,2026-06-30,TechSupply,Travel,15468.21,Manager A,Operations,UPI,Bengaluru,False
+TX000349,EMP004,Ishita,2026-06-04,TravelDesk,Office,19448.24,Manager B,Finance,Card,Bengaluru,False
+TX000350,EMP005,Rohan,2026-08-24,CloudWorks,Software,15271.8,Manager B,Finance,Bank Transfer,Mumbai,False
+TX000351,EMP005,Rohan,2026-01-18,OfficeMart,Office,25565.19,Manager A,Operations,UPI,Mumbai,False
+TX000352,EMP005,Rohan,2026-04-28,OfficeMart,Travel,24180.81,Manager B,Engineering,Bank Transfer,Delhi,False
+TX000353,EMP001,Aarav,2026-01-21,EquipHub,Office,25759.14,Manager B,Finance,Card,Mumbai,False
+TX000354,EMP005,Rohan,2026-02-10,EquipHub,Office,14337.65,Manager A,Engineering,UPI,Varanasi,False
+TX000355,EMP003,Kabir,2026-06-21,TravelDesk,Software,23300.57,Manager A,Engineering,Bank Transfer,Varanasi,False
+TX000356,EMP004,Ishita,2026-03-06,TravelDesk,Office,22794.69,Manager A,Operations,Card,Delhi,False
+TX000357,EMP003,Kabir,2026-06-03,EquipHub,Equipment,22608.95,Manager A,Finance,Card,Bengaluru,False
+TX000358,EMP001,Aarav,2026-02-05,TravelDesk,Equipment,20077.08,Manager A,Finance,Card,Varanasi,False
+TX000359,EMP003,Kabir,2026-01-03,TechSupply,Travel,20399.77,Manager A,Finance,Card,Varanasi,False
+TX000360,EMP001,Aarav,2026-02-28,TechSupply,Office,26705.32,Manager A,Finance,Card,Mumbai,False
+TX000361,EMP001,Aarav,2026-03-24,TravelDesk,Software,19422.96,Manager B,Finance,UPI,Varanasi,False
+TX000362,EMP004,Ishita,2026-03-12,EquipHub,Equipment,17003.06,Manager B,Finance,Card,Varanasi,False
+TX000363,EMP005,Rohan,2026-06-07,TravelDesk,Software,20392.32,Manager B,Operations,Bank Transfer,Delhi,False
+TX000364,EMP001,Aarav,2026-05-05,OfficeMart,Travel,16992.04,Manager B,Operations,Card,Delhi,False
+TX000365,EMP001,Aarav,2026-07-24,OfficeMart,Travel,25731.72,Manager A,Engineering,UPI,Bengaluru,False
+TX000366,EMP005,Rohan,2026-07-21,OfficeMart,Travel,12294.26,Manager B,Finance,Bank Transfer,Delhi,False
+TX000367,EMP005,Rohan,2026-06-18,CloudWorks,Equipment,13424.25,Manager B,Finance,UPI,Mumbai,False
+TX000368,EMP005,Rohan,2026-05-07,OfficeMart,Equipment,19540.61,Manager B,Engineering,UPI,Mumbai,False
+TX000369,EMP001,Aarav,2026-01-14,TravelDesk,Travel,22291.72,Manager A,Engineering,Bank Transfer,Delhi,False
+TX000370,EMP005,Rohan,2026-01-07,EquipHub,Travel,22114.89,Manager A,Engineering,Card,Delhi,False
+TX000371,EMP001,Aarav,2026-05-27,EquipHub,Travel,30929.87,Manager B,Finance,Bank Transfer,Delhi,False
+TX000372,EMP001,Aarav,2026-01-07,OfficeMart,Office,23680.32,Manager B,Finance,Bank Transfer,Bengaluru,False
+TX000373,EMP005,Rohan,2026-01-07,OfficeMart,Office,18167.27,Manager A,Finance,UPI,Mumbai,False
+TX000374,EMP001,Aarav,2026-06-28,EquipHub,Software,26177.53,Manager B,Finance,Card,Varanasi,False
+TX000375,EMP004,Ishita,2026-03-25,TravelDesk,Office,27497.65,Manager B,Operations,Card,Mumbai,False
+TX000376,EMP002,Meera,2026-07-05,TravelDesk,Travel,25690.63,Manager A,Finance,UPI,Delhi,False
+TX000377,EMP003,Kabir,2026-08-20,OfficeMart,Office,14180.5,Manager A,Engineering,UPI,Varanasi,False
+TX000378,EMP004,Ishita,2026-01-08,TechSupply,Equipment,21217.53,Manager A,Finance,Bank Transfer,Varanasi,False
+TX000379,EMP002,Meera,2026-02-08,EquipHub,Travel,20906.43,Manager A,Finance,Bank Transfer,Bengaluru,False
+TX000380,EMP003,Kabir,2026-04-24,OfficeMart,Office,15260.69,Manager A,Finance,Bank Transfer,Varanasi,False
+TX000381,EMP004,Ishita,2026-04-02,CloudWorks,Office,23826.6,Manager B,Engineering,Bank Transfer,Bengaluru,False
+TX000382,EMP001,Aarav,2026-05-30,OfficeMart,Office,20219.42,Manager B,Operations,Bank Transfer,Delhi,False
+TX000383,EMP002,Meera,2026-01-11,CloudWorks,Software,13702.07,Manager B,Operations,UPI,Bengaluru,False
+TX000384,EMP003,Kabir,2026-04-01,CloudWorks,Software,18637.91,Manager B,Engineering,UPI,Delhi,False
+TX000385,EMP004,Ishita,2026-04-14,EquipHub,Equipment,16004.29,Manager A,Finance,Card,Mumbai,False
+TX000386,EMP004,Ishita,2026-07-04,OfficeMart,Software,15593.19,Manager A,Finance,UPI,Delhi,False
+TX000387,EMP003,Kabir,2026-02-14,TechSupply,Office,21268.57,Manager B,Operations,UPI,Varanasi,False
+TX000388,EMP005,Rohan,2026-01-19,EquipHub,Office,25437.22,Manager B,Finance,Bank Transfer,Delhi,False
+TX000389,EMP004,Ishita,2026-03-30,CloudWorks,Office,16045.87,Manager A,Engineering,Bank Transfer,Mumbai,False
+TX000390,EMP005,Rohan,2026-07-05,CloudWorks,Office,9432.68,Manager B,Engineering,Bank Transfer,Varanasi,False
+TX000391,EMP002,Meera,2026-08-12,TravelDesk,Equipment,22007.06,Manager B,Finance,Card,Bengaluru,False
+TX000392,EMP001,Aarav,2026-05-28,OfficeMart,Office,29294.92,Manager A,Finance,Bank Transfer,Delhi,False
+TX000393,EMP002,Meera,2026-01-24,EquipHub,Travel,25492.21,Manager A,Engineering,UPI,Mumbai,False
+TX000394,EMP001,Aarav,2026-07-30,TechSupply,Software,19353.46,Manager A,Engineering,UPI,Mumbai,False
+TX000395,EMP003,Kabir,2026-04-03,TechSupply,Software,9520.36,Manager B,Engineering,Bank Transfer,Bengaluru,False
+TX000396,EMP001,Aarav,2026-03-12,TechSupply,Travel,10719.6,Manager A,Operations,Card,Bengaluru,False
+TX000397,EMP001,Aarav,2026-03-01,OfficeMart,Software,33127.6,Manager B,Finance,Card,Delhi,False
+TX000398,EMP001,Aarav,2026-01-13,OfficeMart,Travel,25646.08,Manager A,Engineering,UPI,Bengaluru,False
+TX000399,EMP003,Kabir,2026-01-24,EquipHub,Equipment,13487.59,Manager A,Finance,UPI,Varanasi,False
+TX000400,EMP004,Ishita,2026-02-17,TravelDesk,Software,18606.11,Manager B,Engineering,UPI,Varanasi,False
+TX000401,EMP001,Aarav,2026-05-26,OfficeMart,Software,11551.99,Manager B,Engineering,Card,Bengaluru,False
+TX000402,EMP002,Meera,2026-06-27,OfficeMart,Travel,16058.53,Manager A,Operations,Card,Bengaluru,False
+TX000403,EMP002,Meera,2026-03-20,TechSupply,Equipment,22999.58,Manager A,Finance,Card,Delhi,False
+TX000404,EMP004,Ishita,2026-06-11,CloudWorks,Equipment,23919.18,Manager B,Engineering,UPI,Varanasi,False
+TX000405,EMP003,Kabir,2026-08-02,EquipHub,Software,8681.13,Manager A,Operations,Bank Transfer,Varanasi,False
+TX000406,EMP002,Meera,2026-04-18,TravelDesk,Equipment,22525.45,Manager B,Finance,Card,Delhi,False
+TX000407,EMP002,Meera,2026-06-05,TechSupply,Office,201511.53340064138,Manager B,Operations,Bank Transfer,Bengaluru,True
+TX000408,EMP004,Ishita,2026-01-17,OfficeMart,Equipment,21385.97,Manager A,Engineering,Card,Delhi,False
+TX000409,EMP002,Meera,2026-01-27,EquipHub,Software,29183.78,Manager A,Finance,Card,Mumbai,False
+TX000410,EMP004,Ishita,2026-07-12,EquipHub,Office,21309.95,Manager A,Finance,Bank Transfer,Bengaluru,False
+TX000411,EMP001,Aarav,2026-08-10,EquipHub,Software,20890.22,Manager B,Operations,UPI,Mumbai,False
+TX000412,EMP002,Meera,2026-02-28,OfficeMart,Office,20282.59,Manager A,Engineering,Card,Delhi,False
+TX000413,EMP002,Meera,2026-01-10,TechSupply,Travel,28100.35,Manager B,Engineering,UPI,Mumbai,False
+TX000414,EMP002,Meera,2026-03-16,CloudWorks,Travel,20571.16,Manager A,Engineering,Card,Varanasi,False
+TX000415,EMP002,Meera,2026-05-06,OfficeMart,Software,22974.61,Manager B,Finance,Card,Bengaluru,False
+TX000416,EMP004,Ishita,2026-08-13,TravelDesk,Equipment,12523.49,Manager B,Engineering,Bank Transfer,Bengaluru,False
+TX000417,EMP005,Rohan,2026-07-23,OfficeMart,Software,29315.83,Manager B,Finance,UPI,Varanasi,False
+TX000418,EMP001,Aarav,2026-03-25,TechSupply,Equipment,31192.74,Manager B,Engineering,Card,Varanasi,False
+TX000419,EMP004,Ishita,2026-07-28,OfficeMart,Travel,12682.75,Manager A,Engineering,UPI,Bengaluru,False
+TX000420,EMP005,Rohan,2026-01-05,EquipHub,Equipment,25342.28,Manager B,Operations,Bank Transfer,Delhi,False
+TX000421,EMP001,Aarav,2026-06-28,TechSupply,Equipment,27976.71,Manager B,Engineering,UPI,Bengaluru,False
+TX000422,EMP005,Rohan,2026-03-21,OfficeMart,Travel,16617.68,Manager B,Engineering,UPI,Delhi,False
+TX000423,EMP003,Kabir,2026-06-15,CloudWorks,Travel,24511.59,Manager A,Finance,Bank Transfer,Bengaluru,False
+TX000424,EMP005,Rohan,2026-02-23,TechSupply,Office,21411.1,Manager B,Finance,Bank Transfer,Varanasi,False
+TX000425,EMP004,Ishita,2026-04-10,TravelDesk,Software,15508.76,Manager B,Operations,Card,Varanasi,False
+TX000426,EMP002,Meera,2026-08-24,CloudWorks,Equipment,23330.07,Manager A,Finance,Bank Transfer,Bengaluru,False
+TX000427,EMP003,Kabir,2026-06-13,EquipHub,Software,28760.02,Manager A,Operations,UPI,Varanasi,False
+TX000428,EMP002,Meera,2026-01-06,OfficeMart,Equipment,18050.61,Manager B,Operations,Bank Transfer,Delhi,False
+TX000429,EMP001,Aarav,2026-04-20,TechSupply,Travel,20729.47,Manager B,Operations,Bank Transfer,Delhi,False
+TX000430,EMP001,Aarav,2026-02-23,OfficeMart,Software,33007.67,Manager A,Finance,Card,Bengaluru,False
+TX000431,EMP003,Kabir,2026-03-24,TravelDesk,Office,10828.47,Manager B,Operations,Card,Bengaluru,False
+TX000432,EMP004,Ishita,2026-04-01,TechSupply,Software,22583.52,Manager A,Engineering,UPI,Varanasi,False
+TX000433,EMP003,Kabir,2026-06-01,OfficeMart,Office,15040.75,Manager B,Finance,Card,Varanasi,False
+TX000434,EMP005,Rohan,2026-05-12,CloudWorks,Equipment,14714.93,Manager A,Operations,Card,Varanasi,False
+TX000435,EMP002,Meera,2026-05-26,TravelDesk,Equipment,20446.22,Manager A,Engineering,Bank Transfer,Delhi,False
+TX000436,EMP005,Rohan,2026-06-09,OfficeMart,Travel,136486.02063836818,Manager A,Finance,Bank Transfer,Delhi,True
+TX000437,EMP003,Kabir,2026-02-06,TravelDesk,Office,15019.41,Manager B,Engineering,Bank Transfer,Mumbai,False
+TX000438,EMP001,Aarav,2026-01-10,OfficeMart,Equipment,21131.12,Manager A,Finance,Card,Delhi,False
+TX000439,EMP001,Aarav,2026-03-02,TechSupply,Equipment,26218.48,Manager A,Finance,UPI,Varanasi,False
+TX000440,EMP001,Aarav,2026-05-04,EquipHub,Software,28165.7,Manager B,Engineering,UPI,Bengaluru,False
+TX000441,EMP003,Kabir,2026-03-22,TravelDesk,Equipment,7279.68,Manager B,Engineering,Bank Transfer,Delhi,False
+TX000442,EMP005,Rohan,2026-04-15,TravelDesk,Software,29916.99,Manager B,Finance,Card,Bengaluru,False
+TX000443,EMP001,Aarav,2026-06-29,OfficeMart,Office,15868.04,Manager B,Engineering,UPI,Delhi,False
+TX000444,EMP001,Aarav,2026-01-07,CloudWorks,Software,25224.97,Manager A,Finance,UPI,Bengaluru,False
+TX000445,EMP003,Kabir,2026-05-16,TechSupply,Software,18170.72,Manager A,Operations,UPI,Mumbai,False
+TX000446,EMP002,Meera,2026-04-04,TravelDesk,Equipment,7272.23,Manager A,Operations,Card,Mumbai,False
+TX000447,EMP001,Aarav,2026-01-04,TravelDesk,Equipment,26998.79,Manager B,Finance,UPI,Varanasi,False
+TX000448,EMP002,Meera,2026-05-16,TravelDesk,Software,11588.15,Manager B,Operations,Bank Transfer,Mumbai,False
+TX000449,EMP005,Rohan,2026-01-13,TravelDesk,Software,12619.06,Manager A,Operations,UPI,Delhi,False
+TX000450,EMP004,Ishita,2026-08-05,OfficeMart,Office,19659.79,Manager B,Operations,UPI,Bengaluru,False
+TX000451,EMP005,Rohan,2026-07-20,OfficeMart,Travel,26203.22,Manager B,Engineering,UPI,Mumbai,False
+TX000452,EMP004,Ishita,2026-01-17,OfficeMart,Office,24232.91,Manager A,Engineering,UPI,Mumbai,False
+TX000453,EMP001,Aarav,2026-01-15,CloudWorks,Travel,18194.22,Manager A,Engineering,Bank Transfer,Varanasi,False
+TX000454,EMP003,Kabir,2026-03-12,TechSupply,Office,21738.25,Manager B,Engineering,UPI,Bengaluru,False
+TX000455,EMP005,Rohan,2026-02-22,CloudWorks,Software,18056.35,Manager B,Finance,Bank Transfer,Mumbai,False
+TX000456,EMP001,Aarav,2026-07-19,TechSupply,Equipment,21062.0,Manager B,Finance,UPI,Varanasi,False
+TX000457,EMP001,Aarav,2026-04-04,EquipHub,Travel,9425.51,Manager A,Operations,Bank Transfer,Delhi,False
+TX000458,EMP001,Aarav,2026-04-15,TechSupply,Office,23645.99,Manager A,Finance,UPI,Delhi,False
+TX000459,EMP004,Ishita,2026-05-28,EquipHub,Software,27467.13,Manager B,Operations,Bank Transfer,Bengaluru,False
+TX000460,EMP002,Meera,2026-05-11,OfficeMart,Travel,157161.71383263337,Manager A,Engineering,Card,Mumbai,True
+TX000461,EMP001,Aarav,2026-02-27,TechSupply,Office,21591.06,Manager A,Engineering,Bank Transfer,Varanasi,False
+TX000462,EMP005,Rohan,2026-03-25,OfficeMart,Travel,26133.59,Manager B,Engineering,Bank Transfer,Mumbai,False
+TX000463,EMP004,Ishita,2026-07-25,TravelDesk,Office,11348.38,Manager A,Engineering,UPI,Delhi,False
+TX000464,EMP003,Kabir,2026-01-08,TravelDesk,Travel,27947.2,Manager A,Operations,Bank Transfer,Varanasi,False
+TX000465,EMP004,Ishita,2026-01-16,OfficeMart,Travel,24889.02,Manager A,Engineering,Card,Varanasi,False
+TX000466,EMP001,Aarav,2026-07-03,CloudWorks,Equipment,21219.29,Manager A,Operations,Card,Delhi,False
+TX000467,EMP004,Ishita,2026-05-31,TravelDesk,Travel,12804.55,Manager B,Finance,UPI,Delhi,False
+TX000468,EMP004,Ishita,2026-05-31,OfficeMart,Travel,175355.0803307289,Manager A,Finance,Bank Transfer,Varanasi,True
+TX000469,EMP004,Ishita,2026-05-27,TechSupply,Travel,12311.28,Manager A,Finance,UPI,Mumbai,False
+TX000470,EMP005,Rohan,2026-05-08,OfficeMart,Travel,22752.13,Manager A,Engineering,Bank Transfer,Bengaluru,False
+TX000471,EMP001,Aarav,2026-06-03,CloudWorks,Office,14596.28,Manager B,Engineering,Bank Transfer,Bengaluru,False
+TX000472,EMP004,Ishita,2026-02-02,TravelDesk,Office,10628.58,Manager A,Engineering,Card,Varanasi,False
+TX000473,EMP002,Meera,2026-05-19,EquipHub,Software,2850.53,Manager A,Finance,Bank Transfer,Delhi,False
+TX000474,EMP004,Ishita,2026-05-27,OfficeMart,Travel,14877.69,Manager A,Operations,UPI,Mumbai,False
+TX000475,EMP003,Kabir,2026-02-13,EquipHub,Office,13119.31,Manager B,Engineering,Bank Transfer,Delhi,False
+TX000476,EMP001,Aarav,2026-04-21,EquipHub,Travel,26986.35,Manager A,Finance,Card,Varanasi,False
+TX000477,EMP001,Aarav,2026-05-09,CloudWorks,Equipment,8853.61,Manager A,Finance,Bank Transfer,Delhi,False
+TX000478,EMP004,Ishita,2026-01-02,CloudWorks,Office,14146.33,Manager A,Operations,UPI,Bengaluru,False
+TX000479,EMP003,Kabir,2026-07-25,EquipHub,Office,20011.54,Manager B,Operations,Card,Delhi,False
+TX000480,EMP003,Kabir,2026-08-02,TechSupply,Equipment,12477.51,Manager A,Engineering,UPI,Delhi,False
+TX000481,EMP004,Ishita,2026-05-31,TechSupply,Office,14364.77,Manager A,Engineering,Card,Delhi,False
+TX000482,EMP004,Ishita,2026-02-01,CloudWorks,Travel,24585.78,Manager A,Engineering,UPI,Varanasi,False
+TX000483,EMP005,Rohan,2026-02-09,CloudWorks,Office,13377.09,Manager B,Engineering,Bank Transfer,Mumbai,False
+TX000484,EMP005,Rohan,2026-07-05,CloudWorks,Travel,282950.5117441096,Manager B,Operations,Card,Varanasi,True
+TX000485,EMP002,Meera,2026-05-07,CloudWorks,Equipment,33699.3,Manager A,Operations,UPI,Delhi,False
+TX000486,EMP002,Meera,2026-02-17,TravelDesk,Equipment,30710.3,Manager B,Finance,UPI,Varanasi,False
+TX000487,EMP003,Kabir,2026-02-18,CloudWorks,Equipment,23580.39,Manager A,Finance,UPI,Varanasi,False
+TX000488,EMP004,Ishita,2026-03-02,EquipHub,Travel,23387.05,Manager B,Finance,UPI,Mumbai,False
+TX000489,EMP002,Meera,2026-06-25,CloudWorks,Office,28754.86,Manager A,Engineering,Card,Mumbai,False
+TX000490,EMP004,Ishita,2026-08-05,TravelDesk,Travel,267066.4959213614,Manager B,Engineering,Bank Transfer,Varanasi,True
+TX000491,EMP003,Kabir,2026-02-02,TravelDesk,Equipment,19831.48,Manager B,Engineering,UPI,Varanasi,False
+TX000492,EMP002,Meera,2026-08-09,OfficeMart,Travel,25698.04,Manager A,Finance,Bank Transfer,Bengaluru,False
+TX000493,EMP005,Rohan,2026-02-16,TravelDesk,Software,15881.22,Manager A,Engineering,Bank Transfer,Varanasi,False
+TX000494,EMP005,Rohan,2026-06-13,OfficeMart,Travel,10093.68,Manager A,Finance,UPI,Varanasi,False
+TX000495,EMP001,Aarav,2026-02-25,TechSupply,Travel,18871.08,Manager B,Engineering,UPI,Varanasi,False
+TX000496,EMP005,Rohan,2026-05-08,TravelDesk,Equipment,19598.84,Manager B,Operations,Bank Transfer,Bengaluru,False
+TX000497,EMP005,Rohan,2026-08-25,TechSupply,Office,24155.12,Manager B,Operations,Card,Varanasi,False
+TX000498,EMP001,Aarav,2026-01-17,TechSupply,Office,322447.4268431004,Manager B,Engineering,Bank Transfer,Varanasi,True
+TX000499,EMP001,Aarav,2026-07-29,CloudWorks,Travel,19890.78,Manager B,Engineering,Card,Varanasi,False
+TX000500,EMP003,Kabir,2026-07-01,TravelDesk,Office,17042.01,Manager B,Operations,Card,Mumbai,False
+TX000501,EMP004,Ishita,2026-01-20,TravelDesk,Software,16004.48,Manager A,Finance,Card,Mumbai,False
+TX000502,EMP001,Aarav,2026-04-27,CloudWorks,Software,24568.79,Manager B,Engineering,UPI,Bengaluru,False
+TX000503,EMP003,Kabir,2026-02-05,OfficeMart,Equipment,20973.52,Manager A,Engineering,UPI,Delhi,False
+TX000504,EMP001,Aarav,2026-07-23,OfficeMart,Software,16781.03,Manager A,Operations,Card,Bengaluru,False
+TX000505,EMP002,Meera,2026-01-26,TechSupply,Office,31121.09,Manager A,Finance,Bank Transfer,Mumbai,False
+TX000506,EMP005,Rohan,2026-07-31,TravelDesk,Software,18223.6,Manager A,Finance,Bank Transfer,Bengaluru,False
+TX000507,EMP005,Rohan,2026-07-23,CloudWorks,Software,15303.64,Manager B,Operations,Bank Transfer,Varanasi,False
+TX000508,EMP004,Ishita,2026-02-19,CloudWorks,Office,10708.96,Manager A,Operations,Bank Transfer,Varanasi,False
+TX000509,EMP002,Meera,2026-06-14,CloudWorks,Office,16473.27,Manager A,Engineering,UPI,Bengaluru,False
+TX000510,EMP003,Kabir,2026-01-23,TravelDesk,Software,25424.78,Manager B,Operations,UPI,Varanasi,False
+TX000511,EMP002,Meera,2026-04-14,OfficeMart,Equipment,14602.65,Manager B,Finance,Card,Varanasi,False
+TX000512,EMP003,Kabir,2026-08-21,OfficeMart,Equipment,19248.76,Manager A,Finance,Bank Transfer,Delhi,False
+TX000513,EMP004,Ishita,2026-06-10,TravelDesk,Office,19884.65,Manager A,Finance,UPI,Varanasi,False
+TX000514,EMP002,Meera,2026-03-21,CloudWorks,Travel,161043.66852073345,Manager A,Operations,Bank Transfer,Bengaluru,True
+TX000515,EMP001,Aarav,2026-07-30,TechSupply,Office,29315.88,Manager B,Operations,Card,Varanasi,False
+TX000516,EMP003,Kabir,2026-04-17,TravelDesk,Equipment,222900.3777736025,Manager B,Engineering,Bank Transfer,Mumbai,True
+TX000517,EMP004,Ishita,2026-07-31,OfficeMart,Travel,28455.64,Manager A,Finance,Bank Transfer,Delhi,False
+TX000518,EMP004,Ishita,2026-06-13,EquipHub,Equipment,19485.34,Manager B,Engineering,Bank Transfer,Delhi,False
+TX000519,EMP004,Ishita,2026-07-17,EquipHub,Software,17806.97,Manager B,Operations,Card,Bengaluru,False
+TX000520,EMP004,Ishita,2026-02-17,EquipHub,Travel,26736.06,Manager A,Engineering,Card,Varanasi,False
+TX000521,EMP003,Kabir,2026-05-26,TravelDesk,Travel,19686.36,Manager B,Engineering,UPI,Mumbai,False
+TX000522,EMP005,Rohan,2026-02-01,OfficeMart,Travel,20271.82,Manager B,Finance,Card,Bengaluru,False
+TX000523,EMP003,Kabir,2026-03-29,OfficeMart,Software,16693.28,Manager B,Engineering,Bank Transfer,Mumbai,False
+TX000524,EMP002,Meera,2026-03-30,TravelDesk,Office,26355.56,Manager A,Operations,UPI,Delhi,False
+TX000525,EMP005,Rohan,2026-08-19,OfficeMart,Office,32366.51,Manager A,Finance,Bank Transfer,Mumbai,False
+TX000526,EMP004,Ishita,2026-07-29,CloudWorks,Software,17888.56,Manager B,Finance,UPI,Delhi,False
+TX000527,EMP005,Rohan,2026-06-04,EquipHub,Travel,12484.16,Manager A,Engineering,Card,Mumbai,False
+TX000528,EMP001,Aarav,2026-06-15,TechSupply,Travel,22502.39,Manager B,Operations,Card,Varanasi,False
+TX000529,EMP005,Rohan,2026-02-27,TravelDesk,Software,25688.12,Manager A,Engineering,UPI,Bengaluru,False
+TX000530,EMP002,Meera,2026-03-05,TechSupply,Software,14836.17,Manager A,Operations,Bank Transfer,Bengaluru,False
+TX000531,EMP004,Ishita,2026-03-20,TravelDesk,Software,21714.38,Manager B,Operations,UPI,Varanasi,False
+TX000532,EMP002,Meera,2026-06-28,OfficeMart,Travel,30079.83,Manager B,Operations,Card,Varanasi,False
+TX000533,EMP003,Kabir,2026-02-17,TechSupply,Equipment,24920.2,Manager B,Operations,UPI,Delhi,False
+TX000534,EMP003,Kabir,2026-05-11,EquipHub,Software,21723.64,Manager A,Operations,Card,Bengaluru,False
+TX000535,EMP003,Kabir,2026-03-08,EquipHub,Equipment,10643.3,Manager B,Finance,Card,Varanasi,False
+TX000536,EMP001,Aarav,2026-06-05,EquipHub,Equipment,21193.11,Manager A,Finance,UPI,Varanasi,False
+TX000537,EMP005,Rohan,2026-04-17,EquipHub,Office,10838.01,Manager A,Engineering,Card,Delhi,False
+TX000538,EMP002,Meera,2026-05-12,TechSupply,Equipment,17034.2,Manager B,Finance,UPI,Delhi,False
+TX000539,EMP003,Kabir,2026-02-23,EquipHub,Equipment,12828.89,Manager B,Engineering,UPI,Varanasi,False
+TX000540,EMP002,Meera,2026-01-11,OfficeMart,Travel,13423.5,Manager B,Operations,Bank Transfer,Bengaluru,False
+TX000541,EMP001,Aarav,2026-06-26,OfficeMart,Travel,19327.84,Manager A,Finance,Bank Transfer,Mumbai,False
+TX000542,EMP002,Meera,2026-05-16,EquipHub,Office,9902.13,Manager A,Operations,Bank Transfer,Mumbai,False
+TX000543,EMP004,Ishita,2026-01-01,TechSupply,Software,23557.25,Manager B,Engineering,UPI,Delhi,False
+TX000544,EMP001,Aarav,2026-04-24,OfficeMart,Travel,19019.48,Manager A,Engineering,Card,Bengaluru,False
+TX000545,EMP001,Aarav,2026-03-27,OfficeMart,Office,31438.78,Manager B,Operations,Card,Varanasi,False
+TX000546,EMP002,Meera,2026-06-18,OfficeMart,Travel,23996.99,Manager A,Finance,Card,Bengaluru,False
+TX000547,EMP002,Meera,2026-01-06,OfficeMart,Software,24897.24,Manager A,Finance,UPI,Varanasi,False
+TX000548,EMP005,Rohan,2026-03-07,OfficeMart,Travel,18722.46,Manager B,Operations,Bank Transfer,Delhi,False
+TX000549,EMP003,Kabir,2026-02-14,OfficeMart,Software,22253.43,Manager B,Operations,Card,Varanasi,False
+TX000550,EMP002,Meera,2026-06-19,TechSupply,Travel,22389.61,Manager A,Finance,Card,Bengaluru,False
+TX000551,EMP002,Meera,2026-03-20,TravelDesk,Travel,25276.89,Manager A,Engineering,Bank Transfer,Varanasi,False
+TX000552,EMP004,Ishita,2026-07-09,CloudWorks,Equipment,18016.65,Manager B,Finance,UPI,Mumbai,False
+TX000553,EMP005,Rohan,2026-07-05,CloudWorks,Equipment,32848.9,Manager A,Operations,Card,Mumbai,False
+TX000554,EMP004,Ishita,2026-03-27,EquipHub,Travel,17485.36,Manager B,Engineering,Card,Varanasi,False
+TX000555,EMP005,Rohan,2026-06-25,TravelDesk,Equipment,15501.02,Manager A,Engineering,Bank Transfer,Bengaluru,False
+TX000556,EMP001,Aarav,2026-08-12,TechSupply,Software,20206.72,Manager B,Engineering,UPI,Bengaluru,False
+TX000557,EMP003,Kabir,2026-07-10,TravelDesk,Equipment,17372.84,Manager B,Finance,UPI,Bengaluru,False
+TX000558,EMP004,Ishita,2026-03-13,TechSupply,Travel,18437.74,Manager B,Operations,Card,Varanasi,False
+TX000559,EMP005,Rohan,2026-02-18,CloudWorks,Office,14864.51,Manager B,Operations,Bank Transfer,Varanasi,False
+TX000560,EMP005,Rohan,2026-08-02,EquipHub,Equipment,20227.63,Manager A,Operations,Card,Mumbai,False
+TX000561,EMP001,Aarav,2026-05-05,OfficeMart,Office,19996.95,Manager B,Engineering,Bank Transfer,Bengaluru,False
+TX000562,EMP005,Rohan,2026-07-09,EquipHub,Equipment,12392.64,Manager A,Finance,Bank Transfer,Varanasi,False
+TX000563,EMP001,Aarav,2026-05-21,EquipHub,Office,16719.96,Manager A,Operations,Card,Mumbai,False
+TX000564,EMP001,Aarav,2026-07-20,OfficeMart,Travel,16358.54,Manager B,Engineering,Card,Delhi,False
+TX000565,EMP004,Ishita,2026-07-23,CloudWorks,Software,8091.27,Manager B,Engineering,Card,Mumbai,False
+TX000566,EMP001,Aarav,2026-07-30,EquipHub,Equipment,17278.87,Manager B,Finance,Bank Transfer,Mumbai,False
+TX000567,EMP002,Meera,2026-07-10,EquipHub,Office,181685.13473972533,Manager A,Operations,UPI,Bengaluru,True
+TX000568,EMP002,Meera,2026-02-09,EquipHub,Travel,18749.99,Manager A,Operations,UPI,Bengaluru,False
+TX000569,EMP001,Aarav,2026-08-02,CloudWorks,Travel,19132.09,Manager A,Operations,Card,Delhi,False
+TX000570,EMP005,Rohan,2026-06-15,TravelDesk,Office,18394.32,Manager A,Operations,Card,Mumbai,False
+TX000571,EMP002,Meera,2026-07-01,CloudWorks,Equipment,34022.38,Manager B,Finance,UPI,Mumbai,False
+TX000572,EMP003,Kabir,2026-05-06,TechSupply,Equipment,22465.59,Manager B,Operations,Card,Mumbai,False
+TX000573,EMP005,Rohan,2026-04-07,EquipHub,Office,25820.93,Manager B,Finance,UPI,Bengaluru,False
+TX000574,EMP001,Aarav,2026-05-18,TechSupply,Equipment,14198.11,Manager A,Engineering,Bank Transfer,Mumbai,False
+TX000575,EMP003,Kabir,2026-08-28,CloudWorks,Travel,22854.44,Manager A,Operations,UPI,Delhi,False
+TX000576,EMP005,Rohan,2026-01-12,CloudWorks,Software,20712.67,Manager A,Engineering,UPI,Delhi,False
+TX000577,EMP005,Rohan,2026-08-20,OfficeMart,Software,16133.2,Manager B,Finance,UPI,Varanasi,False
+TX000578,EMP001,Aarav,2026-04-07,TravelDesk,Software,18311.1,Manager A,Engineering,UPI,Delhi,False
+TX000579,EMP005,Rohan,2026-01-05,CloudWorks,Office,13678.93,Manager B,Operations,Card,Bengaluru,False
+TX000580,EMP002,Meera,2026-07-25,OfficeMart,Travel,14588.25,Manager B,Operations,Card,Mumbai,False
+TX000581,EMP005,Rohan,2026-05-22,OfficeMart,Software,7993.27,Manager B,Finance,UPI,Varanasi,False
+TX000582,EMP005,Rohan,2026-01-20,CloudWorks,Software,19723.36,Manager A,Engineering,Card,Delhi,False
+TX000583,EMP004,Ishita,2026-01-25,CloudWorks,Equipment,29557.93,Manager A,Engineering,Bank Transfer,Bengaluru,False
+TX000584,EMP005,Rohan,2026-06-15,TravelDesk,Office,21460.37,Manager B,Finance,Bank Transfer,Mumbai,False
+TX000585,EMP004,Ishita,2026-05-27,TravelDesk,Software,27227.54,Manager A,Operations,Bank Transfer,Bengaluru,False
+TX000586,EMP005,Rohan,2026-02-02,TravelDesk,Travel,22836.7,Manager A,Operations,Bank Transfer,Varanasi,False
+TX000587,EMP004,Ishita,2026-02-10,EquipHub,Equipment,12283.02,Manager B,Finance,Bank Transfer,Bengaluru,False
+TX000588,EMP005,Rohan,2026-02-13,TechSupply,Travel,15759.63,Manager A,Operations,Bank Transfer,Delhi,False
+TX000589,EMP004,Ishita,2026-05-18,CloudWorks,Software,32914.39,Manager A,Finance,Bank Transfer,Delhi,False
+TX000590,EMP003,Kabir,2026-02-05,CloudWorks,Travel,22050.73,Manager B,Finance,UPI,Delhi,False
+TX000591,EMP002,Meera,2026-04-08,TravelDesk,Equipment,23417.62,Manager A,Engineering,Bank Transfer,Bengaluru,False
+TX000592,EMP004,Ishita,2026-04-16,EquipHub,Software,27548.51,Manager A,Finance,Card,Varanasi,False
+TX000593,EMP003,Kabir,2026-08-06,OfficeMart,Equipment,16570.12,Manager A,Finance,Bank Transfer,Bengaluru,False
+TX000594,EMP002,Meera,2026-04-22,CloudWorks,Office,22173.67,Manager B,Engineering,Bank Transfer,Mumbai,False
+TX000595,EMP004,Ishita,2026-06-09,TechSupply,Equipment,19884.88,Manager B,Operations,Bank Transfer,Mumbai,False
+TX000596,EMP003,Kabir,2026-03-18,EquipHub,Software,32127.47,Manager B,Finance,Bank Transfer,Delhi,False
+TX000597,EMP005,Rohan,2026-08-10,CloudWorks,Office,324354.02071528684,Manager B,Finance,Bank Transfer,Delhi,True
+TX000598,EMP005,Rohan,2026-07-29,EquipHub,Equipment,19822.94,Manager A,Engineering,UPI,Bengaluru,False
+TX000599,EMP003,Kabir,2026-03-24,CloudWorks,Office,16652.22,Manager A,Engineering,UPI,Bengaluru,False
+TX000600,EMP002,Meera,2026-06-23,EquipHub,Software,16972.13,Manager B,Operations,UPI,Delhi,False
+TX000601,EMP005,Rohan,2026-06-20,EquipHub,Travel,21092.84,Manager A,Operations,Bank Transfer,Mumbai,False
+TX000602,EMP001,Aarav,2026-06-05,OfficeMart,Office,20349.75,Manager A,Engineering,Bank Transfer,Mumbai,False
+TX000603,EMP005,Rohan,2026-06-14,EquipHub,Equipment,29030.8,Manager B,Finance,UPI,Varanasi,False
+TX000604,EMP004,Ishita,2026-06-05,EquipHub,Office,22030.44,Manager A,Finance,UPI,Bengaluru,False
+TX000605,EMP005,Rohan,2026-05-25,TravelDesk,Office,24325.41,Manager A,Operations,Card,Bengaluru,False
+TX000606,EMP003,Kabir,2026-01-02,OfficeMart,Software,31571.79,Manager A,Finance,Card,Mumbai,False
+TX000607,EMP001,Aarav,2026-03-10,OfficeMart,Travel,16173.15,Manager A,Finance,Bank Transfer,Mumbai,False
+TX000608,EMP005,Rohan,2026-05-22,OfficeMart,Software,26411.49,Manager B,Engineering,UPI,Bengaluru,False
+TX000609,EMP004,Ishita,2026-01-13,EquipHub,Software,14464.02,Manager A,Finance,Card,Delhi,False
+TX000610,EMP002,Meera,2026-04-23,EquipHub,Equipment,20262.17,Manager A,Finance,Card,Mumbai,False
+TX000611,EMP003,Kabir,2026-05-23,EquipHub,Office,12426.87,Manager A,Finance,Bank Transfer,Delhi,False
+TX000612,EMP004,Ishita,2026-05-16,TechSupply,Software,147112.99954746553,Manager A,Engineering,Card,Mumbai,True
+TX000613,EMP003,Kabir,2026-05-27,OfficeMart,Software,22999.56,Manager A,Finance,UPI,Varanasi,False
+TX000614,EMP002,Meera,2026-04-30,EquipHub,Equipment,12749.75,Manager A,Operations,Bank Transfer,Delhi,False
+TX000615,EMP001,Aarav,2026-01-12,TravelDesk,Office,8551.52,Manager B,Finance,Card,Varanasi,False
+TX000616,EMP003,Kabir,2026-07-22,CloudWorks,Office,24561.21,Manager A,Operations,Bank Transfer,Mumbai,False
+TX000617,EMP003,Kabir,2026-06-22,EquipHub,Office,7518.59,Manager A,Finance,Card,Mumbai,False
+TX000618,EMP003,Kabir,2026-08-14,CloudWorks,Equipment,11297.51,Manager A,Finance,Bank Transfer,Delhi,False
+TX000619,EMP002,Meera,2026-04-23,CloudWorks,Office,22500.03,Manager A,Finance,Card,Bengaluru,False
+TX000620,EMP002,Meera,2026-07-08,OfficeMart,Travel,14359.68,Manager A,Engineering,UPI,Varanasi,False
+TX000621,EMP005,Rohan,2026-02-06,CloudWorks,Office,22610.1,Manager B,Finance,UPI,Bengaluru,False
+TX000622,EMP001,Aarav,2026-05-10,EquipHub,Office,22184.04,Manager B,Engineering,UPI,Delhi,False
+TX000623,EMP005,Rohan,2026-08-21,TechSupply,Travel,10965.19,Manager B,Finance,Bank Transfer,Varanasi,False
+TX000624,EMP002,Meera,2026-02-04,TravelDesk,Equipment,12474.31,Manager B,Operations,UPI,Bengaluru,False
+TX000625,EMP001,Aarav,2026-01-27,EquipHub,Equipment,32083.34,Manager B,Operations,Bank Transfer,Varanasi,False
+TX000626,EMP002,Meera,2026-02-08,EquipHub,Office,18538.99,Manager B,Engineering,Bank Transfer,Bengaluru,False
+TX000627,EMP001,Aarav,2026-01-04,OfficeMart,Equipment,18852.98,Manager A,Engineering,UPI,Varanasi,False
+TX000628,EMP001,Aarav,2026-07-28,TravelDesk,Equipment,24959.81,Manager A,Engineering,UPI,Bengaluru,False
+TX000629,EMP005,Rohan,2026-03-22,TravelDesk,Software,11960.0,Manager B,Finance,Card,Bengaluru,False
+TX000630,EMP004,Ishita,2026-05-20,TravelDesk,Office,20606.17,Manager A,Finance,Bank Transfer,Delhi,False
+TX000631,EMP005,Rohan,2026-04-27,OfficeMart,Software,18818.07,Manager A,Operations,Card,Varanasi,False
+TX000632,EMP003,Kabir,2026-05-05,TechSupply,Office,24005.5,Manager A,Operations,Bank Transfer,Varanasi,False
+TX000633,EMP002,Meera,2026-02-13,TravelDesk,Equipment,15603.64,Manager A,Engineering,Bank Transfer,Mumbai,False
+TX000634,EMP002,Meera,2026-08-18,CloudWorks,Office,24160.24,Manager B,Finance,UPI,Mumbai,False
+TX000635,EMP004,Ishita,2026-04-05,TravelDesk,Travel,17308.06,Manager B,Engineering,UPI,Mumbai,False
+TX000636,EMP002,Meera,2026-01-01,CloudWorks,Equipment,23752.9,Manager B,Engineering,Bank Transfer,Delhi,False
+TX000637,EMP004,Ishita,2026-03-26,CloudWorks,Software,20979.55,Manager B,Engineering,Bank Transfer,Bengaluru,False
+TX000638,EMP004,Ishita,2026-05-25,TechSupply,Office,28129.23,Manager B,Finance,Card,Varanasi,False
+TX000639,EMP005,Rohan,2026-03-11,TechSupply,Equipment,22093.43,Manager B,Operations,Card,Mumbai,False
+TX000640,EMP003,Kabir,2026-05-04,TravelDesk,Travel,20701.12,Manager B,Operations,Bank Transfer,Mumbai,False
+TX000641,EMP001,Aarav,2026-08-05,EquipHub,Software,8246.09,Manager B,Operations,UPI,Varanasi,False
+TX000642,EMP003,Kabir,2026-02-10,EquipHub,Office,17839.44,Manager B,Engineering,UPI,Delhi,False
+TX000643,EMP001,Aarav,2026-06-18,EquipHub,Equipment,22726.49,Manager A,Operations,Bank Transfer,Mumbai,False
+TX000644,EMP003,Kabir,2026-04-21,TechSupply,Office,18558.1,Manager A,Operations,Bank Transfer,Mumbai,False
+TX000645,EMP005,Rohan,2026-01-31,TechSupply,Software,20424.92,Manager B,Engineering,Bank Transfer,Bengaluru,False
+TX000646,EMP004,Ishita,2026-02-17,TravelDesk,Travel,12828.73,Manager B,Engineering,UPI,Bengaluru,False
+TX000647,EMP001,Aarav,2026-01-26,TechSupply,Software,473375.6536597416,Manager B,Finance,UPI,Varanasi,True
+TX000648,EMP005,Rohan,2026-05-15,TechSupply,Office,18683.08,Manager A,Engineering,Card,Mumbai,False
+TX000649,EMP002,Meera,2026-01-17,OfficeMart,Equipment,13612.31,Manager A,Finance,UPI,Mumbai,False
+TX000650,EMP001,Aarav,2026-02-24,OfficeMart,Software,25721.56,Manager A,Operations,Card,Bengaluru,False
+TX000651,EMP001,Aarav,2026-08-24,TravelDesk,Software,13251.91,Manager A,Operations,UPI,Delhi,False
+TX000652,EMP003,Kabir,2026-02-12,TravelDesk,Equipment,15717.66,Manager A,Finance,Bank Transfer,Bengaluru,False
+TX000653,EMP001,Aarav,2026-02-14,TechSupply,Travel,22519.13,Manager B,Engineering,UPI,Delhi,False
+TX000654,EMP002,Meera,2026-04-01,CloudWorks,Travel,34266.53,Manager A,Operations,Card,Mumbai,False
+TX000655,EMP004,Ishita,2026-05-19,TechSupply,Office,24960.76,Manager B,Finance,Bank Transfer,Mumbai,False
+TX000656,EMP001,Aarav,2026-08-01,CloudWorks,Travel,23599.13,Manager A,Operations,Bank Transfer,Delhi,False
+TX000657,EMP003,Kabir,2026-03-15,CloudWorks,Equipment,19016.32,Manager A,Finance,UPI,Varanasi,False
+TX000658,EMP002,Meera,2026-08-17,CloudWorks,Office,14685.35,Manager A,Finance,Card,Varanasi,False
+TX000659,EMP001,Aarav,2026-02-04,OfficeMart,Software,26012.45,Manager B,Engineering,Card,Delhi,False
+TX000660,EMP001,Aarav,2026-03-10,CloudWorks,Travel,24329.87,Manager B,Operations,Card,Varanasi,False
+TX000661,EMP005,Rohan,2026-03-17,EquipHub,Equipment,22038.3,Manager A,Operations,Bank Transfer,Mumbai,False
+TX000662,EMP002,Meera,2026-05-16,TravelDesk,Office,9783.96,Manager A,Engineering,Card,Varanasi,False
+TX000663,EMP004,Ishita,2026-07-12,TechSupply,Travel,13553.32,Manager B,Engineering,Card,Delhi,False
+TX000664,EMP004,Ishita,2026-01-18,OfficeMart,Equipment,21089.59,Manager A,Engineering,UPI,Bengaluru,False
+TX000665,EMP005,Rohan,2026-06-20,TravelDesk,Office,24922.84,Manager A,Finance,Card,Varanasi,False
+TX000666,EMP004,Ishita,2026-04-01,OfficeMart,Travel,17339.11,Manager B,Engineering,Card,Delhi,False
+TX000667,EMP004,Ishita,2026-03-11,EquipHub,Office,6524.03,Manager B,Operations,UPI,Mumbai,False
+TX000668,EMP003,Kabir,2026-02-27,EquipHub,Equipment,14262.56,Manager A,Finance,Card,Bengaluru,False
+TX000669,EMP001,Aarav,2026-02-08,OfficeMart,Travel,21628.12,Manager B,Operations,UPI,Bengaluru,False
+TX000670,EMP004,Ishita,2026-07-28,OfficeMart,Office,17994.22,Manager A,Operations,UPI,Bengaluru,False
+TX000671,EMP001,Aarav,2026-01-01,OfficeMart,Software,28879.29,Manager A,Engineering,Bank Transfer,Delhi,False
+TX000672,EMP004,Ishita,2026-05-31,EquipHub,Equipment,27024.48,Manager B,Operations,UPI,Varanasi,False
+TX000673,EMP005,Rohan,2026-07-24,TechSupply,Travel,29246.61,Manager A,Operations,Bank Transfer,Varanasi,False
+TX000674,EMP001,Aarav,2026-03-23,EquipHub,Software,18265.07,Manager A,Operations,UPI,Mumbai,False
+TX000675,EMP005,Rohan,2026-06-22,CloudWorks,Office,18861.06,Manager A,Engineering,Card,Varanasi,False
+TX000676,EMP001,Aarav,2026-02-15,CloudWorks,Travel,19076.93,Manager A,Operations,UPI,Varanasi,False
+TX000677,EMP001,Aarav,2026-06-01,TravelDesk,Travel,18764.29,Manager B,Operations,Card,Delhi,False
+TX000678,EMP002,Meera,2026-04-23,OfficeMart,Equipment,23794.16,Manager B,Operations,UPI,Mumbai,False
+TX000679,EMP004,Ishita,2026-05-14,TravelDesk,Software,20234.64,Manager A,Finance,UPI,Mumbai,False
+TX000680,EMP003,Kabir,2026-04-26,TechSupply,Travel,20134.29,Manager A,Operations,Card,Mumbai,False
+TX000681,EMP003,Kabir,2026-07-08,TravelDesk,Travel,27803.52,Manager A,Finance,Card,Mumbai,False
+TX000682,EMP003,Kabir,2026-04-14,EquipHub,Equipment,20169.45,Manager B,Operations,Bank Transfer,Delhi,False
+TX000683,EMP005,Rohan,2026-05-21,CloudWorks,Office,17698.19,Manager B,Finance,Card,Mumbai,False
+TX000684,EMP003,Kabir,2026-03-17,CloudWorks,Equipment,17507.6,Manager B,Operations,UPI,Delhi,False
+TX000685,EMP005,Rohan,2026-01-17,EquipHub,Software,14721.31,Manager B,Engineering,Card,Mumbai,False
+TX000686,EMP001,Aarav,2026-06-16,CloudWorks,Equipment,7015.51,Manager A,Operations,Card,Delhi,False
+TX000687,EMP003,Kabir,2026-03-01,TravelDesk,Office,22343.13,Manager A,Engineering,Bank Transfer,Delhi,False
+TX000688,EMP001,Aarav,2026-05-27,TechSupply,Travel,12344.37,Manager A,Engineering,UPI,Delhi,False
+TX000689,EMP001,Aarav,2026-07-18,OfficeMart,Office,24491.14,Manager A,Operations,UPI,Mumbai,False
+TX000690,EMP001,Aarav,2026-04-21,TravelDesk,Equipment,19611.85,Manager A,Engineering,Bank Transfer,Bengaluru,False
+TX000691,EMP002,Meera,2026-03-11,TechSupply,Office,13002.63,Manager B,Finance,UPI,Delhi,False
+TX000692,EMP004,Ishita,2026-05-02,TravelDesk,Equipment,13508.95,Manager A,Operations,UPI,Bengaluru,False
+TX000693,EMP001,Aarav,2026-06-22,OfficeMart,Software,5471.65,Manager A,Operations,UPI,Varanasi,False
+TX000694,EMP002,Meera,2026-02-14,TechSupply,Equipment,20843.88,Manager B,Engineering,Bank Transfer,Bengaluru,False
+TX000695,EMP004,Ishita,2026-06-18,TechSupply,Office,21950.81,Manager B,Finance,UPI,Varanasi,False
+TX000696,EMP004,Ishita,2026-03-02,CloudWorks,Equipment,16028.39,Manager B,Operations,UPI,Varanasi,False
+TX000697,EMP001,Aarav,2026-08-26,EquipHub,Software,19054.77,Manager A,Operations,UPI,Delhi,False
+TX000698,EMP004,Ishita,2026-04-01,CloudWorks,Travel,23846.62,Manager A,Finance,UPI,Mumbai,False
+TX000699,EMP005,Rohan,2026-03-04,TechSupply,Travel,25637.44,Manager B,Finance,Card,Varanasi,False
+TX000700,EMP001,Aarav,2026-04-17,TechSupply,Travel,19213.78,Manager A,Finance,UPI,Mumbai,False
+TX000701,EMP001,Aarav,2026-01-25,EquipHub,Travel,23297.13,Manager B,Engineering,Card,Mumbai,False
+TX000702,EMP005,Rohan,2026-04-14,OfficeMart,Equipment,31374.35,Manager B,Engineering,Card,Varanasi,False
+TX000703,EMP002,Meera,2026-06-11,TravelDesk,Office,24775.87,Manager A,Operations,Bank Transfer,Delhi,False
+TX000704,EMP002,Meera,2026-05-22,TechSupply,Office,21229.07,Manager B,Finance,UPI,Mumbai,False
+TX000705,EMP005,Rohan,2026-07-08,OfficeMart,Travel,10014.86,Manager B,Operations,Bank Transfer,Delhi,False
+TX000706,EMP002,Meera,2026-05-21,TravelDesk,Office,26402.4,Manager A,Finance,Bank Transfer,Bengaluru,False
+TX000707,EMP005,Rohan,2026-07-04,EquipHub,Travel,16154.42,Manager A,Finance,Card,Varanasi,False
+TX000708,EMP004,Ishita,2026-03-02,EquipHub,Software,12016.83,Manager B,Operations,UPI,Varanasi,False
+TX000709,EMP003,Kabir,2026-04-30,TravelDesk,Software,21931.7,Manager B,Engineering,UPI,Varanasi,False
+TX000710,EMP003,Kabir,2026-06-04,CloudWorks,Travel,23506.51,Manager B,Finance,UPI,Bengaluru,False
+TX000711,EMP004,Ishita,2026-02-15,TravelDesk,Travel,20629.42,Manager A,Finance,Card,Bengaluru,False
+TX000712,EMP002,Meera,2026-06-29,EquipHub,Software,19611.14,Manager B,Operations,Card,Mumbai,False
+TX000713,EMP005,Rohan,2026-07-24,OfficeMart,Travel,26555.3,Manager B,Engineering,UPI,Delhi,False
+TX000714,EMP002,Meera,2026-01-26,EquipHub,Equipment,20272.37,Manager B,Operations,Card,Delhi,False
+TX000715,EMP001,Aarav,2026-07-03,CloudWorks,Travel,18555.52,Manager A,Operations,UPI,Varanasi,False
+TX000716,EMP004,Ishita,2026-07-28,EquipHub,Equipment,21908.43,Manager B,Operations,Card,Delhi,False
+TX000717,EMP004,Ishita,2026-06-07,TravelDesk,Office,28582.98,Manager B,Operations,Bank Transfer,Varanasi,False
+TX000718,EMP004,Ishita,2026-05-18,EquipHub,Office,17059.98,Manager B,Engineering,Card,Mumbai,False
+TX000719,EMP003,Kabir,2026-04-02,TechSupply,Office,19376.27,Manager A,Operations,Card,Varanasi,False
+TX000720,EMP003,Kabir,2026-06-21,EquipHub,Travel,30998.47,Manager B,Operations,Bank Transfer,Bengaluru,False
+TX000721,EMP005,Rohan,2026-04-14,EquipHub,Equipment,85444.0252021562,Manager A,Engineering,Bank Transfer,Varanasi,True
+TX000722,EMP003,Kabir,2026-03-31,CloudWorks,Equipment,26140.53,Manager B,Operations,Card,Mumbai,False
+TX000723,EMP002,Meera,2026-02-04,CloudWorks,Travel,26495.04,Manager B,Operations,UPI,Delhi,False
+TX000724,EMP005,Rohan,2026-02-24,TechSupply,Office,11034.82,Manager B,Operations,UPI,Varanasi,False
+TX000725,EMP002,Meera,2026-01-20,TechSupply,Software,24414.88,Manager A,Finance,Bank Transfer,Varanasi,False
+TX000726,EMP003,Kabir,2026-04-12,TravelDesk,Travel,15554.17,Manager A,Finance,Bank Transfer,Delhi,False
+TX000727,EMP001,Aarav,2026-03-24,CloudWorks,Software,23127.46,Manager B,Operations,UPI,Bengaluru,False
+TX000728,EMP003,Kabir,2026-03-04,EquipHub,Equipment,15048.09,Manager B,Finance,UPI,Mumbai,False
+TX000729,EMP005,Rohan,2026-01-05,EquipHub,Travel,19721.78,Manager B,Engineering,Card,Mumbai,False
+TX000730,EMP003,Kabir,2026-06-17,CloudWorks,Equipment,285576.17296203534,Manager B,Operations,UPI,Delhi,True
+TX000731,EMP004,Ishita,2026-03-14,OfficeMart,Travel,20205.4,Manager B,Finance,UPI,Delhi,False
+TX000732,EMP005,Rohan,2026-06-25,TechSupply,Equipment,14945.39,Manager B,Finance,Card,Mumbai,False
+TX000733,EMP004,Ishita,2026-01-02,EquipHub,Travel,20634.91,Manager B,Engineering,UPI,Mumbai,False
+TX000734,EMP002,Meera,2026-07-15,EquipHub,Software,20666.71,Manager A,Engineering,UPI,Bengaluru,False
+TX000735,EMP003,Kabir,2026-05-21,OfficeMart,Travel,27046.28,Manager A,Finance,UPI,Mumbai,False
+TX000736,EMP002,Meera,2026-06-15,CloudWorks,Software,20042.81,Manager A,Operations,Card,Bengaluru,False
+TX000737,EMP003,Kabir,2026-02-13,EquipHub,Office,19839.24,Manager A,Finance,UPI,Delhi,False
+TX000738,EMP004,Ishita,2026-02-20,OfficeMart,Office,21899.53,Manager B,Engineering,Bank Transfer,Varanasi,False
+TX000739,EMP004,Ishita,2026-07-15,TravelDesk,Equipment,14148.51,Manager A,Engineering,Card,Bengaluru,False
+TX000740,EMP001,Aarav,2026-05-02,OfficeMart,Travel,19554.1,Manager A,Finance,Card,Bengaluru,False
+TX000741,EMP003,Kabir,2026-06-03,EquipHub,Travel,13135.65,Manager B,Finance,Bank Transfer,Delhi,False
+TX000742,EMP005,Rohan,2026-01-01,CloudWorks,Office,22203.4,Manager B,Engineering,Bank Transfer,Delhi,False
+TX000743,EMP001,Aarav,2026-02-18,CloudWorks,Office,23204.1,Manager A,Finance,Card,Delhi,False
+TX000744,EMP004,Ishita,2026-06-16,TechSupply,Travel,26676.81,Manager B,Finance,Card,Mumbai,False
+TX000745,EMP002,Meera,2026-07-07,TravelDesk,Office,18010.81,Manager B,Operations,Card,Bengaluru,False
+TX000746,EMP005,Rohan,2026-06-08,TravelDesk,Equipment,313672.5828362114,Manager A,Engineering,Bank Transfer,Bengaluru,True
+TX000747,EMP001,Aarav,2026-04-12,EquipHub,Travel,21579.56,Manager A,Engineering,UPI,Delhi,False
+TX000748,EMP005,Rohan,2026-08-19,TechSupply,Travel,23794.21,Manager A,Operations,UPI,Mumbai,False
+TX000749,EMP002,Meera,2026-04-06,TravelDesk,Travel,15359.71,Manager A,Finance,UPI,Delhi,False
+TX000750,EMP003,Kabir,2026-04-20,EquipHub,Travel,16205.23,Manager B,Operations,Card,Bengaluru,False
+TX000751,EMP001,Aarav,2026-02-11,OfficeMart,Office,17313.86,Manager A,Engineering,UPI,Delhi,False
+TX000752,EMP001,Aarav,2026-03-02,EquipHub,Equipment,18367.93,Manager B,Operations,UPI,Bengaluru,False
+TX000753,EMP005,Rohan,2026-01-23,OfficeMart,Travel,22418.82,Manager A,Finance,Card,Mumbai,False
+TX000754,EMP002,Meera,2026-06-23,CloudWorks,Software,16763.66,Manager B,Engineering,UPI,Bengaluru,False
+TX000755,EMP005,Rohan,2026-08-26,TravelDesk,Equipment,23873.5,Manager B,Operations,UPI,Bengaluru,False
+TX000756,EMP002,Meera,2026-08-09,EquipHub,Equipment,21049.71,Manager B,Finance,UPI,Bengaluru,False
+TX000757,EMP001,Aarav,2026-03-29,CloudWorks,Equipment,13412.79,Manager B,Operations,UPI,Delhi,False
+TX000758,EMP005,Rohan,2026-07-06,CloudWorks,Office,24642.43,Manager A,Finance,UPI,Mumbai,False
+TX000759,EMP001,Aarav,2026-05-09,OfficeMart,Equipment,15524.35,Manager A,Operations,Card,Delhi,False
+TX000760,EMP005,Rohan,2026-07-14,TechSupply,Equipment,12735.28,Manager B,Finance,UPI,Mumbai,False
+TX000761,EMP001,Aarav,2026-01-21,TravelDesk,Office,20401.34,Manager A,Operations,Card,Mumbai,False
+TX000762,EMP002,Meera,2026-05-04,OfficeMart,Office,19686.08,Manager B,Finance,Bank Transfer,Mumbai,False
+TX000763,EMP005,Rohan,2026-07-29,OfficeMart,Office,31162.43,Manager A,Operations,Card,Bengaluru,False
+TX000764,EMP001,Aarav,2026-01-17,TravelDesk,Travel,32566.55,Manager A,Operations,Card,Bengaluru,False
+TX000765,EMP003,Kabir,2026-02-26,CloudWorks,Equipment,310040.54194794345,Manager B,Finance,Bank Transfer,Delhi,True
+TX000766,EMP001,Aarav,2026-06-19,TechSupply,Equipment,15135.89,Manager B,Operations,UPI,Delhi,False
+TX000767,EMP001,Aarav,2026-01-17,CloudWorks,Software,19630.69,Manager A,Operations,Bank Transfer,Varanasi,False
+TX000768,EMP004,Ishita,2026-02-04,CloudWorks,Travel,17279.41,Manager A,Operations,Card,Delhi,False
+TX000769,EMP003,Kabir,2026-02-11,TechSupply,Office,31291.8,Manager A,Operations,Bank Transfer,Mumbai,False
+TX000770,EMP003,Kabir,2026-05-06,TechSupply,Equipment,11642.72,Manager B,Operations,Bank Transfer,Varanasi,False
+TX000771,EMP001,Aarav,2026-04-06,OfficeMart,Travel,19501.71,Manager A,Engineering,Bank Transfer,Mumbai,False
+TX000772,EMP002,Meera,2026-01-24,CloudWorks,Software,24237.83,Manager B,Finance,Bank Transfer,Delhi,False
+TX000773,EMP003,Kabir,2026-05-11,EquipHub,Office,17804.82,Manager B,Finance,Card,Mumbai,False
+TX000774,EMP004,Ishita,2026-04-02,TechSupply,Office,25796.07,Manager B,Engineering,UPI,Varanasi,False
+TX000775,EMP001,Aarav,2026-01-15,OfficeMart,Software,22672.58,Manager B,Finance,Card,Bengaluru,False
+TX000776,EMP001,Aarav,2026-06-27,TravelDesk,Equipment,15174.31,Manager A,Finance,Bank Transfer,Mumbai,False
+TX000777,EMP002,Meera,2026-04-15,TechSupply,Travel,25902.28,Manager A,Finance,Bank Transfer,Mumbai,False
+TX000778,EMP004,Ishita,2026-06-06,EquipHub,Equipment,13925.89,Manager A,Engineering,Bank Transfer,Bengaluru,False
+TX000779,EMP001,Aarav,2026-04-22,OfficeMart,Equipment,24266.44,Manager B,Engineering,Card,Mumbai,False
+TX000780,EMP004,Ishita,2026-06-03,CloudWorks,Software,18059.75,Manager A,Operations,Card,Bengaluru,False
+TX000781,EMP004,Ishita,2026-02-08,TechSupply,Travel,7474.92,Manager A,Engineering,Card,Delhi,False
+TX000782,EMP004,Ishita,2026-01-19,CloudWorks,Equipment,18743.35,Manager A,Engineering,UPI,Bengaluru,False
+TX000783,EMP004,Ishita,2026-08-28,OfficeMart,Equipment,19059.35,Manager B,Engineering,Bank Transfer,Bengaluru,False
+TX000784,EMP001,Aarav,2026-07-14,TechSupply,Travel,210373.80850251843,Manager A,Finance,UPI,Delhi,True
+TX000785,EMP001,Aarav,2026-07-22,TechSupply,Equipment,20847.44,Manager B,Operations,Bank Transfer,Varanasi,False
+TX000786,EMP002,Meera,2026-08-12,TravelDesk,Software,24574.83,Manager A,Operations,UPI,Mumbai,False
+TX000787,EMP003,Kabir,2026-04-05,OfficeMart,Software,18567.86,Manager B,Engineering,Card,Varanasi,False
+TX000788,EMP005,Rohan,2026-07-13,CloudWorks,Equipment,26589.71,Manager B,Engineering,Card,Delhi,False
+TX000789,EMP001,Aarav,2026-04-21,EquipHub,Travel,16788.53,Manager A,Finance,Bank Transfer,Bengaluru,False
+TX000790,EMP001,Aarav,2026-07-22,CloudWorks,Office,25512.04,Manager B,Finance,Bank Transfer,Mumbai,False
+TX000791,EMP003,Kabir,2026-02-03,TravelDesk,Office,28187.95,Manager A,Finance,UPI,Varanasi,False
+TX000792,EMP003,Kabir,2026-05-29,EquipHub,Office,23551.45,Manager A,Engineering,Card,Varanasi,False
+TX000793,EMP001,Aarav,2026-02-04,OfficeMart,Equipment,22823.46,Manager A,Finance,Bank Transfer,Bengaluru,False
+TX000794,EMP005,Rohan,2026-08-02,OfficeMart,Office,25373.44,Manager A,Operations,UPI,Mumbai,False
+TX000795,EMP003,Kabir,2026-03-30,EquipHub,Equipment,229499.60560028162,Manager A,Engineering,Card,Varanasi,True
+TX000796,EMP003,Kabir,2026-08-19,TechSupply,Travel,20782.59,Manager A,Operations,Bank Transfer,Delhi,False
+TX000797,EMP001,Aarav,2026-01-29,EquipHub,Travel,28892.32,Manager B,Operations,Card,Mumbai,False
+TX000798,EMP002,Meera,2026-01-14,TechSupply,Software,21390.61,Manager B,Engineering,Bank Transfer,Delhi,False
+TX000799,EMP004,Ishita,2026-02-17,TravelDesk,Equipment,20563.91,Manager B,Operations,UPI,Mumbai,False
+TX000800,EMP002,Meera,2026-05-13,EquipHub,Software,23156.63,Manager B,Engineering,Card,Mumbai,False
+TX000801,EMP003,Kabir,2026-07-29,TravelDesk,Office,29114.51,Manager B,Engineering,Card,Varanasi,False
+TX000802,EMP004,Ishita,2026-01-05,CloudWorks,Equipment,18249.72,Manager B,Finance,UPI,Mumbai,False
+TX000803,EMP001,Aarav,2026-03-29,CloudWorks,Travel,12277.38,Manager A,Engineering,Card,Mumbai,False
+TX000804,EMP001,Aarav,2026-05-10,TechSupply,Equipment,26826.67,Manager B,Engineering,Bank Transfer,Delhi,False
+TX000805,EMP002,Meera,2026-08-10,TechSupply,Office,16987.07,Manager B,Operations,Card,Delhi,False
+TX000806,EMP005,Rohan,2026-01-20,CloudWorks,Equipment,31541.64,Manager A,Engineering,Card,Varanasi,False
+TX000807,EMP005,Rohan,2026-02-13,OfficeMart,Equipment,30672.17,Manager A,Engineering,UPI,Bengaluru,False
+TX000808,EMP002,Meera,2026-02-21,TravelDesk,Office,12967.26,Manager B,Finance,Card,Mumbai,False
+TX000809,EMP001,Aarav,2026-02-26,TravelDesk,Office,33284.95,Manager A,Engineering,UPI,Delhi,False
+TX000810,EMP001,Aarav,2026-07-04,OfficeMart,Equipment,22470.67,Manager B,Engineering,UPI,Varanasi,False
+TX000811,EMP005,Rohan,2026-02-23,CloudWorks,Travel,402416.10723006184,Manager B,Finance,Card,Bengaluru,True
+TX000812,EMP002,Meera,2026-01-20,TravelDesk,Travel,23131.09,Manager B,Finance,Bank Transfer,Delhi,False
+TX000813,EMP001,Aarav,2026-08-18,TechSupply,Equipment,17204.88,Manager B,Finance,UPI,Bengaluru,False
+TX000814,EMP004,Ishita,2026-04-10,CloudWorks,Travel,13754.38,Manager B,Operations,UPI,Varanasi,False
+TX000815,EMP003,Kabir,2026-08-10,TechSupply,Office,14834.41,Manager B,Finance,Bank Transfer,Mumbai,False
+TX000816,EMP003,Kabir,2026-01-04,OfficeMart,Office,24998.54,Manager A,Operations,Card,Bengaluru,False
+TX000817,EMP005,Rohan,2026-03-21,EquipHub,Equipment,15212.81,Manager A,Finance,UPI,Varanasi,False
+TX000818,EMP005,Rohan,2026-08-26,TechSupply,Office,8606.85,Manager A,Operations,Card,Delhi,False
+TX000819,EMP001,Aarav,2026-05-30,TravelDesk,Travel,19704.0,Manager A,Operations,UPI,Bengaluru,False
+TX000820,EMP002,Meera,2026-04-25,TechSupply,Software,259767.21159843335,Manager B,Engineering,Card,Delhi,True
+TX000821,EMP004,Ishita,2026-05-04,CloudWorks,Software,20609.15,Manager A,Finance,Card,Varanasi,False
+TX000822,EMP002,Meera,2026-08-27,OfficeMart,Office,18926.78,Manager B,Engineering,Card,Delhi,False
+TX000823,EMP003,Kabir,2026-01-24,CloudWorks,Office,405705.75151163613,Manager B,Engineering,UPI,Mumbai,True
+TX000824,EMP001,Aarav,2026-05-17,TravelDesk,Equipment,18622.35,Manager B,Engineering,Card,Mumbai,False
+TX000825,EMP002,Meera,2026-05-25,TravelDesk,Equipment,21349.4,Manager B,Finance,UPI,Varanasi,False
+TX000826,EMP003,Kabir,2026-04-22,TechSupply,Equipment,21313.6,Manager B,Operations,UPI,Varanasi,False
+TX000827,EMP005,Rohan,2026-03-06,TravelDesk,Software,25891.64,Manager B,Operations,Card,Delhi,False
+TX000828,EMP001,Aarav,2026-05-29,CloudWorks,Travel,13495.71,Manager A,Finance,Bank Transfer,Mumbai,False
+TX000829,EMP004,Ishita,2026-06-21,OfficeMart,Office,21872.5,Manager A,Engineering,UPI,Delhi,False
+TX000830,EMP004,Ishita,2026-06-09,TravelDesk,Office,37972.65,Manager B,Engineering,UPI,Mumbai,False
+TX000831,EMP001,Aarav,2026-06-07,TechSupply,Equipment,21442.97,Manager A,Finance,Bank Transfer,Delhi,False
+TX000832,EMP004,Ishita,2026-01-21,EquipHub,Office,8133.36,Manager A,Finance,Card,Bengaluru,False
+TX000833,EMP001,Aarav,2026-03-12,TravelDesk,Travel,21331.94,Manager B,Operations,Card,Mumbai,False
+TX000834,EMP005,Rohan,2026-01-23,CloudWorks,Office,15210.53,Manager A,Finance,UPI,Delhi,False
+TX000835,EMP001,Aarav,2026-05-02,TravelDesk,Travel,16327.7,Manager B,Operations,Bank Transfer,Mumbai,False
+TX000836,EMP001,Aarav,2026-07-12,TravelDesk,Software,18977.97,Manager B,Finance,Card,Mumbai,False
+TX000837,EMP001,Aarav,2026-05-15,CloudWorks,Office,12032.09,Manager B,Operations,Bank Transfer,Mumbai,False
+TX000838,EMP001,Aarav,2026-05-22,TechSupply,Office,159596.42709496082,Manager A,Engineering,Card,Delhi,True
+TX000839,EMP005,Rohan,2026-03-15,CloudWorks,Software,17391.64,Manager A,Engineering,Card,Bengaluru,False
+TX000840,EMP001,Aarav,2026-04-09,TravelDesk,Software,21496.19,Manager B,Operations,Bank Transfer,Mumbai,False
+TX000841,EMP005,Rohan,2026-03-24,OfficeMart,Travel,23428.7,Manager B,Engineering,UPI,Bengaluru,False
+TX000842,EMP003,Kabir,2026-07-17,CloudWorks,Software,7295.03,Manager A,Finance,UPI,Delhi,False
+TX000843,EMP002,Meera,2026-04-01,OfficeMart,Software,421581.4515274944,Manager A,Finance,UPI,Bengaluru,True
+TX000844,EMP002,Meera,2026-01-11,EquipHub,Equipment,24143.67,Manager B,Finance,UPI,Varanasi,False
+TX000845,EMP004,Ishita,2026-08-05,TravelDesk,Software,15678.66,Manager A,Operations,UPI,Mumbai,False
+TX000846,EMP004,Ishita,2026-03-01,OfficeMart,Software,6019.07,Manager B,Operations,UPI,Bengaluru,False
+TX000847,EMP004,Ishita,2026-02-19,EquipHub,Equipment,23526.46,Manager B,Operations,UPI,Mumbai,False
+TX000848,EMP004,Ishita,2026-03-22,EquipHub,Software,12953.14,Manager A,Engineering,UPI,Varanasi,False
+TX000849,EMP003,Kabir,2026-05-09,OfficeMart,Equipment,16478.09,Manager A,Operations,Bank Transfer,Mumbai,False
+TX000850,EMP005,Rohan,2026-05-11,EquipHub,Software,7287.34,Manager A,Operations,Card,Delhi,False
+TX000851,EMP001,Aarav,2026-04-02,CloudWorks,Office,10117.31,Manager A,Operations,Card,Bengaluru,False
+TX000852,EMP002,Meera,2026-03-13,TravelDesk,Software,14086.74,Manager A,Operations,Bank Transfer,Varanasi,False
+TX000853,EMP004,Ishita,2026-04-06,TechSupply,Travel,21141.58,Manager B,Engineering,Card,Bengaluru,False
+TX000854,EMP004,Ishita,2026-06-28,CloudWorks,Travel,18238.85,Manager B,Finance,UPI,Mumbai,False
+TX000855,EMP002,Meera,2026-03-22,TravelDesk,Equipment,27862.58,Manager A,Engineering,Card,Varanasi,False
+TX000856,EMP004,Ishita,2026-08-12,OfficeMart,Software,23639.99,Manager B,Operations,Card,Bengaluru,False
+TX000857,EMP002,Meera,2026-06-11,CloudWorks,Travel,231009.51967928125,Manager A,Operations,Bank Transfer,Mumbai,True
+TX000858,EMP005,Rohan,2026-08-27,OfficeMart,Office,19345.46,Manager A,Engineering,UPI,Delhi,False
+TX000859,EMP005,Rohan,2026-01-16,TechSupply,Travel,22623.71,Manager A,Finance,UPI,Mumbai,False
+TX000860,EMP005,Rohan,2026-04-26,TechSupply,Travel,12722.48,Manager B,Engineering,Card,Mumbai,False
+TX000861,EMP004,Ishita,2026-01-02,TravelDesk,Travel,20150.64,Manager A,Finance,Card,Mumbai,False
+TX000862,EMP004,Ishita,2026-01-06,EquipHub,Equipment,25964.8,Manager B,Finance,Card,Varanasi,False
+TX000863,EMP004,Ishita,2026-05-21,TravelDesk,Office,31893.36,Manager B,Finance,UPI,Varanasi,False
+TX000864,EMP002,Meera,2026-05-29,EquipHub,Office,15410.66,Manager B,Engineering,Card,Bengaluru,False
+TX000865,EMP003,Kabir,2026-08-07,TravelDesk,Office,13411.26,Manager A,Finance,Bank Transfer,Bengaluru,False
+TX000866,EMP005,Rohan,2026-04-28,EquipHub,Equipment,5614.3,Manager B,Operations,Card,Delhi,False
+TX000867,EMP001,Aarav,2026-03-07,TravelDesk,Office,36107.61,Manager A,Finance,Card,Varanasi,False
+TX000868,EMP002,Meera,2026-08-24,CloudWorks,Equipment,17700.84,Manager A,Operations,UPI,Delhi,False
+TX000869,EMP005,Rohan,2026-01-11,OfficeMart,Equipment,17467.24,Manager A,Operations,Bank Transfer,Mumbai,False
+TX000870,EMP005,Rohan,2026-04-05,OfficeMart,Software,25270.91,Manager A,Finance,UPI,Delhi,False
+TX000871,EMP002,Meera,2026-02-15,TechSupply,Equipment,21378.23,Manager A,Operations,Card,Delhi,False
+TX000872,EMP001,Aarav,2026-02-04,TechSupply,Equipment,26118.3,Manager A,Finance,Card,Mumbai,False
+TX000873,EMP004,Ishita,2026-02-08,CloudWorks,Office,22648.67,Manager A,Operations,Bank Transfer,Mumbai,False
+TX000874,EMP005,Rohan,2026-04-11,CloudWorks,Travel,11568.63,Manager A,Engineering,Card,Delhi,False
+TX000875,EMP005,Rohan,2026-03-12,TravelDesk,Equipment,20229.79,Manager A,Engineering,UPI,Varanasi,False
+TX000876,EMP005,Rohan,2026-04-04,CloudWorks,Software,23811.02,Manager B,Operations,UPI,Varanasi,False
+TX000877,EMP002,Meera,2026-05-22,OfficeMart,Travel,17135.12,Manager B,Engineering,UPI,Varanasi,False
+TX000878,EMP005,Rohan,2026-04-24,TechSupply,Equipment,15835.79,Manager B,Engineering,UPI,Bengaluru,False
+TX000879,EMP001,Aarav,2026-06-04,TechSupply,Travel,20209.2,Manager A,Finance,Bank Transfer,Delhi,False
+TX000880,EMP005,Rohan,2026-08-27,CloudWorks,Software,28943.6,Manager A,Finance,Bank Transfer,Bengaluru,False
+TX000881,EMP002,Meera,2026-01-26,CloudWorks,Office,25377.82,Manager B,Engineering,Bank Transfer,Varanasi,False
+TX000882,EMP004,Ishita,2026-04-05,CloudWorks,Equipment,28708.48,Manager A,Finance,Bank Transfer,Mumbai,False
+TX000883,EMP002,Meera,2026-08-07,TravelDesk,Software,16994.18,Manager A,Engineering,UPI,Delhi,False
+TX000884,EMP001,Aarav,2026-08-19,CloudWorks,Software,37346.77,Manager B,Engineering,UPI,Delhi,False
+TX000885,EMP005,Rohan,2026-05-31,OfficeMart,Office,29963.24,Manager A,Engineering,Card,Varanasi,False
+TX000886,EMP004,Ishita,2026-05-29,TechSupply,Software,11217.12,Manager B,Finance,Bank Transfer,Mumbai,False
+TX000887,EMP004,Ishita,2026-03-21,TravelDesk,Office,25777.93,Manager B,Operations,Card,Bengaluru,False
+TX000888,EMP001,Aarav,2026-07-18,TechSupply,Software,25743.77,Manager B,Finance,UPI,Varanasi,False
+TX000889,EMP003,Kabir,2026-07-23,CloudWorks,Software,14714.88,Manager A,Finance,Bank Transfer,Varanasi,False
+TX000890,EMP004,Ishita,2026-08-17,OfficeMart,Office,25820.76,Manager B,Engineering,Bank Transfer,Mumbai,False
+TX000891,EMP005,Rohan,2026-05-02,EquipHub,Equipment,24492.46,Manager B,Operations,Bank Transfer,Mumbai,False
+TX000892,EMP002,Meera,2026-05-06,OfficeMart,Equipment,19586.44,Manager A,Finance,Bank Transfer,Delhi,False
+TX000893,EMP004,Ishita,2026-04-03,TravelDesk,Equipment,30115.66,Manager A,Engineering,Bank Transfer,Varanasi,False
+TX000894,EMP002,Meera,2026-07-13,TravelDesk,Office,22797.61,Manager B,Finance,Card,Bengaluru,False
+TX000895,EMP005,Rohan,2026-03-28,TravelDesk,Software,23710.88,Manager A,Operations,Bank Transfer,Varanasi,False
+TX000896,EMP002,Meera,2026-05-27,OfficeMart,Office,19615.51,Manager B,Engineering,UPI,Varanasi,False
+TX000897,EMP002,Meera,2026-08-09,TechSupply,Software,27813.31,Manager A,Operations,Bank Transfer,Bengaluru,False
+TX000898,EMP001,Aarav,2026-04-25,CloudWorks,Travel,19765.74,Manager B,Finance,Card,Mumbai,False
+TX000899,EMP004,Ishita,2026-06-12,EquipHub,Travel,21942.83,Manager A,Engineering,UPI,Delhi,False
+TX000900,EMP002,Meera,2026-03-18,EquipHub,Travel,28212.09,Manager B,Operations,Card,Varanasi,False
+TX000901,EMP005,Rohan,2026-06-11,CloudWorks,Equipment,21792.49,Manager A,Operations,Bank Transfer,Bengaluru,False
+TX000902,EMP003,Kabir,2026-07-11,EquipHub,Office,29987.9,Manager B,Engineering,UPI,Delhi,False
+TX000903,EMP003,Kabir,2026-07-07,EquipHub,Equipment,19302.35,Manager B,Operations,Bank Transfer,Delhi,False
+TX000904,EMP003,Kabir,2026-03-27,TechSupply,Equipment,15247.21,Manager A,Engineering,UPI,Varanasi,False
+TX000905,EMP003,Kabir,2026-07-16,TechSupply,Software,13880.0,Manager B,Operations,Card,Varanasi,False
+TX000906,EMP003,Kabir,2026-02-26,OfficeMart,Software,18634.59,Manager A,Operations,Bank Transfer,Delhi,False
+TX000907,EMP005,Rohan,2026-08-01,CloudWorks,Travel,18846.51,Manager A,Engineering,UPI,Delhi,False
+TX000908,EMP004,Ishita,2026-01-09,OfficeMart,Travel,14717.7,Manager B,Operations,Card,Mumbai,False
+TX000909,EMP003,Kabir,2026-02-25,OfficeMart,Office,23067.57,Manager B,Finance,UPI,Varanasi,False
+TX000910,EMP003,Kabir,2026-04-05,TechSupply,Travel,32537.27,Manager B,Engineering,UPI,Bengaluru,False
+TX000911,EMP003,Kabir,2026-08-11,TechSupply,Equipment,29857.67,Manager A,Finance,UPI,Delhi,False
+TX000912,EMP004,Ishita,2026-02-18,TechSupply,Travel,24552.82,Manager B,Operations,Card,Mumbai,False
+TX000913,EMP001,Aarav,2026-01-28,CloudWorks,Equipment,18337.11,Manager B,Operations,UPI,Varanasi,False
+TX000914,EMP005,Rohan,2026-06-26,OfficeMart,Office,24857.25,Manager B,Finance,Card,Mumbai,False
+TX000915,EMP001,Aarav,2026-07-12,TechSupply,Office,20372.83,Manager B,Operations,Card,Varanasi,False
+TX000916,EMP001,Aarav,2026-04-03,TravelDesk,Office,22299.32,Manager A,Finance,UPI,Mumbai,False
+TX000917,EMP004,Ishita,2026-02-18,EquipHub,Equipment,16531.5,Manager A,Engineering,Bank Transfer,Delhi,False
+TX000918,EMP005,Rohan,2026-07-25,TravelDesk,Travel,23631.29,Manager B,Engineering,UPI,Mumbai,False
+TX000919,EMP003,Kabir,2026-05-11,OfficeMart,Office,22124.31,Manager A,Operations,Bank Transfer,Varanasi,False
+TX000920,EMP003,Kabir,2026-01-12,EquipHub,Software,22007.78,Manager A,Finance,Bank Transfer,Delhi,False
+TX000921,EMP002,Meera,2026-04-17,TechSupply,Software,23840.85,Manager A,Engineering,UPI,Bengaluru,False
+TX000922,EMP002,Meera,2026-02-10,TechSupply,Equipment,12955.01,Manager B,Engineering,UPI,Bengaluru,False
+TX000923,EMP002,Meera,2026-06-16,EquipHub,Equipment,24645.1,Manager A,Finance,Card,Mumbai,False
+TX000924,EMP001,Aarav,2026-07-15,OfficeMart,Equipment,23521.94,Manager B,Engineering,Card,Varanasi,False
+TX000925,EMP005,Rohan,2026-05-29,TechSupply,Equipment,22674.76,Manager A,Engineering,Bank Transfer,Varanasi,False
+TX000926,EMP005,Rohan,2026-06-09,TravelDesk,Travel,23095.64,Manager A,Engineering,UPI,Varanasi,False
+TX000927,EMP005,Rohan,2026-01-19,TravelDesk,Equipment,18984.99,Manager B,Engineering,Card,Varanasi,False
+TX000928,EMP004,Ishita,2026-03-31,OfficeMart,Equipment,21922.65,Manager B,Finance,UPI,Varanasi,False
+TX000929,EMP005,Rohan,2026-05-03,OfficeMart,Office,10297.07,Manager B,Finance,Card,Varanasi,False
+TX000930,EMP003,Kabir,2026-05-05,OfficeMart,Software,20542.63,Manager B,Finance,Card,Mumbai,False
+TX000931,EMP001,Aarav,2026-06-23,TravelDesk,Travel,15443.14,Manager A,Finance,Bank Transfer,Delhi,False
+TX000932,EMP003,Kabir,2026-01-25,TravelDesk,Software,11314.72,Manager B,Operations,Card,Bengaluru,False
+TX000933,EMP004,Ishita,2026-02-18,CloudWorks,Software,26077.71,Manager A,Engineering,UPI,Mumbai,False
+TX000934,EMP005,Rohan,2026-04-24,TechSupply,Travel,14080.82,Manager B,Engineering,UPI,Mumbai,False
+TX000935,EMP001,Aarav,2026-07-22,OfficeMart,Travel,26943.36,Manager B,Finance,UPI,Varanasi,False
+TX000936,EMP004,Ishita,2026-05-15,CloudWorks,Software,19898.57,Manager B,Operations,UPI,Bengaluru,False
+TX000937,EMP002,Meera,2026-03-28,TravelDesk,Travel,24708.48,Manager A,Operations,Bank Transfer,Delhi,False
+TX000938,EMP001,Aarav,2026-03-10,EquipHub,Equipment,18344.17,Manager B,Engineering,Bank Transfer,Varanasi,False
+TX000939,EMP005,Rohan,2026-07-13,OfficeMart,Office,28729.04,Manager B,Engineering,Bank Transfer,Bengaluru,False
+TX000940,EMP005,Rohan,2026-05-19,EquipHub,Office,9309.05,Manager A,Finance,UPI,Bengaluru,False
+TX000941,EMP003,Kabir,2026-06-21,TechSupply,Equipment,20348.73,Manager B,Finance,UPI,Varanasi,False
+TX000942,EMP003,Kabir,2026-05-21,OfficeMart,Office,14869.0,Manager B,Finance,UPI,Delhi,False
+TX000943,EMP003,Kabir,2026-02-25,TravelDesk,Travel,16823.46,Manager B,Engineering,Card,Bengaluru,False
+TX000944,EMP003,Kabir,2026-04-26,EquipHub,Software,26184.36,Manager B,Operations,UPI,Delhi,False
+TX000945,EMP005,Rohan,2026-07-20,OfficeMart,Software,338661.95909458084,Manager B,Operations,UPI,Mumbai,True
+TX000946,EMP005,Rohan,2026-04-16,EquipHub,Office,22802.25,Manager B,Operations,UPI,Varanasi,False
+TX000947,EMP003,Kabir,2026-06-11,TechSupply,Travel,19604.75,Manager B,Engineering,UPI,Bengaluru,False
+TX000948,EMP001,Aarav,2026-03-22,CloudWorks,Travel,20486.36,Manager B,Operations,Bank Transfer,Varanasi,False
+TX000949,EMP004,Ishita,2026-02-23,TravelDesk,Software,17174.03,Manager A,Operations,Bank Transfer,Bengaluru,False
+TX000950,EMP002,Meera,2026-01-24,TravelDesk,Software,19859.86,Manager B,Operations,Bank Transfer,Bengaluru,False
+TX000951,EMP001,Aarav,2026-05-17,EquipHub,Travel,27577.01,Manager A,Finance,UPI,Mumbai,False
+TX000952,EMP005,Rohan,2026-07-07,TravelDesk,Software,25136.9,Manager A,Finance,Bank Transfer,Varanasi,False
+TX000953,EMP005,Rohan,2026-05-01,OfficeMart,Travel,32683.18,Manager B,Finance,Bank Transfer,Mumbai,False
+TX000954,EMP005,Rohan,2026-04-21,OfficeMart,Office,234398.88676811339,Manager A,Engineering,Bank Transfer,Bengaluru,True
+TX000955,EMP004,Ishita,2026-07-09,EquipHub,Travel,13922.71,Manager B,Operations,UPI,Varanasi,False
+TX000956,EMP002,Meera,2026-01-16,OfficeMart,Equipment,33086.78,Manager B,Engineering,Bank Transfer,Varanasi,False
+TX000957,EMP005,Rohan,2026-02-18,CloudWorks,Office,23718.12,Manager B,Finance,UPI,Delhi,False
+TX000958,EMP003,Kabir,2026-04-01,OfficeMart,Equipment,17141.42,Manager B,Operations,Card,Mumbai,False
+TX000959,EMP001,Aarav,2026-07-30,CloudWorks,Software,17924.27,Manager A,Finance,Bank Transfer,Delhi,False
+TX000960,EMP003,Kabir,2026-03-01,TravelDesk,Equipment,362134.28391048,Manager B,Engineering,Card,Varanasi,True
+TX000961,EMP003,Kabir,2026-06-28,EquipHub,Software,19893.71,Manager B,Operations,Bank Transfer,Mumbai,False
+TX000962,EMP003,Kabir,2026-05-08,TravelDesk,Software,27780.02,Manager A,Finance,UPI,Mumbai,False
+TX000963,EMP003,Kabir,2026-06-04,TravelDesk,Office,32063.28,Manager B,Operations,Card,Varanasi,False
+TX000964,EMP002,Meera,2026-02-28,TravelDesk,Equipment,14811.41,Manager B,Engineering,Card,Bengaluru,False
+TX000965,EMP004,Ishita,2026-08-22,TravelDesk,Travel,13183.68,Manager A,Engineering,Bank Transfer,Delhi,False
+TX000966,EMP004,Ishita,2026-04-21,CloudWorks,Equipment,18126.88,Manager A,Engineering,Bank Transfer,Mumbai,False
+TX000967,EMP001,Aarav,2026-06-08,CloudWorks,Equipment,15558.18,Manager B,Operations,UPI,Mumbai,False
+TX000968,EMP003,Kabir,2026-02-20,CloudWorks,Software,21345.06,Manager A,Finance,Card,Delhi,False
+TX000969,EMP005,Rohan,2026-06-25,EquipHub,Office,23952.63,Manager A,Engineering,Card,Varanasi,False
+TX000970,EMP004,Ishita,2026-08-19,EquipHub,Equipment,30764.6,Manager A,Finance,Card,Delhi,False
+TX000971,EMP005,Rohan,2026-08-01,CloudWorks,Office,23625.58,Manager A,Engineering,Card,Bengaluru,False
+TX000972,EMP001,Aarav,2026-04-02,EquipHub,Equipment,23671.33,Manager B,Finance,UPI,Bengaluru,False
+TX000973,EMP004,Ishita,2026-08-27,TravelDesk,Equipment,21163.45,Manager B,Operations,Bank Transfer,Delhi,False
+TX000974,EMP003,Kabir,2026-01-04,EquipHub,Equipment,23311.6,Manager B,Finance,Bank Transfer,Varanasi,False
+TX000975,EMP001,Aarav,2026-02-16,CloudWorks,Software,15544.25,Manager A,Engineering,Bank Transfer,Mumbai,False
+TX000976,EMP003,Kabir,2026-03-01,TechSupply,Office,26766.54,Manager A,Engineering,Bank Transfer,Delhi,False
+TX000977,EMP004,Ishita,2026-07-09,TravelDesk,Travel,18607.78,Manager A,Finance,Bank Transfer,Mumbai,False
+TX000978,EMP001,Aarav,2026-02-08,EquipHub,Software,22077.76,Manager B,Operations,UPI,Varanasi,False
+TX000979,EMP001,Aarav,2026-04-07,EquipHub,Software,21205.97,Manager A,Operations,Bank Transfer,Varanasi,False
+TX000980,EMP005,Rohan,2026-06-09,TravelDesk,Office,382805.4926757751,Manager B,Operations,Card,Bengaluru,True
+TX000981,EMP003,Kabir,2026-06-23,TechSupply,Office,18986.04,Manager B,Engineering,UPI,Bengaluru,False
+TX000982,EMP001,Aarav,2026-08-08,TechSupply,Travel,11635.78,Manager A,Finance,UPI,Varanasi,False
+TX000983,EMP001,Aarav,2026-04-30,TravelDesk,Travel,12901.81,Manager B,Operations,Bank Transfer,Delhi,False
+TX000984,EMP002,Meera,2026-01-04,TechSupply,Software,6581.03,Manager A,Finance,Card,Delhi,False
+TX000985,EMP002,Meera,2026-06-10,TravelDesk,Equipment,384032.5689322177,Manager A,Operations,Bank Transfer,Delhi,True
+TX000986,EMP001,Aarav,2026-06-29,EquipHub,Travel,17465.1,Manager A,Finance,UPI,Mumbai,False
+TX000987,EMP004,Ishita,2026-07-01,EquipHub,Travel,27339.27,Manager B,Finance,UPI,Delhi,False
+TX000988,EMP004,Ishita,2026-03-25,EquipHub,Software,22913.88,Manager B,Finance,UPI,Varanasi,False
+TX000989,EMP002,Meera,2026-05-08,TravelDesk,Travel,9392.39,Manager B,Engineering,Card,Bengaluru,False
+TX000990,EMP003,Kabir,2026-03-19,TravelDesk,Office,18033.8,Manager B,Engineering,Bank Transfer,Delhi,False
+TX000991,EMP005,Rohan,2026-04-03,EquipHub,Travel,24182.27,Manager A,Finance,UPI,Delhi,False
+TX000992,EMP005,Rohan,2026-04-17,TechSupply,Office,33466.75,Manager B,Engineering,UPI,Mumbai,False
+TX000993,EMP005,Rohan,2026-04-30,CloudWorks,Software,25282.61,Manager A,Finance,UPI,Delhi,False
+TX000994,EMP005,Rohan,2026-01-06,TravelDesk,Software,21413.6,Manager A,Finance,Card,Varanasi,False
+TX000995,EMP001,Aarav,2026-01-21,OfficeMart,Office,191801.11962502977,Manager B,Finance,Bank Transfer,Bengaluru,True
+TX000996,EMP003,Kabir,2026-04-25,EquipHub,Software,29687.61,Manager B,Engineering,UPI,Mumbai,False
+TX000997,EMP005,Rohan,2026-03-29,TechSupply,Equipment,6587.36,Manager A,Engineering,Bank Transfer,Varanasi,False
+TX000998,EMP005,Rohan,2026-04-06,TravelDesk,Travel,23727.68,Manager B,Engineering,Card,Varanasi,False
+TX000999,EMP002,Meera,2026-02-17,CloudWorks,Software,14279.26,Manager A,Finance,Bank Transfer,Mumbai,False
+TX001000,EMP005,Rohan,2026-02-07,CloudWorks,Equipment,22274.82,Manager B,Engineering,Card,Mumbai,False

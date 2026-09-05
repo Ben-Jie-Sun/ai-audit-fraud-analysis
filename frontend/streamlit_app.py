@@ -12,6 +12,15 @@ Run the backend first:
 Then run this:
     streamlit run frontend/streamlit_app.py
 """
+import io
+
+from openpyxl.styles import (
+    Alignment,
+    Font,
+    PatternFill,
+)
+
+import pandas as pd
 import json
 import sys
 from pathlib import Path
@@ -84,7 +93,200 @@ def render_result(result: dict) -> None:
     with st.expander("Extracted structured data (what the system actually used)"):
         st.json(result["extracted"])
 
+def create_audit_excel_report(
+    result: dict,
+) -> bytes:
 
+    output = io.BytesIO()
+
+    transactions_df = pd.DataFrame(
+        result["transactions"]
+    )
+
+    anomalies_df = pd.DataFrame(
+        result["anomalies"]
+    )
+
+    summary_df = pd.DataFrame(
+        [
+            {
+                "Metric": "Source file",
+                "Value": result["source_file"],
+            },
+            {
+                "Metric": "Transactions analysed",
+                "Value": result["row_count"],
+            },
+            {
+                "Metric": "Auto-cleared",
+                "Value": result["normal_count"],
+            },
+            {
+                "Metric": "Requires recheck",
+                "Value": result["anomaly_count"],
+            },
+            {
+                "Metric": "Anomaly rate",
+                "Value": f"{result['anomaly_rate']:.2%}",
+            },
+            {
+                "Metric": "Batch judgement",
+                "Value": result["batch_judgement"],
+            },
+            {
+                "Metric": "Judgement reason",
+                "Value": result["batch_reason"],
+            },
+        ]
+    )
+
+    with pd.ExcelWriter(
+        output,
+        engine="openpyxl",
+    ) as writer:
+
+        summary_df.to_excel(
+            writer,
+            sheet_name="Audit Summary",
+            index=False,
+        )
+
+        transactions_df.to_excel(
+            writer,
+            sheet_name="All Transactions",
+            index=False,
+        )
+
+        anomalies_df.to_excel(
+            writer,
+            sheet_name="Anomalies Only",
+            index=False,
+        )
+
+        workbook = writer.book
+
+        # -------------------------------------------------
+        # Audit Summary formatting
+        # -------------------------------------------------
+
+        summary_sheet = workbook[
+            "Audit Summary"
+        ]
+
+        for cell in summary_sheet[1]:
+            cell.font = Font(
+                bold=True
+            )
+
+        summary_sheet.column_dimensions[
+            "A"
+        ].width = 25
+
+        summary_sheet.column_dimensions[
+            "B"
+        ].width = 80
+
+        # -------------------------------------------------
+        # Full transaction ledger formatting
+        # -------------------------------------------------
+
+        transaction_sheet = workbook[
+            "All Transactions"
+        ]
+
+        for cell in transaction_sheet[1]:
+            cell.font = Font(
+                bold=True
+            )
+
+        headers = {
+            cell.value: cell.column
+            for cell
+            in transaction_sheet[1]
+        }
+
+        anomaly_column = headers.get(
+            "is_anomaly"
+        )
+
+        if anomaly_column:
+
+            anomaly_fill = PatternFill(
+                fill_type="solid",
+                fgColor="FFC7CE",
+            )
+
+            for row in range(
+                2,
+                transaction_sheet.max_row + 1,
+            ):
+
+                is_anomaly = (
+                    transaction_sheet.cell(
+                        row=row,
+                        column=anomaly_column,
+                    ).value
+                )
+
+                if is_anomaly is True:
+
+                    for cell in transaction_sheet[
+                        row
+                    ]:
+                        cell.fill = anomaly_fill
+
+        # -------------------------------------------------
+        # Anomalies sheet formatting
+        # -------------------------------------------------
+
+        anomaly_sheet = workbook[
+            "Anomalies Only"
+        ]
+
+        for cell in anomaly_sheet[1]:
+            cell.font = Font(
+                bold=True
+            )
+
+        anomaly_sheet.freeze_panes = "A2"
+        transaction_sheet.freeze_panes = "A2"
+
+        for sheet in [
+            transaction_sheet,
+            anomaly_sheet,
+        ]:
+
+            for column in sheet.columns:
+
+                max_length = 0
+
+                column_letter = (
+                    column[0].column_letter
+                )
+
+                for cell in column:
+
+                    value = (
+                        ""
+                        if cell.value is None
+                        else str(cell.value)
+                    )
+
+                    max_length = max(
+                        max_length,
+                        len(value),
+                    )
+
+                sheet.column_dimensions[
+                    column_letter
+                ].width = min(
+                    max_length + 2,
+                    40,
+                )
+
+    output.seek(0)
+
+    return output.getvalue()
 def main() -> None:
     st.title("🧾 AI Audit Assistant")
     st.write(
@@ -93,7 +295,13 @@ def main() -> None:
         "it never decides risk on its own."
     )
 
-    tab_upload, tab_samples = st.tabs(["Upload a document", "Try a sample"])
+    tab_upload, tab_transactions, tab_samples = st.tabs(
+        [
+             "Audit document",
+             "Analyze transactions",
+             "Try a sample",
+        ]
+    )
 
     with tab_upload:
 
@@ -184,7 +392,221 @@ def main() -> None:
                         f"Could not reach the backend at {API_BASE_URL}. "
                         "Start it with: uvicorn app.main:app --reload"
                     )
+    with tab_transactions:
 
+        st.markdown("### Analyze transaction ledger")
+
+        st.write(
+            "Upload an Excel or CSV transaction ledger. "
+            "The system validates and normalizes the data "
+            "before fraud-pattern analysis."
+        )
+
+        st.info(
+            "Required columns: transaction_id, employee_id, "
+            "employee_name, date, vendor, category, amount"
+        )
+
+        transaction_file = st.file_uploader(
+            "Choose transaction ledger",
+            type=["csv", "xlsx"],
+            key="transaction_ledger",
+        )
+
+        if transaction_file is not None:
+
+            st.write(
+                f"Selected file: **{transaction_file.name}**"
+            )
+
+            if st.button(
+                "Validate transaction ledger",
+                type="primary",
+                key="validate_transactions",
+            ):
+
+                with st.spinner(
+                    "Loading and validating transaction data..."
+                ):
+
+                    try:
+                        resp = requests.post(
+                            f"{API_BASE_URL}/transactions/analyze",
+                            files={
+                                "file": (
+                                    transaction_file.name,
+                                    transaction_file.getvalue(),
+                                )
+                            },
+                            timeout=60,
+                        )
+
+                        if resp.status_code == 200:
+
+                            result = resp.json()
+
+                            st.success(
+                                "Transaction analysis completed successfully."
+                            )
+
+                            total = result["row_count"]
+                            anomaly_count = result["anomaly_count"]
+                            normal_count = result["normal_count"]
+                            anomaly_rate = result["anomaly_rate"]
+
+                            col1, col2, col3, col4 = st.columns(4)
+
+                            with col1:
+                                st.metric(
+                                    "Transactions",
+                                    total,
+                                )
+
+                            with col2:
+                                st.metric(
+                                    "Anomalies",
+                                    anomaly_count,
+                                )
+
+                            with col3:
+                                st.metric(
+                                    "Normal",
+                                    normal_count,
+                                )
+
+                            with col4:
+                                st.metric(
+                                    "Anomaly Rate",
+                                    f"{anomaly_rate:.2%}",
+                                )
+
+                            # -------------------------------------------------
+                            # Audit judgement
+                            # -------------------------------------------------
+
+                            st.markdown("#### Audit judgement")
+
+                            if result["batch_judgement"] == "CONDITIONAL PASS":
+
+                                st.success(
+                                    result["batch_judgement"]
+                                )
+
+                            else:
+
+                                st.warning(
+                                    result["batch_judgement"]
+                                )
+
+                            st.write(
+                                result["batch_reason"]
+                            )
+
+                        
+                            st.markdown("#### Normal vs anomalous transactions")
+
+                            chart_data = pd.DataFrame(
+                                {
+                                    "Type": [
+                                        "Normal",
+                                        "Anomalous",
+                                    ],
+                                    "Count": [
+                                        normal_count,
+                                        anomaly_count,
+                                    ],
+                                }
+                            )
+
+                            st.bar_chart(
+                                chart_data.set_index("Type")
+                            )
+
+                            st.markdown(
+                                "#### Detected anomalous transactions"
+                            )
+
+                            anomalies = result["anomalies"]
+
+                            if anomalies:
+
+                                anomaly_df = pd.DataFrame(
+                                    anomalies
+                                )
+
+                                st.dataframe(
+                                    anomaly_df,
+                                    use_container_width=True,
+                                )
+
+                                anomaly_csv = anomaly_df.to_csv(
+                                    index=False
+                                ).encode("utf-8")
+
+                                st.download_button(
+                                    label="Download anomaly transactions CSV",
+                                    data=anomaly_csv,
+                                    file_name="anomalous_transactions.csv",
+                                    mime="text/csv",
+                                )
+
+                            else:
+                                st.info(
+                                    "No anomalous transactions were detected."
+                                )
+                            # -------------------------------------------------
+                            # Complete Excel audit report
+                            # -------------------------------------------------
+
+                            audit_excel = create_audit_excel_report(
+                                result
+                            )
+
+                            st.download_button(
+                                label="Download Complete AI Audit Report",
+                                data=audit_excel,
+                                file_name="AI_Audit_Report.xlsx",
+                                mime=(
+                                    "application/vnd.openxmlformats-"
+                                    "officedocument.spreadsheetml.sheet"
+                                ),
+                            )
+                            with st.expander(
+                                "View first 20 transactions"
+                            ):
+
+                                st.dataframe(
+                                    result["preview"],
+                                    use_container_width=True,
+                                )
+
+                                st.caption(
+                                    "Showing up to the first 20 transactions."
+                                )
+
+                        else:
+
+                            try:
+                                detail = resp.json().get(
+                                    "detail",
+                                    "Unknown backend error",
+                                )
+
+                            except Exception:
+                                detail = resp.text
+
+                            st.error(
+                                f"Validation failed: {detail}"
+                            )
+
+                    except requests.exceptions.ConnectionError:
+
+                        st.error(
+                            f"Could not reach the backend at "
+                            f"{API_BASE_URL}. "
+                            "Start it with: "
+                            "uvicorn app.main:app --reload"
+                        )
     with tab_samples:
         try:
             samples = requests.get(f"{API_BASE_URL}/audit/samples", timeout=10).json()

@@ -1,19 +1,25 @@
 from __future__ import annotations
 
 import os
+import tempfile
 
 from fastapi import APIRouter, File, HTTPException, UploadFile
 
 from app.ai.explainer import generate_summary
-from app.audit.anomaly import check_amount_anomaly, load_historical
+from app.audit.anomaly import (
+    check_amount_anomaly,
+    detect_transaction_anomalies,
+    load_historical,
+)
 from app.audit.rules import run_all_rules
 from app.audit.scoring import classify_risk, compute_risk_score
 from app.extraction.document_parser import parse_document
+from app.extraction.transaction_parser import load_transaction_file
 from app.models.schemas import AuditResult
 from config import HISTORICAL_TRANSACTIONS_PATH, SAMPLE_DIR
 
-router = APIRouter()
 
+router = APIRouter()
 
 def run_pipeline(filename: str, content: bytes) -> AuditResult:
     invoice = parse_document(filename, content)
@@ -65,7 +71,171 @@ async def audit_sample(sample_name: str) -> AuditResult:
 @router.get("/audit/samples")
 async def list_samples() -> list[str]:
     """List bundled sample documents that /audit/sample/{name} can run."""
+
     return sorted(
-        f for f in os.listdir(SAMPLE_DIR) if f.endswith((".json", ".csv"))
+        f
+        for f in os.listdir(SAMPLE_DIR)
+        if f.endswith((".json", ".csv"))
         and f != "historical_transactions.csv"
     )
+
+
+@router.post("/transactions/analyze")
+async def analyze_transactions(
+    file: UploadFile = File(...)
+):
+    filename = file.filename or ""
+
+    extension = os.path.splitext(filename)[1].lower()
+
+    if extension not in {".csv", ".xlsx"}:
+        raise HTTPException(
+            status_code=400,
+            detail="Transaction ledger must be CSV or XLSX.",
+        )
+
+    content = await file.read()
+
+    temp_path = None
+
+    try:
+        with tempfile.NamedTemporaryFile(
+            delete=False,
+            suffix=extension,
+        ) as temp_file:
+            temp_file.write(content)
+            temp_path = temp_file.name
+
+        df = load_transaction_file(temp_path)
+
+        df = detect_transaction_anomalies(df)
+
+        df["decision"] = "AUTO-CLEARED"
+        df["review_required"] = False
+
+        df.loc[
+            df["is_anomaly"],
+            "decision",
+        ] = "RECHECK"
+
+        df.loc[
+            df["is_anomaly"],
+            "review_required",
+        ] = True
+
+        df["audit_reason"] = (
+            "Transaction passed automated anomaly screening."
+        )
+
+        df.loc[
+            df["is_anomaly"],
+            "audit_reason",
+        ] = (
+            "Transaction was identified as statistically unusual "
+            "and requires human review."
+        )
+
+        anomaly_df = df[
+            df["is_anomaly"]
+        ].copy()
+
+        preview_df = df.head(20).copy()
+
+        preview_df["date"] = (
+            preview_df["date"]
+            .dt.strftime("%Y-%m-%d")
+        )
+
+        anomaly_df["date"] = (
+            anomaly_df["date"]
+            .dt.strftime("%Y-%m-%d")
+        )
+
+        anomaly_count = int(
+            df["is_anomaly"].sum()
+        )
+
+        total_count = len(df)
+
+        anomaly_rate = (
+            anomaly_count / total_count
+            if total_count > 0
+            else 0
+        )
+
+        if anomaly_rate < 0.05:
+            batch_judgement = "CONDITIONAL PASS"
+
+            batch_reason = (
+                "Less than 5% of transactions were flagged. "
+                "Non-flagged transactions passed automated screening, "
+                "while flagged transactions require human review."
+            )
+
+        else:
+            batch_judgement = "REVIEW REQUIRED"
+
+            batch_reason = (
+                "5% or more of transactions were flagged. "
+                "The transaction batch requires additional review."
+            )
+
+        all_transactions_df = df.copy()
+
+        all_transactions_df["date"] = (
+            all_transactions_df["date"]
+            .dt.strftime("%Y-%m-%d")
+        )
+
+        return {
+            "source_file": filename,
+
+            "row_count": total_count,
+
+            "columns": list(df.columns),
+
+            "anomaly_count": anomaly_count,
+
+            "normal_count": (
+                total_count - anomaly_count
+            ),
+
+            "anomaly_rate": anomaly_rate,
+
+            "batch_judgement": batch_judgement,
+
+            "batch_reason": batch_reason,
+
+            "preview": preview_df.to_dict(
+                orient="records"
+            ),
+
+            "anomalies": anomaly_df.to_dict(
+                orient="records"
+            ),
+
+            "transactions": (
+                all_transactions_df.to_dict(
+                    orient="records"
+                )
+            ),
+        }
+
+    except ValueError as exc:
+        raise HTTPException(
+            status_code=400,
+            detail=str(exc),
+        ) from exc
+
+    except Exception as exc:
+        raise HTTPException(
+            status_code=500,
+            detail=(
+                "Unable to process transaction ledger: "
+                f"{exc}"
+            ),
+        ) from exc
+
+    finally:
+        if temp_path and os.path.exists(temp_path):
+            os.remove(temp_path)

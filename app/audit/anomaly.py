@@ -11,6 +11,9 @@ from __future__ import annotations
 
 import pandas as pd
 
+from sklearn.ensemble import IsolationForest
+from sklearn.preprocessing import StandardScaler
+
 from app.models.schemas import Evidence, ExtractedInvoice, Finding, FindingStatus
 from config import ANOMALY_RATIO_THRESHOLD
 
@@ -94,3 +97,60 @@ def check_amount_anomaly(invoice: ExtractedInvoice, historical: pd.DataFrame) ->
         ],
         weight=0,
     )
+def detect_transaction_anomalies(
+    transactions: pd.DataFrame,
+) -> pd.DataFrame:
+    """
+    Detect unusual transactions in a transaction ledger.
+
+    For the first hackathon version, the model uses transaction amount
+    as the anomaly feature. The function returns a copy of the input
+    DataFrame with:
+
+        anomaly_score
+        is_anomaly
+
+    IsolationForest prediction:
+        1  -> normal transaction
+       -1  -> anomalous transaction
+    """
+
+    if transactions.empty:
+        raise ValueError("Transaction dataset is empty.")
+
+    if "amount" not in transactions.columns:
+        raise ValueError(
+            "Transaction dataset must contain an 'amount' column."
+        )
+
+    result = transactions.copy()
+
+    features = result[["amount"]].copy()
+
+    if features["amount"].isna().any():
+        raise ValueError(
+            "Transaction amounts contain missing or invalid values."
+        )
+
+    scaler = StandardScaler()
+
+    scaled_features = scaler.fit_transform(features)
+
+    model = IsolationForest(
+        contamination="auto",
+        random_state=42,
+    )
+
+    predictions = model.fit_predict(
+        scaled_features
+    )
+
+    scores = model.decision_function(
+        scaled_features
+    )
+
+    result["anomaly_score"] = scores
+
+    result["is_anomaly"] = predictions == -1
+
+    return result

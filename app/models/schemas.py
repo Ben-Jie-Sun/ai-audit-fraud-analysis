@@ -57,6 +57,26 @@ class ExtractedInvoice(BaseModel):
     injection_suspected: bool = False
     injection_evidence: list[str] = Field(default_factory=list)
 
+class Transaction(BaseModel):
+    """
+    Structured representation of one financial transaction.
+
+    This will be used for CSV/Excel transaction ledgers.
+    """
+
+    transaction_id: str
+    employee_id: str
+    employee_name: str
+    date: date
+    vendor: str
+    category: str
+    amount: float
+
+    manager_name: Optional[str] = None
+    department: Optional[str] = None
+    payment_method: Optional[str] = None
+    location: Optional[str] = None
+    description: Optional[str] = None
 
 class Evidence(BaseModel):
     label: str
