@@ -9,10 +9,17 @@ from app.ai.explainer import generate_summary
 from app.audit.anomaly import (
     check_amount_anomaly,
     detect_transaction_anomalies,
+    evaluate_synthetic_detection,
     load_historical,
+    summarize_clusters,
 )
 from app.audit.rules import run_all_rules
 from app.audit.scoring import classify_risk, compute_risk_score
+from app.audit.review_workflow import build_document_review_workflow
+from app.audit.transaction_risk import (
+    apply_transaction_risk_routing,
+    summarize_transaction_risk,
+)
 from app.extraction.document_parser import parse_document
 from app.extraction.transaction_parser import load_transaction_file
 from app.models.schemas import AuditResult
@@ -30,6 +37,7 @@ def run_pipeline(filename: str, content: bytes) -> AuditResult:
 
     risk_score = compute_risk_score(findings)
     risk_level = classify_risk(risk_score)
+    workflow = build_document_review_workflow(findings, risk_score)
     summary, source = generate_summary(invoice, findings, risk_score)
 
     return AuditResult(
@@ -40,6 +48,7 @@ def run_pipeline(filename: str, content: bytes) -> AuditResult:
         risk_level=risk_level,
         ai_summary=summary,
         ai_summary_source=source,
+        **workflow,
     )
 
 
@@ -107,36 +116,24 @@ async def analyze_transactions(
             temp_path = temp_file.name
 
         df = load_transaction_file(temp_path)
+        schema_mapping = list(df.attrs.get("schema_mapping", []))
+        data_coverage = dict(df.attrs.get("data_coverage", {}))
 
         df = detect_transaction_anomalies(df)
+        evaluation = evaluate_synthetic_detection(df)
+        cluster_summary = summarize_clusters(df)
 
-        df["decision"] = "AUTO-CLEARED"
-        df["review_required"] = False
-
-        df.loc[
-            df["is_anomaly"],
-            "decision",
-        ] = "RECHECK"
-
-        df.loc[
-            df["is_anomaly"],
-            "review_required",
-        ] = True
-
-        df["audit_reason"] = (
-            "Transaction passed automated anomaly screening."
-        )
-
-        df.loc[
-            df["is_anomaly"],
-            "audit_reason",
-        ] = (
-            "Transaction was identified as statistically unusual "
-            "and requires human review."
-        )
+        # Phase 3: convert anomaly evidence into a transparent operational
+        # review-priority score and supervisory routing decision.
+        df = apply_transaction_risk_routing(df)
+        risk_summary = summarize_transaction_risk(df)
 
         anomaly_df = df[
             df["is_anomaly"]
+        ].copy()
+
+        review_queue_df = df[
+            df["review_required"]
         ].copy()
 
         preview_df = df.head(20).copy()
@@ -172,6 +169,18 @@ async def analyze_transactions(
                 "while flagged transactions require human review."
             )
 
+        elif anomaly_rate >= 0.50:
+            batch_judgement = "SYSTEMIC REVIEW REQUIRED"
+
+            batch_reason = (
+                "At least 50% of transactions were flagged. This may indicate "
+                "a systemic control failure, a corrupted/shifted ledger, or a "
+                "population whose behaviour differs substantially from the learned "
+                "baseline. Relative anomaly models become less reliable when abnormal "
+                "behaviour dominates the population, so policy thresholds and human "
+                "review are especially important."
+            )
+
         else:
             batch_judgement = "REVIEW REQUIRED"
 
@@ -205,6 +214,20 @@ async def analyze_transactions(
             "batch_judgement": batch_judgement,
 
             "batch_reason": batch_reason,
+
+            "evaluation": evaluation,
+
+            "cluster_summary": cluster_summary,
+
+            "risk_summary": risk_summary,
+
+            "schema_mapping": schema_mapping,
+
+            "data_coverage": data_coverage,
+
+            "review_queue": review_queue_df.assign(
+                date=review_queue_df["date"].dt.strftime("%Y-%m-%d")
+            ).to_dict(orient="records"),
 
             "preview": preview_df.to_dict(
                 orient="records"

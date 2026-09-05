@@ -27,6 +27,13 @@ app.include_router(router)
 def root():
     return {
         "service": "ai-audit-assistant",
+        "phase": 6,
         "docs": "/docs",
-        "endpoints": ["/audit/upload", "/audit/sample/{name}", "/audit/samples"],
+        "endpoints": [
+            "/transactions/analyze",
+            "/audit/upload",
+            "/audit/sample/{name}",
+            "/audit/samples",
+        ],
+        "workflow": "shared LOW/MEDIUM/HIGH/CRITICAL human-review routing",
     }

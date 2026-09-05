@@ -100,3 +100,15 @@ class AuditResult(BaseModel):
     risk_level: RiskLevel
     ai_summary: str
     ai_summary_source: str  # "llm" or "template_fallback"
+
+    # Phase 6 operational workflow. ``risk_level`` above is retained for
+    # backward compatibility with the original document-audit API; the shared
+    # review workflow uses the same LOW/MEDIUM/HIGH/CRITICAL terminology as
+    # transaction analysis.
+    review_priority: str
+    decision: str
+    assigned_reviewer: str
+    review_required: bool
+    recommended_action: str
+    risk_components: str
+    audit_reason: str

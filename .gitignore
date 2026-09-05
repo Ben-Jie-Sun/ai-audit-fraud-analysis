@@ -8,3 +8,7 @@ venv/
 .DS_Store
 data/raw/*
 !data/raw/.gitkeep
+
+data/generated/*
+!data/generated/.gitkeep
+scripts/data/generated/*
